@@ -21,8 +21,8 @@ export const prompts = {
                 "Extraversion": [updated Extraversion],
                 "Agreeableness": [updated Agreeableness],
                 "Neuroticism": [updated Neuroticism]
-]
-]
+            ]
+        ]
 
         Always respond with relevant information. If you believe that the conversation is concluded, reply only with the word "FINISHED" as a response. Never have "FINISHED" be a part of the response string.
     `,
