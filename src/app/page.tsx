@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
 
+import { prompts } from "@/config/prompts";
+
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 export default function ChatPage() {
@@ -12,7 +14,11 @@ export default function ChatPage() {
   >([]);
   const [simulationLoading, setSimulationLoading] = useState(false);
 
-  const [personalities, setPersonalities] = useState<Record<string, any[]>>({});
+  const characterDynamicFactors = Object.fromEntries(
+    prompts.characters.map(({ name, dynamic_factors }) => [name, [dynamic_factors]]) // Wrap in an array
+  );
+
+  const [values, setValues] = useState<Record<string, any[]>>(characterDynamicFactors);
 
   const handleSimulation = async () => {
     setSimulationLoading(true);
@@ -22,11 +28,11 @@ export default function ChatPage() {
 
     eventSource.onmessage = (event) => {
       const newMessage = JSON.parse(event.data);
-      const { role, personality } = newMessage;
+      const { role, values } = newMessage;
 
-      setPersonalities((prev: Record<string, any[]>) => ({
+      setValues((prev: Record<string, any[]>) => ({
         ...prev,
-        [role]: [...(prev[role] || []), personality],
+        [role]: [...(prev[role] || []), values],
       }));
       setSimulationResponse((prev) => [...prev, newMessage]);
     };
@@ -38,45 +44,46 @@ export default function ChatPage() {
   };
 
   const getChartData = (role: string) => {
-    const personalityList = personalities[role] || [];
+    const valueList = values[role] || [];
 
     const chartData = {
-      labels: personalityList.map((_, i) => `Conv ${i + 1}`),
+      labels: valueList.map((_: any, i: number) => `Conv ${i + 1}`),
       datasets: [
         {
-          label: "Openness",
-          data: personalityList.map((p) => p.Openness),
-          borderColor: "rgb(75, 192, 192)",
+          label: "Belief",
+          data: valueList.map((p: { belief_strength: any; }) => p.belief_strength),
+          borderColor: "rgb(192, 75, 85)",
           tension: 0.1,
         },
         {
-          label: "Conscientiousness",
-          data: personalityList.map((p) => p.Conscientiousness),
-          borderColor: "rgb(255, 159, 64)",
+          label: "Receptiveness",
+          data: valueList.map((p: { receptiveness: any; }) => p.receptiveness),
+          borderColor: "rgb(55, 210, 166)",
           tension: 0.1,
         },
         {
-          label: "Extraversion",
-          data: personalityList.map((p) => p.Extraversion),
-          borderColor: "rgb(153, 102, 255)",
+          label: "Interest",
+          data: valueList.map((p: { interest_in_argument: any; }) => p.interest_in_argument),
+          borderColor: "rgb(121, 64, 255)",
           tension: 0.1,
-        },
-        {
-          label: "Agreeableness",
-          data: personalityList.map((p) => p.Agreeableness),
-          borderColor: "rgb(54, 162, 235)",
-          tension: 0.1,
-        },
-        {
-          label: "Neuroticism",
-          data: personalityList.map((p) => p.Neuroticism),
-          borderColor: "rgb(255, 99, 132)",
-          tension: 0.1,
-        },
+        }
       ],
     };
 
     return chartData;
+  };
+
+  const chartOptions = {
+    responsive: true,
+    scales: {
+      y: {
+        min: 0,
+        max: 12,
+        ticks: {
+          stepSize: 1,
+        }
+      },
+    },
   };
 
   return (
@@ -93,13 +100,13 @@ export default function ChatPage() {
 
       <div className="container-fluid">
         <div className="row">
-        <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
+          <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
             <div className="container">
               <div className="row">
-                {Object.keys(personalities).map((role, index) => (
+                {Object.keys(values).map((role, index) => (
                   <div key={index} className="col-4 mt-6">
-                    <h5 className="font-semibold text-lg">Personality Over Time - {role}</h5>
-                    <Line data={getChartData(role)} options={{ responsive: true }} />
+                    <h5 className="font-semibold text-lg">{role} - Character Values</h5>
+                    <Line data={getChartData(role)} options={chartOptions} />
                   </div>
                 ))}
               </div>
@@ -115,40 +122,19 @@ export default function ChatPage() {
                       className="p-2 rounded-lg text-sm max-w-[90%] mt-3"
                     >
                       <strong className="text-uppercase">{msg.role}: </strong>
-                      "{msg.content}"
+                      &#39;{msg.content}&#39;F
                     </div>
                   ))
                 ) : (
                   <p className="text-gray-500 text-sm">
-                    Click "Simulate Chat" to start a conversation.
+                    Click [Simulate Chat] to start a conversation.
                   </p>
                 )}
               </div>
             </div>
           </div>
-          {/* <div className="col-4">
-            <div className="mt-4 p-4 border rounded max-w-md text-left shadow-md">
-              <h3 className="font-semibold text-lg">Personalities:</h3>
-              {Object.entries(personalities).map(([role, personalityList], index) => (
-                <div key={index} className="mt-2">
-                  <h4 className="font-medium">{role}:</h4>
-                  <ul>
-                    {personalityList &&
-                      personalityList.map((personality, i) => (
-                        <li key={i} className="text-sm">
-                          {`Openness: ${personality.Openness}, Conscientiousness: ${personality.Conscientiousness}, Extraversion: ${personality.Extraversion}, Agreeableness: ${personality.Agreeableness}, Neuroticism: ${personality.Neuroticism}`}
-                        </li>
-                      ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div> */}
         </div>
       </div>
-
-      {/* Render a chart for each user/role */}
-
     </div>
   );
 }

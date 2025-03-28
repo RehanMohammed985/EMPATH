@@ -10,7 +10,7 @@ import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 import { StateGraph, END, START } from "@langchain/langgraph";
 
 import { prompts } from "@/config/prompts";
-import { messageLimit } from "@/config/run_config";
+import { messageLimit, topic } from "@/config/run_config";
 
 const llm = new ChatGoogleGenerativeAI({
     model: "gemini-1.5-flash",
@@ -18,7 +18,7 @@ const llm = new ChatGoogleGenerativeAI({
 });
 
 export async function createSimulatedUser(character: any): Promise<Runnable<{ messages: BaseMessageLike[] }, AIMessage>> {
-    console.log("[createSimulatedUser] Creating simulated user with custom instructions...");
+    console.log(`[createSimulatedUser] (${character.name}) Creating simulated user`);
 
     // Ensure `messages` placeholder is properly formatted
     const prompt = ChatPromptTemplate.fromMessages([
@@ -37,7 +37,10 @@ export async function createSimulatedUser(character: any): Promise<Runnable<{ me
     const partialPrompt = await prompt.partial({
         instructions: character.instructions,
         knowledge: character.knowledge,
-        personality: JSON.stringify(character.personality)
+        topic: topic,
+        personality: JSON.stringify(character.personality),
+        static: JSON.stringify(character.static_factors),
+        dynamic: JSON.stringify(character.dynamic_factors)
     });
     console.log("[createSimulatedUser] Final Prompt Created");
 
@@ -46,7 +49,6 @@ export async function createSimulatedUser(character: any): Promise<Runnable<{ me
 }
 
 function swapRoles(messages: BaseMessage[]) {
-    console.log("[swapRoles] Swapping roles for messages");
     return messages.map((m) =>
         m instanceof AIMessage
             ? new HumanMessage({ content: m.content })
@@ -60,11 +62,10 @@ async function simulatedUserNode(state: typeof MessagesAnnotation.State, charact
 
     if (messages.length === 0) {
         console.warn(`[simulatedUserNode] (${character.name}) No messages received, initializing with default.`);
-        messages.push(new HumanMessage("Hello."));
+        messages.push(new HumanMessage("Hello. Shall we have a discussion?"));
     }
 
     const newMessages = swapRoles(messages);
-    console.log(`[simulatedUserNode] (${character.name}) Swapped messages`);
 
     const simulatedUser = await createSimulatedUser(character);
     const response = await simulatedUser.invoke({ messages: newMessages });
@@ -76,16 +77,18 @@ async function simulatedUserNode(state: typeof MessagesAnnotation.State, charact
 
     console.log(`[simulatedUserNode] (${character.name}) Simulated user response`);
 
-    adjustOCEANValues(character, response.content);
+    character = adjustCharacterValues(character, response.content);
 
-    // console.log(response)
+    const updatedSimulatedUser = await createSimulatedUser(character);
 
-    return { messages: [{ role: "user", content: response.content }] };
+    const updatedResponse = await updatedSimulatedUser.invoke({ messages: newMessages });
+
+    return { messages: [{ role: "user", content: updatedResponse.content }] };
 }
 
 function shouldContinue(state: typeof MessagesAnnotation.State) {
     const messages = state.messages;
-    if (messages.length > messageLimit) {  // Increased limit for a natural conversation flow
+    if (messages.length > messageLimit) { 
         console.log("[shouldContinue] Ending simulation - Too many messages.");
         return '__end__';
     } else if (messages[messages.length - 1].content == 'FINISHED') {
@@ -98,31 +101,40 @@ function shouldContinue(state: typeof MessagesAnnotation.State) {
 }
 
 function createSimulation() {
-    console.log("[createSimulation] Creating simulation workflow...");
+    console.log("[createSimulation] Creating simulation workflow");
+
+    function shuffleArray(array: any) {
+        return array.sort(() => Math.random() - 0.5);
+    }
 
     const characters = prompts.characters;
 
-    const workflow = new StateGraph(MessagesAnnotation)
+    shuffleArray(characters)
+
+    const workflow = new StateGraph(MessagesAnnotation);
 
     for (let i = 0; i < characters.length; i++) {
-        workflow.addNode(characters[i].name, (state) => simulatedUserNode(state, characters[i]))
+        workflow.addNode(characters[i].name, (state) => simulatedUserNode(state, characters[i]));
     }
 
+    // Add normal edges (A → B → C → D)
     for (let i = 0; i < characters.length - 1; i++) {
-        workflow.addEdge(characters[i].name as any, characters[i + 1].name as any)
+        workflow.addEdge(characters[i].name as any, characters[i + 1].name as any);
     }
 
+    // Conditional looping logic (D → A if shouldContinue allows)
     for (let i = 0; i < characters.length; i++) {
         const nextIndex = (i + 1) % characters.length;
         workflow.addConditionalEdges(characters[i].name as any, shouldContinue, {
             [END]: END,
             continue: characters[nextIndex].name as any,
-        })
+        });
     }
 
     workflow.addEdge(START, characters[0].name as any);
 
     const simulation = workflow.compile();
+
     console.log("[createSimulation] Simulation workflow compiled.");
     return simulation;
 }
@@ -133,19 +145,21 @@ export async function runSimulationStream() {
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
         async start(controller) {
-            for await (const chunk of await simulation.stream({})) {
+            const recursionLimit = 100; // Set your desired limit
+
+            for await (const chunk of await simulation.stream({}, { recursionLimit })) {
                 const nodeName = Object.keys(chunk)[0];
                 const messages = chunk[nodeName].messages;
                 const messageText = messages[0].content
 
                 let conv = "--"
-                let personality;
+                let values;
 
                 try {
                     const cleanedMessageText = messageText.replace(/```json\n|\n```/g, '');
                     const parsedMessage = JSON.parse(cleanedMessageText)
-                    conv = parsedMessage[0].content
-                    personality = parsedMessage[0].personality
+                    conv = parsedMessage.content
+                    values = parsedMessage.values
                 }
                 catch (err) {
                     console.log(err)
@@ -155,7 +169,7 @@ export async function runSimulationStream() {
                     continue;
                 }
 
-                const messageObj = { role: nodeName, content: conv, personality: personality };
+                const messageObj = { role: nodeName, content: conv, values: values };
                 const data = `data: ${JSON.stringify(messageObj)}\n\n`;
 
                 controller.enqueue(encoder.encode(data));
@@ -173,11 +187,11 @@ export async function runSimulationStream() {
     });
 }
 
-function adjustOCEANValues(character:any, content:any){
-    console.log("NAME:", character.name)
-    console.log("before", JSON.stringify(character.personality))
-    const personality = JSON.parse(content.replace(/```json\n|\n```/g, ''))[0].personality;
-    character.personality = personality
-    console.log("after", JSON.stringify(character.personality))
-    return character
+function adjustCharacterValues(character: any, content: any) {
+    console.log(`[adjustCharacterValues] (${character.name}) Adjusting values for conversation.`);
+    // console.log(content)
+    const dynamic_factors = JSON.parse(content.replace(/```json\n|\n```/g, '')).values;
+    character.dynamic_factors = dynamic_factors;
+    return character;
 }
+
