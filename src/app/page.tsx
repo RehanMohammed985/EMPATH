@@ -17,9 +17,9 @@ export default function ChatPage() {
   const characterDynamicFactors = Object.fromEntries(
     prompts.characters.map(({ name, dynamic_factors }) => [name, [dynamic_factors]]) // Wrap in an array
   );
-  
+
   const [values, setValues] = useState<Record<string, any[]>>(characterDynamicFactors);
-  
+
   const handleSimulation = async () => {
     setSimulationLoading(true);
     setSimulationResponse([]);
@@ -100,7 +100,7 @@ export default function ChatPage() {
 
       <div className="container-fluid">
         <div className="row">
-        <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
+          <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
             <div className="container">
               <div className="row">
                 {Object.keys(values).map((role, index) => (
@@ -122,40 +122,19 @@ export default function ChatPage() {
                       className="p-2 rounded-lg text-sm max-w-[90%] mt-3"
                     >
                       <strong className="text-uppercase">{msg.role}: </strong>
-                      "{msg.content}"
+                      &#39;{msg.content}&#39;F
                     </div>
                   ))
                 ) : (
                   <p className="text-gray-500 text-sm">
-                    Click "Simulate Chat" to start a conversation.
+                    Click [Simulate Chat] to start a conversation.
                   </p>
                 )}
               </div>
             </div>
           </div>
-          {/* <div className="col-4">
-            <div className="mt-4 p-4 border rounded max-w-md text-left shadow-md">
-              <h3 className="font-semibold text-lg">Personalities:</h3>
-              {Object.entries(personalities).map(([role, personalityList], index) => (
-                <div key={index} className="mt-2">
-                  <h4 className="font-medium">{role}:</h4>
-                  <ul>
-                    {personalityList &&
-                      personalityList.map((personality, i) => (
-                        <li key={i} className="text-sm">
-                          {`Openness: ${personality.Openness}, Conscientiousness: ${personality.Conscientiousness}, Extraversion: ${personality.Extraversion}, Agreeableness: ${personality.Agreeableness}, Neuroticism: ${personality.Neuroticism}`}
-                        </li>
-                      ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div> */}
         </div>
       </div>
-
-      {/* Render a chart for each user/role */}
-
     </div>
   );
 }
