@@ -1,1 +1,2 @@
-export const messageLimit = 15;
+export const messageLimit = 24;
+export const topic = 'Is climate change real?'
