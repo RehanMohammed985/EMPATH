@@ -122,7 +122,7 @@ export default function ChatPage() {
                       className="p-2 rounded-lg text-sm max-w-[90%] mt-3"
                     >
                       <strong className="text-uppercase">{msg.role}: </strong>
-                      &#39;{msg.content}&#39;F
+                      &#39;{msg.content}&#39;
                     </div>
                   ))
                 ) : (
