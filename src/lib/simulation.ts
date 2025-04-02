@@ -9,7 +9,7 @@ import { MessagesAnnotation } from "@langchain/langgraph";
 import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 import { StateGraph, END, START } from "@langchain/langgraph";
 
-import { prompts } from "@/config/prompts";
+import { prompts, personalities } from "@/config";
 import { messageLimit, topic } from "@/config/run_config";
 
 const llm = new ChatGoogleGenerativeAI({
@@ -34,11 +34,13 @@ export async function createSimulatedUser(character: any): Promise<Runnable<{ me
         throw new Error("[createSimulatedUser] Error: Knowledge is empty!");
     }
 
+    const personality_type = personalities[character.personality as keyof typeof personalities];
+
     const partialPrompt = await prompt.partial({
         instructions: character.instructions,
         knowledge: character.knowledge,
         topic: topic,
-        personality: JSON.stringify(character.personality),
+        personality: JSON.stringify(personality_type),
         static: JSON.stringify(character.static_factors),
         dynamic: JSON.stringify(character.dynamic_factors)
     });
