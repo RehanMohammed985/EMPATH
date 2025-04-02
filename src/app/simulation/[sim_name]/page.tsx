@@ -11,6 +11,8 @@ export default function SimulationPage() {
   const { sim_name } = useParams(); // Get filename from URL
   const [simulationData, setSimulationData] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
+  const [visibleCharacters, setVisibleCharacters] = useState<string[]>([]);
+  const [allCharacters, setAllCharacters] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchSimulationData = async () => {
@@ -20,6 +22,9 @@ export default function SimulationPage() {
 
         if (response.ok) {
           setSimulationData(data);
+          const characters = Object.keys(data.content.graphValues);
+          setAllCharacters(characters);
+          setVisibleCharacters(characters);
         } else {
           console.error("Error fetching simulation:", data.error);
         }
@@ -40,8 +45,6 @@ export default function SimulationPage() {
   if (!simulationData) {
     return <div className="flex justify-center items-center min-h-screen text-red-500">Error loading simulation.</div>;
   }
-
-  console.log(JSON.stringify(simulationData))
 
   const getChartData = (role: string) => {
     const valueList = simulationData.content.graphValues[role] || [];
@@ -64,37 +67,60 @@ export default function SimulationPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-200">
-      <h1 className="text-2xl font-bold mb-2">Simulation Log: {simulationData.filename}</h1>
-
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
-            <div className="container">
-              <div className="row">
-                {Object.keys(simulationData.content.graphValues).map((role, index) => (
+    <div className="container py-4">
+      <h2 className="text-center mb-3">Simulation Log: {simulationData.filename}</h2>
+      
+      <div className="mt-4 p-4 border rounded shadow-md">
+        <h5 className="font-semibold text-lg">Filter Characters:</h5>
+        <div className="d-flex flex-wrap">
+          {allCharacters.map((character) => (
+            <div key={character} className="form-check me-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                checked={visibleCharacters.includes(character)}
+                onChange={() =>
+                  setVisibleCharacters((prev) =>
+                    prev.includes(character) ? prev.filter((c) => c !== character) : [...prev, character]
+                  )
+                }
+              />
+              <label className="form-check-label">{character}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="row">
+        <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
+          <div className="container">
+            <div className="row">
+              {allCharacters.map((role, index) =>
+                visibleCharacters.includes(role) ? (
                   <div key={index} className="col-4 mt-6">
                     <h5 className="font-semibold text-lg">{role} - Character Values</h5>
                     <Line data={getChartData(role)} options={chartOptions} />
                   </div>
-                ))}
-              </div>
+                ) : null
+              )}
             </div>
           </div>
-          <div className="col-12">
-            <div className="mt-4 p-4 border rounded max-w-md text-left shadow-md">
-              <div className="flex flex-col space-y-2">
-                {simulationData.content.chatLog.length > 0 ? (
-                  simulationData.content.chatLog.map((msg: any, index: Key | null | undefined) => (
+        </div>
+        <div className="col-12">
+          <div className="mt-4 p-4 border rounded max-w-md text-left shadow-md">
+            <div className="flex flex-col space-y-2">
+              {simulationData.content.chatLog.length > 0 ? (
+                simulationData.content.chatLog
+                  .filter((msg: any) => visibleCharacters.includes(msg.role))
+                  .map((msg: any, index: Key | null | undefined) => (
                     <div key={index} className="p-2 rounded-lg text-sm max-w-[90%] mt-3">
                       <strong className="text-uppercase">{msg.role}: </strong>
                       &#39;{msg.content}&#39;
                     </div>
                   ))
-                ) : (
-                  <p className="text-gray-500 text-sm">No chat logs available.</p>
-                )}
-              </div>
+              ) : (
+                <p className="text-gray-500 text-sm">No chat logs available.</p>
+              )}
             </div>
           </div>
         </div>
