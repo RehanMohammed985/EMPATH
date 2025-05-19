@@ -2,10 +2,27 @@
 
 import { useState } from "react";
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 import { prompts } from "@/config/prompts";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 export default function ChatPage() {
   const [simulationResponse, setSimulationResponse] = useState<
@@ -16,11 +33,14 @@ export default function ChatPage() {
   const [allCharacters, setAllCharacters] = useState<string[]>([]);
   const [visibleCharacters, setVisibleCharacters] = useState<string[]>([]);
 
-  const characterDynamicFactors = Object.fromEntries(
-    prompts.characters.map(({ name, dynamic_factors }) => [name, [dynamic_factors]])
+  const characterFactors = Object.fromEntries(
+    prompts.characters.map(({ name, opinion_strength }) => [
+      name,
+      [{ opinion_strength }],
+    ])
   );
 
-  const [values, setValues] = useState<Record<string, any[]>>(characterDynamicFactors);
+  const [values, setValues] = useState<Record<string, any[]>>(characterFactors);
 
   const handleSimulation = async () => {
     setSimulationLoading(true);
@@ -40,8 +60,12 @@ export default function ChatPage() {
 
       setSimulationResponse((prev) => [...prev, newMessage]);
 
-      setAllCharacters((prev) => (prev.includes(role) ? prev : [...prev, role]));
-      setVisibleCharacters((prev) => (prev.includes(role) ? prev : [...prev, role]));
+      setAllCharacters((prev) =>
+        prev.includes(role) ? prev : [...prev, role]
+      );
+      setVisibleCharacters((prev) =>
+        prev.includes(role) ? prev : [...prev, role]
+      );
     };
 
     eventSource.onerror = () => {
@@ -72,7 +96,7 @@ export default function ChatPage() {
         alert(`Failed to save simulation: ${data.error}`);
       }
     } catch (error) {
-      console.error(error)
+      console.error(error);
       alert("Error saving simulation.");
     }
   };
@@ -83,17 +107,19 @@ export default function ChatPage() {
     return {
       labels: valueList.map((_, i) => `Conv ${i + 1}`),
       datasets: [
-        { label: "Belief", data: valueList.map((p) => p.belief_strength), borderColor: "rgb(192, 75, 85)", tension: 0.1 },
-        { label: "Receptiveness", data: valueList.map((p) => p.receptiveness), borderColor: "rgb(55, 210, 166)", tension: 0.1 },
-        { label: "Interest", data: valueList.map((p) => p.interest_in_argument), borderColor: "rgb(121, 64, 255)", tension: 0.1 },
+        {
+          label: "Opinion Strength",
+          data: valueList.map((p) => p.opinion_strength),
+          borderColor: "rgb(75, 192, 192)",
+          tension: 0.1,
+        },
       ],
     };
   };
-
   const chartOptions = {
     responsive: true,
     scales: {
-      y: { min: 0, max: 12, ticks: { stepSize: 1 } },
+      y: { min: -2, max: 2, ticks: { stepSize: 0.1 } },
     },
   };
 
@@ -102,12 +128,18 @@ export default function ChatPage() {
       <h1 className="text-center mb-3">Conversation Simulation</h1>
 
       <div className="d-flex justify-content-center gap-3">
-        <button onClick={handleSimulation} disabled={simulationLoading} className="btn btn-success">
+        <button
+          onClick={handleSimulation}
+          disabled={simulationLoading}
+          className="btn btn-success"
+        >
           {simulationLoading ? "Streaming..." : "Simulate Chat"}
         </button>
 
         {simulationComplete && (
-          <button onClick={handleSave} className="btn btn-primary">Save Simulation</button>
+          <button onClick={handleSave} className="btn btn-primary">
+            Save Simulation
+          </button>
         )}
       </div>
 
@@ -118,7 +150,9 @@ export default function ChatPage() {
               <div className="row">
                 {Object.keys(values).map((role, index) => (
                   <div key={index} className="col-4 mt-6">
-                    <h5 className="font-semibold text-lg">{role} - Character Values</h5>
+                    <h5 className="font-semibold text-lg">
+                      {role} - Character Values
+                    </h5>
                     <Line data={getChartData(role)} options={chartOptions} />
                   </div>
                 ))}
@@ -126,7 +160,6 @@ export default function ChatPage() {
             </div>
           </div>
           <div className="col-12">
-
             <div className="mt-4 p-4 border rounded shadow-md">
               <h5 className="font-semibold text-lg">Filter Characters:</h5>
               <div className="d-flex flex-wrap">
@@ -138,7 +171,9 @@ export default function ChatPage() {
                       checked={visibleCharacters.includes(character)}
                       onChange={() =>
                         setVisibleCharacters((prev) =>
-                          prev.includes(character) ? prev.filter((c) => c !== character) : [...prev, character]
+                          prev.includes(character)
+                            ? prev.filter((c) => c !== character)
+                            : [...prev, character]
                         )
                       }
                     />
@@ -155,7 +190,10 @@ export default function ChatPage() {
                   simulationResponse
                     .filter((msg) => visibleCharacters.includes(msg.role))
                     .map((msg, index) => (
-                      <div key={index} className="p-2 rounded-lg text-sm max-w-[90%] mt-3">
+                      <div
+                        key={index}
+                        className="p-2 rounded-lg text-sm max-w-[90%] mt-3"
+                      >
                         <strong className="text-uppercase">{msg.role}: </strong>
                         &#39;{msg.content}&#39;
                       </div>
