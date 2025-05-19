@@ -3,7 +3,7 @@ export const prompts = {
   {personality}
   This is your current opinion on the topic:
   {opinion_strength} - -1 to 1 scale, -1 is strongly disagree, 0 is neutral and 1 is strongly agree
-  Respond with a short and concise response as part of a conversation.
+  Respond with a response as part of a conversation.
     `,
   characters: [
   {

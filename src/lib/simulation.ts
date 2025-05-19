@@ -22,18 +22,21 @@ const llm = new ChatGoogleGenerativeAI({
 });
 
 export async function createSimulatedUser(character: any) {
-  console.log(`[createSimulatedUser] (${character.name}) Creating simulated user`);
+  console.log(
+    `[createSimulatedUser] (${character.name}) Creating simulated user`
+  );
 
   if (
     !character.name.trim() ||
     !character.profession.trim() ||
-    !character.opinion_strength ||
     !character.personality
   ) {
+    console.log(character);
     throw new Error("[createSimulatedUser] Error: Fields are empty!");
   }
 
-  const personality_type = personalities[character.personality as keyof typeof personalities];
+  const personality_type =
+    personalities[character.personality as keyof typeof personalities];
 
   const prompt = ChatPromptTemplate.fromMessages([
     ["system", prompts.system],
@@ -44,20 +47,14 @@ export async function createSimulatedUser(character: any) {
     topic,
     name: character.name,
     profession: character.profession,
-    personality: personality_type,
-    opinion_strength: character.opinion_strength,
+    personality: JSON.stringify(personality_type),
+    opinion_strength: JSON.stringify(character.opinion_strength),
   });
+  console.log("[createSimulatedUser] Final Prompt Created");
 
-  // ✅ Wrap in RunnableSequence to ensure it's an invokable pipeline
-  const chain = RunnableSequence.from([
-    partialPrompt,
-    llm,
-  ]);
-
-  return chain;
+  const simulatedUser = partialPrompt.pipe(llm);
+  return simulatedUser;
 }
-
-
 
 function swapRoles(messages: BaseMessage[]) {
   return messages.map((m) =>
@@ -86,7 +83,6 @@ async function simulatedUserNode(
   const simulatedUser = await createSimulatedUser(character);
   const response = await simulatedUser.invoke({ messages: newMessages });
 
-
   if (!response || !response.content) {
     console.error(
       `[simulatedUserNode] (${character.name}) Received invalid response.`
@@ -110,12 +106,7 @@ async function simulatedUserNode(
     messages: newMessages,
   });
 
-  return {
-    messages: [
-      ...messages,
-      new AIMessage({ content: updatedResponse.content }),
-    ],
-  };
+  return { messages: [{ role: "user", content: updatedResponse.content }] };
 }
 
 function shouldContinue(state: typeof MessagesAnnotation.State) {
@@ -189,7 +180,8 @@ export async function runSimulationStream() {
       )) {
         const nodeName = Object.keys(chunk)[0];
         const messages = chunk[nodeName].messages;
-        const messageText = messages[0].cotent;
+        console.log(JSON.stringify(messages));
+        const messageText = messages[0].content;
 
         let conv = "";
         let values = { opinion_strength: 0 };
