@@ -1,8 +1,6 @@
 "use server";
 
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
-import type { BaseMessageLike } from "@langchain/core/messages";
-import { RunnableSequence, type Runnable } from "@langchain/core/runnables";
 import { AIMessage } from "@langchain/core/messages";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { MessagesAnnotation } from "@langchain/langgraph";
@@ -11,6 +9,7 @@ import { StateGraph, END, START } from "@langchain/langgraph";
 
 import { prompts, personalities } from "@/config";
 import { messageLimit, topic } from "@/config/run_config";
+import { simulatedUserNode } from "@/utils/simulation_utils";
 
 const llm = new ChatGoogleGenerativeAI({
   model: "gemini-1.5-flash",
@@ -21,103 +20,98 @@ const llm = new ChatGoogleGenerativeAI({
     })(),
 });
 
-export async function createSimulatedUser(character: any) {
-  console.log(
-    `[createSimulatedUser] (${character.name}) Creating simulated user`
-  );
+// export async function createSimulatedUser(character: any) {
+//   console.log(
+//     `[createSimulatedUser] (${character.name}) Creating simulated user`
+//   );
 
-  if (
-    !character.name.trim() ||
-    !character.profession.trim() ||
-    !character.personality
-  ) {
-    console.log(character);
-    throw new Error("[createSimulatedUser] Error: Fields are empty!");
-  }
+//   if (
+//     !character.name.trim() ||
+//     !character.profession.trim() ||
+//     !character.personality
+//   ) {
+//     console.log(character);
+//     throw new Error("[createSimulatedUser] Error: Fields are empty!");
+//   }
 
-  const personality_type =
-    personalities[character.personality as keyof typeof personalities];
+//   const personality_type =
+//     personalities[character.personality as keyof typeof personalities];
 
-  const prompt = ChatPromptTemplate.fromMessages([
-    ["system", prompts.system],
-    ["human", "{messages}"],
-  ]);
+//   const prompt = ChatPromptTemplate.fromMessages([
+//     ["system", prompts.system],
+//     ["human", "{messages}"],
+//   ]);
 
-  const partialPrompt = await prompt.partial({
-    topic,
-    name: character.name,
-    profession: character.profession,
-    personality: JSON.stringify(personality_type),
-    opinion_strength: JSON.stringify(character.opinion_strength),
-  });
-  console.log("[createSimulatedUser] Final Prompt Created");
+//   const partialPrompt = await prompt.partial({
+//     topic,
+//     name: character.name,
+//     profession: character.profession,
+//     personality: JSON.stringify(personality_type),
+//     opinion_strength: JSON.stringify(character.opinion_strength),
+//   });
+//   console.log("[createSimulatedUser] Final Prompt Created");
 
-  const simulatedUser = partialPrompt.pipe(llm);
-  return simulatedUser;
-}
+//   const simulatedUser = partialPrompt.pipe(llm);
+//   return simulatedUser;
+// }
 
-function swapRoles(messages: BaseMessage[]) {
-  return messages.map((m) =>
-    m instanceof AIMessage
-      ? new HumanMessage({ content: m.content })
-      : new AIMessage({ content: m.content })
-  );
-}
+// function swapRoles(messages: BaseMessage[]) {
+//   return messages.map((m) =>
+//     m instanceof AIMessage
+//       ? new HumanMessage({ content: m.content })
+//       : new AIMessage({ content: m.content })
+//   );
+// }
 
-async function simulatedUserNode(
-  state: typeof MessagesAnnotation.State,
-  character: any
-) {
-  console.log(`[simulatedUserNode] (${character.name}) State received`);
-  const messages = state.messages;
+// async function simulatedUserNode(
+//   state: typeof MessagesAnnotation.State,
+//   character: any
+// ) {
+//   console.log(`[simulatedUserNode] (${character.name}) State received`);
+//   const messages = state.messages;
 
-  if (messages.length === 0) {
-    console.warn(
-      `[simulatedUserNode] (${character.name}) No messages received, initializing with default.`
-    );
-    messages.push(new HumanMessage("Hello. Shall we have a discussion?"));
-  }
+//   if (messages.length === 0) {
+//     console.warn(
+//       `[simulatedUserNode] (${character.name}) No messages received, initializing with default.`
+//     );
+//     messages.push(new HumanMessage("Hello. Shall we have a discussion?"));
+//   }
 
-  const newMessages = swapRoles(messages);
+//   const newMessages = swapRoles(messages);
 
-  const simulatedUser = await createSimulatedUser(character);
-  const response = await simulatedUser.invoke({ messages: newMessages });
+//   const simulatedUser = await createSimulatedUser(character);
+//   const response = await simulatedUser.invoke({ messages: newMessages });
 
-  if (!response || !response.content) {
-    console.error(
-      `[simulatedUserNode] (${character.name}) Received invalid response.`
-    );
-    return {
-      messages: [
-        { role: "user", content: "I'm sorry, I didn't understand that." },
-      ],
-    };
-  }
+//   if (!response || !response.content) {
+//     console.error(
+//       `[simulatedUserNode] (${character.name}) Received invalid response.`
+//     );
+//     return {
+//       messages: [
+//         { role: "user", content: "I'm sorry, I didn't understand that." },
+//       ],
+//     };
+//   }
 
-  console.log(
-    `[simulatedUserNode] (${character.name}) Simulated user response`
-  );
+//   console.log(
+//     `[simulatedUserNode] (${character.name}) Simulated user response`
+//   );
 
-  character = adjustCharacterValues(character, response.content);
+//   character = adjustCharacterValues(character, response.content);
 
-  const updatedSimulatedUser = await createSimulatedUser(character);
+//   const updatedSimulatedUser = await createSimulatedUser(character);
 
-  const updatedResponse = await updatedSimulatedUser.invoke({
-    messages: newMessages,
-  });
+//   const updatedResponse = await updatedSimulatedUser.invoke({
+//     messages: newMessages,
+//   });
 
-  return { messages: [{ role: "user", content: updatedResponse.content }] };
-}
+//   return { messages: [{ role: "user", content: updatedResponse.content }] };
+// }
 
 function shouldContinue(state: typeof MessagesAnnotation.State) {
   const messages = state.messages;
   if (messages.length > messageLimit) {
     console.log("[shouldContinue] Ending simulation - Too many messages.");
-    return "__end__";
-  } else if (messages[messages.length - 1].content == "FINISHED") {
-    console.log(
-      "[shouldContinue] Ending simulation - One user finished conversation."
-    );
     return "__end__";
   } else {
     console.log("[shouldContinue] Continuing conversation.");
@@ -125,14 +119,12 @@ function shouldContinue(state: typeof MessagesAnnotation.State) {
   }
 }
 
-function createSimulation() {
+function createSimulation(characters: any[] = [], topic: string = "") {
   console.log("[createSimulation] Creating simulation workflow");
 
   function shuffleArray(array: any) {
     return array.sort(() => Math.random() - 0.5);
   }
-
-  const characters = prompts.characters;
 
   shuffleArray(characters);
 
@@ -140,7 +132,7 @@ function createSimulation() {
 
   for (let i = 0; i < characters.length; i++) {
     workflow.addNode(characters[i].name, (state) =>
-      simulatedUserNode(state, characters[i])
+      simulatedUserNode(llm, state, characters[i], topic)
     );
   }
 
@@ -166,8 +158,8 @@ function createSimulation() {
   return simulation;
 }
 
-export async function runSimulationStream() {
-  const simulation = createSimulation();
+export async function runSimulationStream(characters: any[], topic: string) {
+  const simulation = createSimulation(characters, topic);
 
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
@@ -219,18 +211,6 @@ export async function runSimulationStream() {
     },
   });
 }
-
-// function adjustCharacterValues(character: any, content: any) {
-//   console.log(
-//     `[adjustCharacterValues] (${character.name}) Adjusting values for conversation.`
-//   );
-//   // console.log(content)
-//   const dynamic_factors = JSON.parse(
-//     content.replace(/```json\n|\n```/g, "")
-//   ).values;
-//   character.dynamic_factors = dynamic_factors;
-//   return character;
-// }
 
 function adjustCharacterValues(character: any, content: any) {
   console.log(

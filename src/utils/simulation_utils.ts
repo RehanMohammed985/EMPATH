@@ -1,0 +1,113 @@
+"use server";
+
+import { AIMessage } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { MessagesAnnotation } from "@langchain/langgraph";
+import { BaseMessage, HumanMessage } from "@langchain/core/messages";
+
+import { prompts, personalities } from "@/config";
+import { messageLimit } from "@/config/run_config";
+
+export async function createSimulatedUser(
+  llm: any,
+  character: any,
+  topic: string
+) {
+  console.log(
+    `[createSimulatedUser] (${character.name}) Creating simulated user`
+  );
+
+  if (
+    !character.name.trim() ||
+    !character.profession.trim() ||
+    !character.personality
+  ) {
+    console.log(character);
+    throw new Error("[createSimulatedUser] Error: Fields are empty!");
+  }
+
+  const personality_type =
+    personalities[character.personality as keyof typeof personalities];
+
+  const prompt = ChatPromptTemplate.fromMessages([
+    ["system", prompts.system],
+    ["human", "{messages}"],
+  ]);
+
+  const partialPrompt = await prompt.partial({
+    topic,
+    name: character.name,
+    profession: character.profession,
+    personality: JSON.stringify(personality_type),
+    opinion_strength: JSON.stringify(character.opinion_strength),
+  });
+  console.log("[createSimulatedUser] Final Prompt Created");
+
+  const simulatedUser = partialPrompt.pipe(llm);
+  return simulatedUser;
+}
+
+export async function simulatedUserNode(
+  llm: any,
+  state: typeof MessagesAnnotation.State,
+  character: any,
+  topic: string
+) {
+  console.log(`[simulatedUserNode] (${character.name}) State received`);
+  const messages = state.messages;
+
+  if (messages.length === 0) {
+    console.warn(
+      `[simulatedUserNode] (${character.name}) No messages received, initializing with default.`
+    );
+    messages.push(new HumanMessage("Hello. Shall we have a discussion?"));
+  }
+
+  const newMessages = await swapRoles(messages);
+
+  const simulatedUser = await createSimulatedUser(llm, character, topic);
+  const response = await simulatedUser.invoke({ messages: newMessages });
+
+  // Type guard to check if response has a 'content' property
+  if (
+    !response ||
+    typeof response !== "object" ||
+    response === null ||
+    !("content" in response)
+  ) {
+    console.error(
+      `[simulatedUserNode] (${character.name}) Received invalid response.`
+    );
+    return {
+      messages: [
+        { role: "user", content: "I'm sorry, I didn't understand that." },
+      ],
+    };
+  }
+
+  console.log(
+    `[simulatedUserNode] (${character.name}) Simulated user response`
+  );
+
+  const response_content = (response as { content: string }).content;
+  return { messages: [{ role: "user", content: response_content }] };
+}
+
+export async function shouldContinue(state: typeof MessagesAnnotation.State) {
+  const messages = state.messages;
+  if (messages.length > messageLimit) {
+    console.log("[shouldContinue] Ending simulation - Too many messages.");
+    return "__end__";
+  } else {
+    console.log("[shouldContinue] Continuing conversation.");
+    return "continue";
+  }
+}
+
+export async function swapRoles(messages: BaseMessage[]) {
+  return messages.map((m) =>
+    m instanceof AIMessage
+      ? new HumanMessage({ content: m.content })
+      : new AIMessage({ content: m.content })
+  );
+}
