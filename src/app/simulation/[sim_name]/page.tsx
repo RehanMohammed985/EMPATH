@@ -1,129 +1,180 @@
 "use client";
 
-import { Key, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
+import CharacterMessage from "@/components/CharacterMessage";
+import ChartComponent from "@/components/ChartComponent";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+const personalities = {
+  INTJ: "INTJ (Architect)",
+  INTP: "INTP (Logician)",
+  ENTJ: "ENTJ (Commander)",
+  ENTP: "ENTP (Debater)",
+  INFJ: "INFJ (Advocate)",
+  INFP: "INFP (Mediator)",
+  ENFJ: "ENFJ (Protagonist)",
+  ENFP: "ENFP (Campaigner)",
+  ISTJ: "ISTJ (Logistician)",
+  ISFJ: "ISFJ (Defender)",
+  ESTJ: "ESTJ (Executive)",
+  ESFJ: "ESFJ (Consul)",
+  ISTP: "ISTP (Virtuoso)",
+  ISFP: "ISFP (Adventurer)",
+  ESTP: "ESTP (Entrepreneur)",
+  ESFP: "ESFP (Entertainer)",
+};
 
-export default function SimulationPage() {
-  const { sim_name } = useParams(); // Get filename from URL
-  const [simulationData, setSimulationData] = useState<any | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [visibleCharacters, setVisibleCharacters] = useState<string[]>([]);
-  const [allCharacters, setAllCharacters] = useState<string[]>([]);
+export default function SimulationReplayPage() {
+  const { sim_name } = useParams();
+  const [data, setData] = useState<{
+    topic: string;
+    characters: any[];
+    messages: any[];
+    chartData: Record<string, { x: number; y: number }[]>;
+  } | null>(null);
+
+  const [showChart, setShowChart] = useState(true);
+  const [showCharacters, setShowCharacters] = useState(false);
+  const [visibleCharacters, setVisibleCharacters] = useState<
+    Record<string, boolean>
+  >({});
 
   useEffect(() => {
-    const fetchSimulationData = async () => {
-      try {
-        const response = await fetch(`/api/sims/read?filename=${sim_name}.json`);
-        const data = await response.json();
+    async function fetchData() {
+      const res = await fetch(`/api/sims/read?filename=${sim_name}.json`);
+      const json = await res.json();
+      if (json.content) {
+        setData(json.content);
 
-        if (response.ok) {
-          setSimulationData(data);
-          const characters = Object.keys(data.content.graphValues);
-          setAllCharacters(characters);
-          setVisibleCharacters(characters);
-        } else {
-          console.error("Error fetching simulation:", data.error);
-        }
-      } catch (error) {
-        console.error("Error fetching simulation:", error);
-      } finally {
-        setLoading(false);
+        const initialVisibility: Record<string, boolean> = {};
+        json.content.characters.forEach((char: any) => {
+          initialVisibility[char.name] = true;
+        });
+        setVisibleCharacters(initialVisibility);
       }
-    };
-
-    fetchSimulationData();
+    }
+    fetchData();
   }, [sim_name]);
 
-  if (loading) {
-    return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
+  if (!data) {
+    return (
+      <p className="text-white text-center">Loading saved simulation...</p>
+    );
   }
-
-  if (!simulationData) {
-    return <div className="flex justify-center items-center min-h-screen text-red-500">Error loading simulation.</div>;
-  }
-
-  const getChartData = (role: string) => {
-    const valueList = simulationData.content.graphValues[role] || [];
-
-    return {
-      labels: valueList.map((_: any, i: number) => `Conv ${i + 1}`),
-      datasets: [
-        { label: "Belief", data: valueList.map((p: any) => p.belief_strength), borderColor: "rgb(192, 75, 85)", tension: 0.1 },
-        { label: "Receptiveness", data: valueList.map((p: any) => p.receptiveness), borderColor: "rgb(55, 210, 166)", tension: 0.1 },
-        { label: "Interest", data: valueList.map((p: any) => p.interest_in_argument), borderColor: "rgb(121, 64, 255)", tension: 0.1 },
-      ],
-    };
-  };
-
-  const chartOptions = {
-    responsive: true,
-    scales: {
-      y: { min: 0, max: 12, ticks: { stepSize: 1 } },
-    },
-  };
 
   return (
-    <div className="container py-4">
-      <h2 className="text-center mb-3">Simulation Log: {simulationData.filename}</h2>
-      
-      <div className="mt-4 p-4 border rounded shadow-md">
-        <h5 className="font-semibold text-lg">Filter Characters:</h5>
-        <div className="d-flex flex-wrap">
-          {allCharacters.map((character) => (
-            <div key={character} className="form-check me-3">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                checked={visibleCharacters.includes(character)}
-                onChange={() =>
-                  setVisibleCharacters((prev) =>
-                    prev.includes(character) ? prev.filter((c) => c !== character) : [...prev, character]
-                  )
-                }
-              />
-              <label className="form-check-label">{character}</label>
-            </div>
-          ))}
+    <div className="container min-vh-100 text-white bg-dark py-4">
+      <h1 className="display-5 fw-bold text-center mb-4">Replay Simulation</h1>
+      <h4 className="text-center mb-4">Simulation Name: {sim_name}</h4>
+      <h3 className="text-center mb-4">Topic: {data.topic}</h3>
+
+      {/* Character visibility checkboxes */}
+      <div className="d-flex flex-wrap gap-3 justify-content-center mb-4">
+        {data.characters.map((char) => (
+          <div key={char.name} className="form-check form-switch text-white">
+            <input
+              type="checkbox"
+              className="form-check-input"
+              id={`toggle-${char.name}`}
+              checked={visibleCharacters[char.name]}
+              onChange={() =>
+                setVisibleCharacters((prev) => ({
+                  ...prev,
+                  [char.name]: !prev[char.name],
+                }))
+              }
+            />
+            <label className="form-check-label" htmlFor={`toggle-${char.name}`}>
+              {char.name}
+            </label>
+          </div>
+        ))}
+      </div>
+
+      {/* Toggle Buttons */}
+      <div className="d-flex justify-content-end gap-3 mb-4">
+        <button
+          className="btn btn-secondary"
+          onClick={() => setShowCharacters((prev) => !prev)}
+        >
+          {showCharacters ? "Hide Characters" : "Show Characters"}
+        </button>
+        <button
+          className="btn btn-secondary"
+          onClick={() => setShowChart((prev) => !prev)}
+        >
+          {showChart ? "Hide Graph" : "Show Graph"}
+        </button>
+      </div>
+
+      {/* Character Cards */}
+      <div className={`slide-toggle ${showCharacters ? "open" : "closed"}`}>
+        <div className="container border border-light rounded-4 p-4 bg-dark mb-4">
+          <h5 className="fw-semibold mb-3">Characters</h5>
+
+          <div className="table-responsive">
+            <table className="table table-dark table-bordered table-hover align-middle text-white">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Profession</th>
+                  <th>Personality</th>
+                  <th>Opinion Strength</th>
+                  <th>Added Information</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.characters
+                  .filter((char) => visibleCharacters[char.name])
+                  .map((char, idx) => (
+                    <tr key={idx}>
+                      <td>{char.name}</td>
+                      <td>{char.profession}</td>
+                      <td>
+                        {(personalities as any)[char.personality] ||
+                          char.personality}
+                      </td>
+                      <td>{char.opinion_strength}</td>
+                      <td style={{ whiteSpace: "pre-wrap" }}>
+                        {char.added_information || "N/A"}
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      
-      <div className="row">
-        <div className="col-12 mt-4 p-4 border rounded shadow-md max-w-md">
-          <div className="container">
-            <div className="row">
-              {allCharacters.map((role, index) =>
-                visibleCharacters.includes(role) ? (
-                  <div key={index} className="col-4 mt-6">
-                    <h5 className="font-semibold text-lg">{role} - Character Values</h5>
-                    <Line data={getChartData(role)} options={chartOptions} />
-                  </div>
-                ) : null
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="col-12">
-          <div className="mt-4 p-4 border rounded max-w-md text-left shadow-md">
-            <div className="flex flex-col space-y-2">
-              {simulationData.content.chatLog.length > 0 ? (
-                simulationData.content.chatLog
-                  .filter((msg: any) => visibleCharacters.includes(msg.role))
-                  .map((msg: any, index: Key | null | undefined) => (
-                    <div key={index} className="p-2 rounded-lg text-sm max-w-[90%] mt-3">
-                      <strong className="text-uppercase">{msg.role}: </strong>
-                      &#39;{msg.content}&#39;
-                    </div>
-                  ))
-              ) : (
-                <p className="text-gray-500 text-sm">No chat logs available.</p>
-              )}
-            </div>
-          </div>
-        </div>
+
+      {/* ChartComponent */}
+      <div className={`slide-toggle ${showChart ? "open" : "closed"}`}>
+        <ChartComponent
+          chartData={Object.fromEntries(
+            Object.entries(data.chartData).filter(
+              ([charName]) => visibleCharacters[charName]
+            )
+          )}
+        />
+      </div>
+
+      {/* Messages */}
+      <div
+        className="bg-secondary bg-opacity-25 rounded-4 shadow p-4 overflow-auto mt-4"
+        style={{ maxHeight: "80vh" }}
+      >
+        {data.messages?.length > 0 ? (
+          data.messages
+            .filter((msg) => visibleCharacters[msg.role])
+            .map((msg, idx) => (
+              <CharacterMessage
+                key={idx}
+                role={msg.role}
+                content={msg.content}
+              />
+            ))
+        ) : (
+          <p className="text-center text-white">No messages found.</p>
+        )}
       </div>
     </div>
   );

@@ -62,6 +62,9 @@ export default function SimulationPage() {
     },
   ]);
 
+  const [isSimulationComplete, setIsSimulationComplete] = useState(false);
+  const [savedFilePath, setSavedFilePath] = useState<string | null>(null);
+
   const getInitialChartData = (chars: typeof characters) => {
     const data: Record<string, { x: number; y: number }[]> = {};
     chars.forEach(({ name, opinion_strength }) => {
@@ -85,23 +88,27 @@ export default function SimulationPage() {
     const newChars = [...characters];
     (newChars[index] as any)[field] = value;
     setCharacters(newChars);
+    setChartData(getInitialChartData(newChars));
   };
 
   const addCharacter = () => {
-    setCharacters([
+    const newChars = [
       ...characters,
       {
-        name: "",
-        profession: "",
+        name: "Test Character",
+        profession: "Student",
         personality: "INTJ",
         opinion_strength: 0,
         added_information: "",
       },
-    ]);
+    ];
+    setCharacters(newChars);
+    setChartData(getInitialChartData(newChars));
   };
 
   const removeCharacter = (index: number) => {
     setCharacters(characters.filter((_, i) => i !== index));
+    setChartData(getInitialChartData(characters.filter((_, i) => i !== index)));
   };
 
   const handleStartSimulation = async () => {
@@ -165,6 +172,7 @@ export default function SimulationPage() {
     }
 
     setIsRunning(false);
+    setIsSimulationComplete(true);
   };
 
   return (
@@ -181,12 +189,48 @@ export default function SimulationPage() {
         >
           {isRunning ? "Running Simulation..." : "Start Simulation"}
         </button>
-        <button
-          className="btn btn-secondary"
-          onClick={() => setShowInputs(!showInputs)}
-        >
-          {showInputs ? "Hide Settings" : "Show Settings"}
-        </button>
+
+        <div className="d-flex justify-content-end align-items-center gap-3">
+          {isSimulationComplete && (
+            <div className="text-center mb-4">
+              <button
+                className="btn btn-success"
+                onClick={async () => {
+                  const simulationData = {
+                    characters,
+                    topic,
+                    messages,
+                    chartData,
+                  };
+
+                  const res = await fetch("/api/sims/save", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(simulationData),
+                  });
+
+                  const data = await res.json();
+                  if (data.filePath) {
+                    setSavedFilePath(data.filePath);
+                    alert("Simulation saved successfully!" + data.filePath);
+                  } else {
+                    alert("Failed to save simulation.");
+                  }
+                }}
+              >
+                Save Simulation
+              </button>
+            </div>
+          )}
+          <div className="text-center mb-4">
+            <button
+              className="btn btn-secondary"
+              onClick={() => setShowInputs(!showInputs)}
+            >
+              {showInputs ? "Hide Settings" : "Show Settings"}
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className={`slide-toggle ${showInputs ? "open" : "closed"}`}>
@@ -203,96 +247,100 @@ export default function SimulationPage() {
 
           <div className="mb-4 px-2">
             <h5 className="fw-semibold mb-3">Characters</h5>
-            <div className="row">
-              {characters.map((char, idx) => (
-                <div
-                  key={idx}
-                  className="card bg-dark text-white mb-3 p-3 col-3 border border-dark"
-                >
-                  <div className="card bg-dark text-white row g-1 border border-light p-2">
-                    <div className="col-12">
-                      <label className="form-label">Name</label>
-                      <input
-                        type="text"
-                        className="form-control bg-dark text-white"
-                        value={char.name}
-                        onChange={(e) =>
-                          updateCharacter(idx, "name", e.target.value)
-                        }
-                      />
-                    </div>
-                    <div className="col-12">
-                      <label className="form-label">Profession</label>
-                      <input
-                        type="text"
-                        className="form-control bg-dark text-white"
-                        value={char.profession}
-                        onChange={(e) =>
-                          updateCharacter(idx, "profession", e.target.value)
-                        }
-                      />
-                    </div>
-                    <div className="col-12">
-                      <label className="form-label">Personality</label>
-                      <select
-                        className="form-select bg-dark text-white"
-                        value={char.personality}
-                        onChange={(e) =>
-                          updateCharacter(idx, "personality", e.target.value)
-                        }
-                      >
-                        {Object.keys(personalities).map((p) => (
-                          <option key={p} value={p}>
-                            {personalities[p as keyof typeof personalities]}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="col-12">
-                      <label className="form-label">Opinion Strength</label>
-                      <input
-                        type="number"
-                        min={-1}
-                        max={1}
-                        step={0.05}
-                        className="form-control bg-dark text-white"
-                        value={char.opinion_strength}
-                        onChange={(e) =>
-                          updateCharacter(
-                            idx,
-                            "opinion_strength",
-                            parseFloat(e.target.value)
-                          )
-                        }
-                      />
-                    </div>
-                    <div className="col-12">
-                      <label className="form-label">Added Information</label>
-                      <textarea
-                        rows={2}
-                        className="form-control bg-dark text-white"
-                        value={char.added_information}
-                        onChange={(e) =>
-                          updateCharacter(
-                            idx,
-                            "added_information",
-                            e.target.value
-                          )
-                        }
-                      />
-                    </div>
-                    <div className="col-12 text-end mt-2">
-                      <button
-                        className="btn btn-outline-danger w-100"
-                        onClick={() => removeCharacter(idx)}
-                        disabled={characters.length === 1}
-                      >
-                        Remove Character
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            <div className="table-responsive mb-3">
+              <table className="table table-dark table-bordered table-striped align-middle text-white">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Profession</th>
+                    <th>Personality</th>
+                    <th>Opinion Strength</th>
+                    <th>Added Info</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {characters.map((char, idx) => (
+                    <tr key={idx}>
+                      <td>
+                        <input
+                          type="text"
+                          className="form-control bg-dark text-white"
+                          value={char.name}
+                          onChange={(e) =>
+                            updateCharacter(idx, "name", e.target.value)
+                          }
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          className="form-control bg-dark text-white"
+                          value={char.profession}
+                          onChange={(e) =>
+                            updateCharacter(idx, "profession", e.target.value)
+                          }
+                        />
+                      </td>
+                      <td>
+                        <select
+                          className="form-select bg-dark text-white"
+                          value={char.personality}
+                          onChange={(e) =>
+                            updateCharacter(idx, "personality", e.target.value)
+                          }
+                        >
+                          {Object.entries(personalities).map(([key, val]) => (
+                            <option key={key} value={key}>
+                              {val}
+                            </option>
+                          ))}
+                        </select>
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          className="form-control bg-dark text-white"
+                          min={-1}
+                          max={1}
+                          step={0.05}
+                          value={char.opinion_strength}
+                          onChange={(e) =>
+                            updateCharacter(
+                              idx,
+                              "opinion_strength",
+                              parseFloat(e.target.value)
+                            )
+                          }
+                        />
+                      </td>
+                      <td>
+                        <textarea
+                          className="form-control bg-dark text-white"
+                          rows={2}
+                          value={char.added_information}
+                          onChange={(e) =>
+                            updateCharacter(
+                              idx,
+                              "added_information",
+                              e.target.value
+                            )
+                          }
+                        />
+                      </td>
+                      <td>
+                        <button
+                          className="btn btn-outline-danger w-100"
+                          onClick={() => removeCharacter(idx)}
+                          disabled={characters.length === 1}
+                        >
+                          Remove
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
 
             <button

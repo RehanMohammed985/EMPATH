@@ -112,19 +112,13 @@ export async function swapRoles(messages: BaseMessage[]) {
   );
 }
 
-type StanceRatingOptions = {
-  llm: any;
-  topic: string;
-  response: string;
-};
-
 export async function rateOpinionOnTopic(
   llm: any,
   topic: string,
   response: string
 ): Promise<number> {
   console.log(
-    `[rateOpinionOnTopic] Rating opinion on topic: "${topic}" with response: "${response}"`
+    `[rateOpinionOnTopic] Rating opinion`
   );
   const prompt = prompts.evaluation
     .replace("{topic}", topic.replace(/"/g, '\\"'))

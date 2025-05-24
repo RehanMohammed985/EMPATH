@@ -1,2 +1,2 @@
-export const messageLimit = 25;
+export const messageLimit = 10;
 export const topic = 'Climate change is real'
