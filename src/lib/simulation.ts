@@ -1,112 +1,22 @@
 "use server";
 
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
-import { AIMessage } from "@langchain/core/messages";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { MessagesAnnotation } from "@langchain/langgraph";
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 import { StateGraph, END, START } from "@langchain/langgraph";
-
-import { prompts, personalities } from "@/config";
-import { messageLimit, topic } from "@/config/run_config";
-import { simulatedUserNode } from "@/utils/simulation_utils";
+import { messageLimit } from "@/config/run_config";
+import {
+  rateOpinionOnTopic,
+  simulatedUserNode,
+} from "@/utils/simulation_utils";
 
 const llm = new ChatGoogleGenerativeAI({
-  model: "gemini-1.5-flash",
+  model: "gemini-2.0-flash",
   apiKey:
     process.env.GOOGLE_API_KEY ??
     (() => {
       throw new Error("GOOGLE_API_KEY is not set.");
     })(),
 });
-
-// export async function createSimulatedUser(character: any) {
-//   console.log(
-//     `[createSimulatedUser] (${character.name}) Creating simulated user`
-//   );
-
-//   if (
-//     !character.name.trim() ||
-//     !character.profession.trim() ||
-//     !character.personality
-//   ) {
-//     console.log(character);
-//     throw new Error("[createSimulatedUser] Error: Fields are empty!");
-//   }
-
-//   const personality_type =
-//     personalities[character.personality as keyof typeof personalities];
-
-//   const prompt = ChatPromptTemplate.fromMessages([
-//     ["system", prompts.system],
-//     ["human", "{messages}"],
-//   ]);
-
-//   const partialPrompt = await prompt.partial({
-//     topic,
-//     name: character.name,
-//     profession: character.profession,
-//     personality: JSON.stringify(personality_type),
-//     opinion_strength: JSON.stringify(character.opinion_strength),
-//   });
-//   console.log("[createSimulatedUser] Final Prompt Created");
-
-//   const simulatedUser = partialPrompt.pipe(llm);
-//   return simulatedUser;
-// }
-
-// function swapRoles(messages: BaseMessage[]) {
-//   return messages.map((m) =>
-//     m instanceof AIMessage
-//       ? new HumanMessage({ content: m.content })
-//       : new AIMessage({ content: m.content })
-//   );
-// }
-
-// async function simulatedUserNode(
-//   state: typeof MessagesAnnotation.State,
-//   character: any
-// ) {
-//   console.log(`[simulatedUserNode] (${character.name}) State received`);
-//   const messages = state.messages;
-
-//   if (messages.length === 0) {
-//     console.warn(
-//       `[simulatedUserNode] (${character.name}) No messages received, initializing with default.`
-//     );
-//     messages.push(new HumanMessage("Hello. Shall we have a discussion?"));
-//   }
-
-//   const newMessages = swapRoles(messages);
-
-//   const simulatedUser = await createSimulatedUser(character);
-//   const response = await simulatedUser.invoke({ messages: newMessages });
-
-//   if (!response || !response.content) {
-//     console.error(
-//       `[simulatedUserNode] (${character.name}) Received invalid response.`
-//     );
-//     return {
-//       messages: [
-//         { role: "user", content: "I'm sorry, I didn't understand that." },
-//       ],
-//     };
-//   }
-
-//   console.log(
-//     `[simulatedUserNode] (${character.name}) Simulated user response`
-//   );
-
-//   character = adjustCharacterValues(character, response.content);
-
-//   const updatedSimulatedUser = await createSimulatedUser(character);
-
-//   const updatedResponse = await updatedSimulatedUser.invoke({
-//     messages: newMessages,
-//   });
-
-//   return { messages: [{ role: "user", content: updatedResponse.content }] };
-// }
 
 function shouldContinue(state: typeof MessagesAnnotation.State) {
   const messages = state.messages;
@@ -160,6 +70,7 @@ function createSimulation(characters: any[] = [], topic: string = "") {
 
 export async function runSimulationStream(characters: any[], topic: string) {
   const simulation = createSimulation(characters, topic);
+  const roleTurnCounters: Record<string, number | null> = {};
 
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
@@ -172,20 +83,20 @@ export async function runSimulationStream(characters: any[], topic: string) {
       )) {
         const nodeName = Object.keys(chunk)[0];
         const messages = chunk[nodeName].messages;
-        console.log(JSON.stringify(messages));
         const messageText = messages[0].content;
 
         let conv = "";
-        let values = { opinion_strength: 0 };
+        let values: Record<string, number | null> = { opinion: null };
 
         try {
           conv = messageText;
-          const nodeCharacter = prompts.characters.find(
-            (c) => c.name === nodeName
+          const opinion = await rateOpinionOnTopic(llm, topic, conv);
+          values.opinion = opinion;
+          console.log(
+            `[runSimulationStream] (${nodeName}) Opinion rating: ${JSON.stringify(
+              opinion
+            )}`
           );
-          if (nodeCharacter) {
-            values = { opinion_strength: nodeCharacter.opinion_strength };
-          }
         } catch (err) {
           console.log(err);
         }
@@ -194,7 +105,20 @@ export async function runSimulationStream(characters: any[], topic: string) {
           continue;
         }
 
-        const messageObj = { role: nodeName, content: conv, values: values };
+        // Increment the character’s turn count
+        const turnIndex = roleTurnCounters[nodeName] ?? 0;
+        roleTurnCounters[nodeName] = turnIndex + 1;
+
+        console.log(
+          `[runSimulationStream] (${nodeName}) Turn: ${turnIndex}, Message`
+        );
+
+        const messageObj = {
+          role: nodeName,
+          content: conv,
+          values: values,
+          turn: turnIndex,
+        };
         const data = `data: ${JSON.stringify(messageObj)}\n\n`;
 
         controller.enqueue(encoder.encode(data));
@@ -210,19 +134,4 @@ export async function runSimulationStream(characters: any[], topic: string) {
       Connection: "keep-alive",
     },
   });
-}
-
-function adjustCharacterValues(character: any, content: any) {
-  console.log(
-    `[adjustCharacterValues] (${character.name}) Adjusting opinion_strength`
-  );
-
-  // Randomly increase or decrease opinion_strength by 0.1 (clamped between 0 and 1)
-  const delta = Math.random() < 0.5 ? -0.1 : 0.1;
-  character.opinion_strength = Math.min(
-    1,
-    Math.max(0, character.opinion_strength + delta)
-  );
-
-  return character;
 }

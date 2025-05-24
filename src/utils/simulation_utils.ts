@@ -111,3 +111,30 @@ export async function swapRoles(messages: BaseMessage[]) {
       : new AIMessage({ content: m.content })
   );
 }
+
+type StanceRatingOptions = {
+  llm: any;
+  topic: string;
+  response: string;
+};
+
+export async function rateOpinionOnTopic(
+  llm: any,
+  topic: string,
+  response: string
+): Promise<number> {
+  console.log(
+    `[rateOpinionOnTopic] Rating opinion on topic: "${topic}" with response: "${response}"`
+  );
+  const prompt = prompts.evaluation
+    .replace("{topic}", topic.replace(/"/g, '\\"'))
+    .replace("{response}", response.replace(/"/g, '\\"'));
+
+  const res = await llm.invoke(prompt);
+
+  // Extract the number from the response
+  const match = res.content.trim().match(/-?1(?:\.0+)?|-?0(?:\.\d+)?/);
+  if (!match) throw new Error(`Unexpected model output: "${res.content}"`);
+
+  return parseFloat(match[0]);
+}

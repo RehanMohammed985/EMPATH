@@ -5,36 +5,16 @@ export const prompts = {
   {opinion_strength} - -1 to 1 scale, -1 is strongly disagree, 0 is neutral and 1 is strongly agree
   Respond with a response as part of a conversation.
     `,
-  characters: [
-  {
-    name: "Dr. Elena Voss",
-    profession: "Climate Scientist",
-    personality: "INTJ",
-    opinion_strength: 1,
-  },
-  {
-    name: "Tom Caldwell",
-    profession: "Skeptical Journalist",
-    personality: "ENTP",
-    opinion_strength: -0.5,
-  },
-  {
-    name: "Sofia Green",
-    profession: "Environmental Activist",
-    personality: "ENFJ",
-    opinion_strength: 0.9,
-  },
-  {
-    name: "Dr. Marcus Lang",
-    profession: "Economist",
-    personality: "ISTJ",
-    opinion_strength: 0.5,
-  },
-  {
-    name: "Jenna Blake",
-    profession: "High School Science Teacher",
-    personality: "ISFJ",
-    opinion_strength: -0.7,
-  },
-],
+  evaluation: `You are an impartial evaluator. Given a topic and a person's statement, return a number between -1 and 1 indicating how strongly their response supports or opposes the topic.
+
+    Instructions:
+    - Use -1 if the response strongly denies or rejects the topic.
+    - Use 0 if the response is neutral, ambiguous, or unrelated.
+    - Use 1 if the response strongly supports or affirms the topic.
+    - Use numbers in between for partial agreement or disagreement.
+
+    Topic: "{topic}"
+    Response: "{response}"
+
+    Only return a single number between -1 and 1. Do not add any explanation.`,
 };

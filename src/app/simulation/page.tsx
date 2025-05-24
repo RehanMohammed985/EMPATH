@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import CharacterMessage from "@/components/CharacterMessage";
+import ChartComponent from "@/components/ChartComponent";
 
 const personalities = {
   INTJ: "INTJ (Architect)",
@@ -61,12 +62,24 @@ export default function SimulationPage() {
     },
   ]);
 
+  const getInitialChartData = (chars: typeof characters) => {
+    const data: Record<string, { x: number; y: number }[]> = {};
+    chars.forEach(({ name, opinion_strength }) => {
+      data[name] = [{ x: 0, y: opinion_strength }];
+    });
+    return data;
+  };
+
   const [topic, setTopic] = useState("Is climate change real?");
   const [messages, setMessages] = useState<{ role: string; content: string }[]>(
     []
   );
   const [isRunning, setIsRunning] = useState(false);
   const [showInputs, setShowInputs] = useState(true);
+
+  const [chartData, setChartData] = useState(() =>
+    getInitialChartData(characters)
+  );
 
   const updateCharacter = (index: number, field: string, value: any) => {
     const newChars = [...characters];
@@ -122,7 +135,28 @@ export default function SimulationPage() {
           const json = line.replace("data: ", "").trim();
           try {
             const msg = JSON.parse(json);
+
             setMessages((prev) => [...prev, msg]);
+
+            const { role, values, turn } = msg;
+
+            console.log(
+              `[handleStartSimulation] (${role}) Message: ${JSON.stringify(
+                values
+              )}`
+            );
+            console.log(
+              `[handleStartSimulation] (${role}) TURN: ${JSON.stringify(turn)}`
+            );
+
+            setChartData((prev) => {
+              const updated = { ...prev };
+              if (!updated[role]) {
+                updated[role] = [];
+              }
+              updated[role].push({ x: turn + 1, y: values.opinion });
+              return updated;
+            });
           } catch {}
         }
       }
@@ -271,17 +305,7 @@ export default function SimulationPage() {
         </div>
       </div>
 
-      {/* <div className="text-center">
-        <button
-          onClick={handleStartSimulation}
-          disabled={isRunning}
-          className={`btn btn-lg mb-4 fw-semibold shadow ${
-            isRunning ? "btn-secondary disabled" : "btn-primary"
-          }`}
-        >
-          {isRunning ? "Running Simulation..." : "Start Simulation"}
-        </button>
-      </div> */}
+      <ChartComponent chartData={chartData} />
 
       <div
         className="bg-secondary bg-opacity-25 rounded-4 shadow p-4 overflow-auto"
