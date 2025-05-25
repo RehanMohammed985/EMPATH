@@ -18,16 +18,16 @@ const llm = new ChatGoogleGenerativeAI({
     })(),
 });
 
-function shouldContinue(state: typeof MessagesAnnotation.State) {
-  const messages = state.messages;
-  if (messages.length > messageLimit) {
-    console.log("[shouldContinue] Ending simulation - Too many messages.");
-    return "__end__";
-  } else {
-    console.log("[shouldContinue] Continuing conversation.");
-    return "continue";
-  }
-}
+// function shouldContinue(state: typeof MessagesAnnotation.State) {
+//   const messages = state.messages;
+//   if (messages.length > messageLimit) {
+//     console.log("[shouldContinue] Ending simulation - Too many messages.");
+//     return "__end__";
+//   } else {
+//     console.log("[shouldContinue] Continuing conversation.");
+//     return "continue";
+//   }
+// }
 
 function createSimulation(characters: any[] = [], topic: string = "") {
   console.log("[createSimulation] Creating simulation workflow");
@@ -46,21 +46,30 @@ function createSimulation(characters: any[] = [], topic: string = "") {
     );
   }
 
+  const turns = Math.ceil(messageLimit / characters.length);
+  let graph_list: any[] = [];
+  for (let i = 0; i < turns; i++) {
+    shuffleArray(characters);
+    graph_list = [...graph_list, ...characters];
+  }
+
   // Add normal edges (A → B → C → D)
-  for (let i = 0; i < characters.length - 1; i++) {
-    workflow.addEdge(characters[i].name as any, characters[i + 1].name as any);
+  for (let i = 0; i < graph_list.length - 1; i++) {
+    workflow.addEdge(graph_list[i].name as any, graph_list[i + 1].name as any);
   }
 
+  workflow.addEdge(graph_list[graph_list.length - 1].name, END);
+  
   // Conditional looping logic (D → A if shouldContinue allows)
-  for (let i = 0; i < characters.length; i++) {
-    const nextIndex = (i + 1) % characters.length;
-    workflow.addConditionalEdges(characters[i].name as any, shouldContinue, {
-      [END]: END,
-      continue: characters[nextIndex].name as any,
-    });
-  }
+  // for (let i = 0; i < characters.length; i++) {
+  //   const nextIndex = (i + 1) % characters.length;
+  //   workflow.addConditionalEdges(characters[i].name as any, shouldContinue, {
+  //     [END]: END,
+  //     continue: characters[nextIndex].name as any,
+  //   });
+  // }
 
-  workflow.addEdge(START, characters[0].name as any);
+  workflow.addEdge(START, graph_list[0].name as any);
 
   const simulation = workflow.compile();
 
