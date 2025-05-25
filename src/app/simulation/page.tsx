@@ -177,7 +177,7 @@ export default function SimulationPage() {
 
   return (
     <div className="container min-vh-100 text-white bg-dark py-4">
-      <h1 className="display-4 fw-bold mb-4 text-center">Group Chat</h1>
+      <h1 className="fw-bold mb-5 text-center mt-5">Evaluating multi-turn Opinion dynamics of LLM agents with rich personalities</h1>
 
       <div className="d-flex flex-row align-items-center justify-content-between mb-4 g-3">
         <button
