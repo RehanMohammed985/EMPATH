@@ -6,7 +6,6 @@ import { MessagesAnnotation } from "@langchain/langgraph";
 import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 
 import { prompts, personalities } from "@/config";
-import { messageLimit } from "@/config/run_config";
 
 export async function createSimulatedUser(
   llm: any,
@@ -40,6 +39,7 @@ export async function createSimulatedUser(
     profession: character.profession,
     personality: JSON.stringify(personality_type),
     opinion_strength: JSON.stringify(character.opinion_strength),
+    additional_info: JSON.stringify(character.additional_info),
   });
   console.log("[createSimulatedUser] Final Prompt Created");
 
@@ -91,17 +91,6 @@ export async function simulatedUserNode(
 
   const response_content = (response as { content: string }).content;
   return { messages: [{ role: "user", content: response_content }] };
-}
-
-export async function shouldContinue(state: typeof MessagesAnnotation.State) {
-  const messages = state.messages;
-  if (messages.length > messageLimit) {
-    console.log("[shouldContinue] Ending simulation - Too many messages.");
-    return "__end__";
-  } else {
-    console.log("[shouldContinue] Continuing conversation.");
-    return "continue";
-  }
 }
 
 export async function swapRoles(messages: BaseMessage[]) {

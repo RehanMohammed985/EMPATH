@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import { v4 as uuidv4 } from "uuid";
 
 const SAVE_DIR = path.join(process.cwd(), "saved");
 

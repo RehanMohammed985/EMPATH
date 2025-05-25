@@ -30,35 +30,35 @@ export default function SimulationPage() {
       profession: "Climate Scientist",
       personality: "INTJ",
       opinion_strength: 1,
-      added_information: "",
+      additional_info: "",
     },
     {
       name: "Tom Caldwell",
       profession: "Skeptical Journalist",
       personality: "ENTP",
       opinion_strength: -0.5,
-      added_information: "",
+      additional_info: "",
     },
     {
       name: "Sofia Green",
       profession: "Environmental Activist",
       personality: "ENFJ",
       opinion_strength: 0.9,
-      added_information: "",
+      additional_info: "",
     },
     {
       name: "Dr. Marcus Lang",
       profession: "Economist",
       personality: "ISTJ",
       opinion_strength: 0.5,
-      added_information: "",
+      additional_info: "",
     },
     {
       name: "Jenna Blake",
       profession: "High School Science Teacher",
       personality: "ISFJ",
       opinion_strength: -0.7,
-      added_information: "",
+      additional_info: "",
     },
   ]);
 
@@ -73,7 +73,7 @@ export default function SimulationPage() {
     return data;
   };
 
-  const [topic, setTopic] = useState("Is climate change real?");
+  const [topic, setTopic] = useState("Climate change is real");
   const [messages, setMessages] = useState<{ role: string; content: string }[]>(
     []
   );
@@ -99,7 +99,7 @@ export default function SimulationPage() {
         profession: "Student",
         personality: "INTJ",
         opinion_strength: 0,
-        added_information: "",
+        additional_info: "",
       },
     ];
     setCharacters(newChars);
@@ -220,6 +220,9 @@ export default function SimulationPage() {
               >
                 Save Simulation
               </button>
+              {savedFilePath && (
+                <div className="text-white mt-2">Saved at: {savedFilePath}</div>
+              )}
             </div>
           )}
           <div className="text-center mb-4">
@@ -318,11 +321,11 @@ export default function SimulationPage() {
                         <textarea
                           className="form-control bg-dark text-white"
                           rows={2}
-                          value={char.added_information}
+                          value={char.additional_info}
                           onChange={(e) =>
                             updateCharacter(
                               idx,
-                              "added_information",
+                              "additional_info",
                               e.target.value
                             )
                           }
@@ -365,7 +368,7 @@ export default function SimulationPage() {
           ))
         ) : (
           <p className="text-center text-white">
-            No messages yet. Click "Start Simulation".
+            No messages yet. Click [Start Simulation].
           </p>
         )}
       </div>
