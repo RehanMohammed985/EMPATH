@@ -26,38 +26,115 @@ const personalities = {
 export default function SimulationPage() {
   const [characters, setCharacters] = useState([
     {
-      name: "Dr. Elena Voss",
-      profession: "Climate Scientist",
+      name: "Dr. Elena Pierce",
+      profession: "Strategic Consultant",
       personality: "INTJ",
-      opinion_strength: 1,
+      opinion_strength: 0,
       additional_info: "",
     },
     {
-      name: "Tom Caldwell",
-      profession: "Skeptical Journalist",
+      name: "Liam Foster",
+      profession: "Theoretical Physicist",
+      personality: "INTP",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Claire Bennett",
+      profession: "Psychologist",
+      personality: "INFJ",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Noah Sinclair",
+      profession: "Writer",
+      personality: "INFP",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Sophia Reed",
+      profession: "Creative Director",
       personality: "ENTP",
-      opinion_strength: -0.5,
+      opinion_strength: 0,
       additional_info: "",
     },
     {
-      name: "Sofia Green",
-      profession: "Environmental Activist",
+      name: "Ethan Blake",
+      profession: "Corporate Executive",
+      personality: "ENTJ",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Isabella Tran",
+      profession: "Public Relations Manager",
       personality: "ENFJ",
-      opinion_strength: 0.9,
+      opinion_strength: 0,
       additional_info: "",
     },
     {
-      name: "Dr. Marcus Lang",
-      profession: "Economist",
-      personality: "ISTJ",
-      opinion_strength: 0.5,
+      name: "Lucas Meyer",
+      profession: "Motivational Speaker",
+      personality: "ENFP",
+      opinion_strength: 0,
       additional_info: "",
     },
     {
-      name: "Jenna Blake",
-      profession: "High School Science Teacher",
+      name: "Olivia Carson",
+      profession: "Nurse",
       personality: "ISFJ",
-      opinion_strength: -0.7,
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Aiden Murphy",
+      profession: "IT Support Specialist",
+      personality: "ISTJ",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Grace Lin",
+      profession: "School Counselor",
+      personality: "INFJ",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Mason King",
+      profession: "Social Worker",
+      personality: "ISFP",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Chloe Rivera",
+      profession: "Interior Designer",
+      personality: "ESFP",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Jackson Moore",
+      profession: "Paramedic",
+      personality: "ESTP",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Natalie Cooper",
+      profession: "Elementary School Teacher",
+      personality: "ESFJ",
+      opinion_strength: 0,
+      additional_info: "",
+    },
+    {
+      name: "Henry Walsh",
+      profession: "Military Officer",
+      personality: "ESTJ",
+      opinion_strength: 0,
       additional_info: "",
     },
   ]);
@@ -177,7 +254,10 @@ export default function SimulationPage() {
 
   return (
     <div className="container min-vh-100 text-white bg-dark py-4">
-      <h1 className="fw-bold mb-5 text-center mt-5">Evaluating multi-turn Opinion dynamics of LLM agents with rich personalities</h1>
+      <h1 className="fw-bold mb-5 text-center mt-5">
+        Evaluating multi-turn Opinion dynamics of LLM agents with rich
+        personalities
+      </h1>
 
       <div className="d-flex flex-row align-items-center justify-content-between mb-4 g-3">
         <button
