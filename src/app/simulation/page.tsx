@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CharacterMessage from "@/components/CharacterMessage";
 import ChartComponent from "@/components/ChartComponent";
+import { generatePersonalityGroups } from "@/utils/group_generator";
 
 const personalities = {
   INTJ: "INTJ (Architect)",
@@ -138,6 +139,17 @@ export default function SimulationPage() {
       additional_info: "",
     },
   ]);
+
+const result = generatePersonalityGroups(12);
+console.log("✅ Generated MBTI Groups:");
+if (Array.isArray(result)) {
+  result.forEach((group, i) => {
+    console.log(`Group ${i + 1}: [ ${group.join(', ')} ]`);
+  });
+} else {
+  console.error("❌ Failed to generate personality groups.");
+}
+
 
   const [isSimulationComplete, setIsSimulationComplete] = useState(false);
   const [savedFilePath, setSavedFilePath] = useState<string | null>(null);

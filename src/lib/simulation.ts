@@ -10,7 +10,7 @@ import {
 } from "@/utils/simulation_utils";
 
 const llm = new ChatGoogleGenerativeAI({
-  model: "gemini-1.5-flash",
+  model: "gemini-2.0-flash",
   apiKey:
     process.env.GOOGLE_API_KEY ??
     (() => {
