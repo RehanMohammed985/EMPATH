@@ -1,7 +1,7 @@
 // Updated SimulationPage.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CharacterMessage from "@/components/CharacterMessage";
 import ChartComponent from "@/components/ChartComponent";
 import { generatePersonalityGroups } from "@/utils/group_generator";
@@ -33,11 +33,9 @@ export default function SimulationPage() {
     []
   );
   const [chartData, setChartData] = useState<any>({});
-  const [isRunning, setIsRunning] = useState(false);
-  //@ts-ignore
-  const [isSimulationComplete, setIsSimulationComplete] = useState(false);
+  // const [isRunning, setIsRunning] = useState(false);
+  // const [isSimulationComplete, setIsSimulationComplete] = useState(false);
   const [savedFilePath, setSavedFilePath] = useState<string | null>(null);
-  //@ts-ignore
   const [showInputs, setShowInputs] = useState(true);
   const [autoRunning, setAutoRunning] = useState(false);
 
@@ -54,86 +52,90 @@ export default function SimulationPage() {
     return data;
   };
 
-  const runSimulation = async (chars: typeof characters) => {
-    setCharacters(chars);
-    setMessages([]);
-    setIsRunning(true);
-    setIsSimulationComplete(false);
-    setChartData(getInitialChartData(chars));
+const runSimulation = async (chars: typeof characters) => {
+  setCharacters(chars);
+  setMessages([]);
+  // setIsRunning(true);
+  // setIsSimulationComplete(false);
 
-    const newMessages: {
-      role: string;
-      content: string;
-      values?: any;
-      turn?: number;
-    }[] = [];
+  const localChartData: Record<string, { x: number; y: number }[]> = getInitialChartData(chars);
+  setChartData(localChartData); // show initial chart state in UI
 
-    const response = await fetch("/api/simulation", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ characters: chars, topic }),
-    });
+  const newMessages: {
+    role: string;
+    content: string;
+    values?: any;
+    turn?: number;
+  }[] = [];
 
-    const reader = response.body?.getReader();
-    const decoder = new TextDecoder();
-    let buffer = "";
+  const response = await fetch("/api/simulation", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ characters: chars, topic }),
+  });
 
-    if (!reader) {
-      setIsRunning(false);
-      return;
-    }
+  const reader = response.body?.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
 
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
+  if (!reader) {
+    // setIsRunning(false);
+    return;
+  }
 
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split("\n\n");
-      buffer = lines.pop() || ""; // keep any incomplete line
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
 
-      for (const line of lines) {
-        if (line.startsWith("data:")) {
-          const json = line.replace("data: ", "").trim();
-          try {
-            const msg = JSON.parse(json);
-            newMessages.push(msg);
-            setMessages((prev) => [...prev, msg]);
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split("\n\n");
+    buffer = lines.pop() || ""; // Keep leftover chunk for next loop
 
-            const { role, values, turn } = msg;
-            if (role && values?.opinion != null && typeof turn === "number") {
-              setChartData((prev: any) => {
-                const updated = { ...prev };
-                if (!updated[role]) updated[role] = [];
-                updated[role].push({ x: turn + 1, y: values.opinion });
-                return updated;
-              });
-            }
-          } catch (err) {
-            console.error("Failed to parse message", err);
+    for (const line of lines) {
+      if (line.startsWith("data:")) {
+        const json = line.replace("data: ", "").trim();
+        try {
+          const msg = JSON.parse(json);
+          newMessages.push(msg);
+          setMessages((prev) => [...prev, msg]);
+
+          const { role, values, turn } = msg;
+          if (role && values?.opinion != null && typeof turn === "number") {
+            // Update local chart data
+            if (!localChartData[role]) localChartData[role] = [];
+            localChartData[role].push({ x: turn + 1, y: values.opinion });
+
+            // Update state to reflect changes visually
+            setChartData({ ...localChartData });
           }
+        } catch (err) {
+          console.error("Failed to parse message", err);
         }
       }
     }
+  }
 
-    setIsRunning(false);
-    setIsSimulationComplete(true);
+  // setIsRunning(false);
+  // setIsSimulationComplete(true);
 
-    const res = await fetch("/api/sims/save", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        characters: chars,
-        topic,
-        messages: newMessages,
-        chartData,
-      }),
-    });
+  // Save simulation run with correct chart datac
+  const res = await fetch("/api/sims/save", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      characters: chars,
+      topic,
+      messages: newMessages,
+      chartData: localChartData,
+    }),
+  });
 
-    const data = await res.json();
-    if (data.filePath) {
-      setSavedFilePath(data.filePath);
-    }
-  };
+  const data = await res.json();
+  if (data.filePath) {
+    setSavedFilePath(data.filePath);
+  }
+};
+
 
   const handleStartNow = async () => {
     setAutoRunning(true);
@@ -144,7 +146,7 @@ export default function SimulationPage() {
 
     for (let i = 0; i < groups.length; i++) {
       const group = groups[i];
-      let selected = [];
+      const selected = [];
       for (let j = 0; j < group.length; j++) {
         const mbti = group[j];
         const char = characters.find((c) => c.personality === mbti);
