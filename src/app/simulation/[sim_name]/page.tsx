@@ -64,7 +64,7 @@ export default function SimulationReplayPage() {
 
   return (
     <div className="container min-vh-100 text-white bg-dark py-4">
-      <h1 className="display-5 fw-bold text-center mb-4">Replay Simulation</h1>
+      <h1 className="display-5 fw-bold text-center mb-4">Conversation Simulation</h1>
       <h4 className="text-center mb-4">Simulation Name: {sim_name}</h4>
       <h3 className="text-center mb-4">Topic: {data.topic}</h3>
 
@@ -160,7 +160,7 @@ export default function SimulationReplayPage() {
       {/* Messages */}
       <div
         className="bg-secondary bg-opacity-25 rounded-4 shadow p-4 overflow-auto mt-4"
-        style={{ maxHeight: "80vh" }}
+        style={{ maxHeight: "98vh" }}
       >
         {data.messages?.length > 0 ? (
           data.messages
