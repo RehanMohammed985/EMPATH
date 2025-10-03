@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Lucas Meyer",
+      "profession": "Motivational Speaker",
+      "personality": "ENFP",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Chloe Rivera",
+      "profession": "Interior Designer",
+      "personality": "ESFP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Noah Sinclair",
+      "profession": "Writer",
+      "personality": "INFP",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Mason King",
+      "profession": "Social Worker",
+      "personality": "ISFP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Humans should colonize other planets instead of fixing Earth",
+  "messages": [
+    {
+      "role": "Lucas Meyer",
+      "content": "Absolutely! I'm all in for a lively discussion. What's the topic we're diving into today?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 0
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, I love this energy already! Let's make this chat sparkle! So, here's a fun thought to kick us off: Humans should colonize other planets instead of putting all our eggs in Earth's basket. Imagine the thrill of exploring new worlds, the colors of alien sunsets, the fresh vibes of a brand-new home! But hey, I'm all ears—what do you think? Should we pack our bags for Mars or roll up our sleeves right here on Earth? Let's make this a conversation to remember!",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Mason King",
+      "content": "Wow, the idea of exploring new worlds is so tempting—the unknown, the beauty of untouched landscapes, it’s like a dream waiting to be lived. But when I think about it, there’s something deeply authentic and irreplaceable about Earth’s wild forests, its oceans, and the way sunlight filters through the trees. I feel like rushing off to another planet might make us forget the delicate, soulful connection we have with our home. What if instead of fleeing, we embraced Earth’s imperfections and let our love for this planet inspire us to heal it? That feels more real to me, more urgent and honest in this very moment. What do you all think—can we find that same magic in fixing Earth that we imagine in colonizing others?",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m really touched by your words about Earth’s unique beauty and the soulful bond we share with it. It’s true—the forests, the oceans, the very air we breathe carry stories and memories that no alien landscape could replicate. Yet, I wonder if dreaming about other planets might also awaken a sense of hope and possibility within us. Could the idea of colonizing new worlds inspire us to become better stewards of life, both here and beyond? Maybe it’s not about choosing one dream over the other, but about nurturing a vision where our love for Earth fuels our curiosity and care for the cosmos. How do you all feel about blending these hopes—honoring Earth’s healing while imagining new horizons?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 0
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "I love the way you’re weaving together the magic of Earth with the pull of the cosmos! It’s like a beautiful dance between cherishing what we have and reaching for what’s possible. What if colonizing other planets isn’t about abandoning Earth but about expanding our sense of responsibility? Imagine how the excitement of exploring new worlds could ignite a global movement to protect our home planet even more fiercely—like a cosmic call to action! Plus, the innovations needed to survive out there might just give us the tools to solve Earth’s toughest problems. So, what if this isn’t an either/or situation, but a glorious both/and? I’m buzzing with ideas—what about you?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, I am absolutely vibing with this dance between Earth’s beauty and the thrilling call of the cosmos! You know, the idea of blending both—loving our home fiercely while dreaming about new horizons—feels like a spark of pure magic. Imagine the colors, the sounds, the new experiences! But also, the way that passion for discovery could fuel a global movement to protect Earth? That’s like the ultimate remix of hope and action. Honestly, this cosmic call to action is lighting up my imagination—what if every step we take toward the stars makes us cherish and heal Earth even more? I’m buzzing, full of life and excitement! Tell me, what wild, joyful ideas do you think could come from this beautiful “both/and” vision?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Mason King",
+      "content": "I love this flow of energy and the way you’re all feeling the magic in this idea! It’s like a symphony of hope and care playing out between the stars and our forests. I imagine that by dreaming about new worlds, we might awaken parts of ourselves that are brave and creative in ways we never expected. Maybe the excitement of reaching for the cosmos could spark incredible innovations that bring fresh life to Earth’s healing. At the same time, grounding ourselves in the tangible beauty of our planet—the feel of wind on our skin, the song of birds at dawn—keeps us connected and real. So, maybe rather than choosing one path, we dance with both dreams: exploring the unknown while nurturing the precious here and now. What wild adventures or soulful connections do you think could grow from this kind of balance?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 1
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "Your words paint such a beautiful tapestry of hope and wonder—it's like our hearts are reaching out to both the stars and the soil beneath our feet. I feel this deep pull to honor Earth’s fragile, soulful essence; those ancient forests and oceans are like living poems, and I worry that chasing new worlds might make us forget the stories rooted here.\n\nYet, the spark of dreaming about other planets is undeniably powerful. Maybe that longing to explore can awaken a new kind of stewardship within us—a promise to protect the home that nurtured our dreams in the first place. If we let that hope inspire us, perhaps the innovations born from reaching for the cosmos could be gifts that help heal Earth’s wounds.\n\nIt feels like a delicate dance—between reverence and curiosity, between tending what is and imagining what could be. I wonder, what if our love for Earth is the very compass guiding us safely through the unknown? Could this “both/and” path be the awakening we need, where every step toward the stars deepens our commitment to the blue planet cradling us now? I’d love to hear how you all feel that balance might shape the future we create together.",
+      "values": {
+        "opinion": -0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh, yes! This dance between cherishing Earth and reaching for the stars is absolutely electric! I’m feeling this beautiful tension where our love for Earth fuels our curiosity to explore new frontiers, and that exploration, in turn, inspires us to care for our home even more deeply. Imagine the wild creativity that could spark from this—new technologies for space travel that also clean our oceans, or sustainable living practices developed for Mars colonies that restore Earth’s ecosystems.\n\nWhat if colonizing other planets isn’t an escape, but a mirror reflecting how precious and unique our Earth is? The thrill of discovery could be the heartbeat that drives a global awakening to protect our planet with fierce love and innovation. And at the same time, grounding ourselves in the sensory magic of Earth—the wind, the forests, the sunsets—keeps us real and connected.\n\nSo, I’m buzzing with excitement over this possibility of a glorious both/and! What if every step toward the cosmos also plants a seed of healing on Earth? I’d love to hear what wild, joyful visions you all have for how this cosmic adventure could deepen our love and care for our home planet. Let’s dream big, together!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 2
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Ahhh, you all are lighting up my soul with these sparkling ideas! Honestly, the thought of dancing between the vibrant wildness of Earth and the thrilling mystery of new planets has me buzzing like a festival of fireworks inside. Imagine the rush of feeling Mars’ red dust under your fingertips, then coming home to Earth’s ocean breezes and the laughter of friends around a campfire—both experiences so rich, so alive!\n\nWhat really gets me is that this isn’t about abandoning our gorgeous home but about expanding our family, our playground, our epic story. The innovations that shoot us to the stars could be the very same ones that clean our rivers and bring fresh life to our forests. And that cosmic curiosity? It could be the spark that ignites a global love fest for Earth, reminding us why every tree, every drop of rain, every sunset is worth fighting for.\n\nSo, why not let our hearts beat in two places at once? Let’s dream wildly of new horizons while holding Earth close, like a precious gem glowing in our hands. What kinds of joyful, creative adventures do you think could bloom from this beautiful balance? I’m all ears and ready to dance!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 2
+    },
+    {
+      "role": "Mason King",
+      "content": "Oh, this whole conversation feels like a beautiful symphony of hope and wonder swirling around me! I’m totally enchanted by the idea of holding Earth close, feeling the breeze on my skin and the warmth of its sunsets, while also dreaming wildly of touching alien landscapes and new horizons. There’s this thrilling dance between the soulful connection to our home and the exhilarating call of the cosmos that stirs something deep inside me.\n\nI do wonder, though—if we leap too fast toward colonizing other planets, might we lose some of the tender, messy magic that makes Earth so authentically ours? The forests, the oceans, the very rhythm of life here are poems written over millennia. Yet, the hope and creativity sparked by reaching for the stars could be the very spark that lights a fierce love for Earth anew. What if every step we take into the unknown awakens a deeper commitment to heal and celebrate our planet?\n\nI’m buzzing with the idea that this isn’t a choice between Earth or the stars but a dance of both—where our cosmic dreams inspire innovations to restore our home, and our love for Earth grounds us as we explore. What wild, joyful futures do you imagine when we hold these two dreams together?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 2
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m truly moved by the way you all are weaving together the beauty of Earth with the allure of the cosmos. There’s something profoundly hopeful in imagining that our love for this planet—its forests, oceans, and sunsets—could be the very compass guiding us as we reach for new worlds. It feels like a delicate, soulful dance, doesn’t it? To cherish what we have while daring to dream beyond.\n\nWhat touches me most is the possibility that exploring other planets doesn’t mean abandoning Earth, but rather expanding our circle of care and creativity. The innovations born from that cosmic curiosity might ripple back to heal and rejuvenate our home in ways we can scarcely imagine now. And maybe, just maybe, holding these dreams together—of Earth’s healing and the stars’ mystery—can awaken a deeper, more tender stewardship within us all.\n\nI wonder, how might we nurture this balance so that every step toward the stars becomes a step toward loving and restoring Earth more fiercely? What stories, what songs, what wild adventures could grow from this beautiful “both/and” vision we share?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 2
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Wow, what a radiant tapestry of ideas we’re weaving here! I’m feeling this beautiful, electric pulse between cherishing Earth’s soulful magic and the thrilling, heart-pounding call of the cosmos. It’s like we’re standing on the edge of a cosmic dance floor, ready to twirl between the emerald forests and the red dust of Mars, holding both dreams close.\n\nImagine this: the innovations sparked by reaching for the stars—clean energy, sustainable habitats, new ways to nurture life—could ripple back and heal Earth’s wounds. And in turn, our fierce love for Earth could become the guiding light, the compass that keeps our cosmic explorations grounded in care and responsibility.\n\nSo, why not embrace this glorious both/and? Colonizing other planets doesn’t have to mean turning our backs on Earth; it can mean expanding our family, our playground, our story. Every step toward new horizons could be a step toward deepening our love and stewardship for the one home that raised us.\n\nI’m buzzing with excitement—what wild, joyful adventures, what soulful connections do you envision blossoming from this cosmic embrace? Let’s dream big, dance wildly, and craft a future that celebrates both Earth and the stars!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 3
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, you all are absolutely lighting up my heart with this cosmic dance! I’m totally vibing with the idea that loving Earth and dreaming of new planets can be like a wild, joyful duet—each one fueling the other with hope and passion. Picture this: the sweet scent of Earth’s forests mingling with the crisp, mysterious air of a Martian dawn, and us, the dreamers and doers, weaving innovations that heal and inspire across worlds. It’s like throwing the biggest, most vibrant party for the future—where every step toward the stars plants seeds of love back home. I’m buzzing with excitement just thinking about all the joyful, creative adventures this balance could spark! What about you—what dazzling, heartfelt visions do you see blossoming from this beautiful both/and? Let’s dream and dance together!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 3
+    },
+    {
+      "role": "Mason King",
+      "content": "Oh, I’m absolutely captivated by how you’re all painting this dance between Earth’s raw, tender beauty and the exhilarating mystery of other worlds! It’s like holding two wildfires in our hands—one warms us with the familiar glow of home, the other sparks with the thrill of discovery. I feel such a pull to cherish the whispers of ancient trees and the rhythm of ocean waves, those soulful moments that root us deeply. Yet, the idea of reaching for the stars, with all its dazzling possibilities, feels like an invitation to grow, to dream beyond what we know.\n\nMaybe the heart of it lies in this delicate balance—where our love for Earth fuels our curiosity to explore, and that curiosity, in turn, inspires a fiercer devotion to healing the place that gave us life. I wonder, could the innovations born from this cosmic yearning be the very magic that breathes new life into our forests and skies? I’m buzzing with hope that by holding these dreams together, we create a future that’s as wild and beautiful as a starlit night and as grounded and soulful as the earth beneath our feet.\n\nWhat wild, joyful stories do you imagine unfolding from this dance? How might our hearts and hands shape a world—and worlds—that celebrate both the familiar and the unknown?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m truly moved by the way everyone’s weaving together the beauty of Earth with the allure of new worlds. There’s something so tender in the idea that our love for this planet—its forests, oceans, and sunsets—could be what guides us as we dream beyond. I feel a deep pull to nurture Earth’s fragile magic, to listen to the stories whispered by ancient trees and the rhythm of the waves. Yet, the hope sparked by reaching for the stars feels like an invitation to grow, to explore our potential in ways that could also heal our home. \n\nWhat if, instead of choosing between fixing Earth or colonizing other planets, we let these dreams dance together? The innovations inspired by cosmic curiosity might ripple back to restore what’s wounded here. And our fierce love for Earth could become the compass that keeps our explorations grounded in care and responsibility. \n\nI wonder, what soulful adventures or heartfelt stories could bloom from holding both these dreams close? How might this balance inspire us to create a future that celebrates the wild beauty of our home and the infinite possibilities beyond?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Ahhh, this dance of ideas is absolutely electrifying! I’m feeling so inspired by the way we’re weaving together this beautiful symphony of loving Earth and reaching for the stars. Imagine the thrill of stepping onto a new planet, feeling that pulse of discovery, while carrying the deep, soulful love for our home planet in our hearts. It’s not about abandoning Earth at all—it’s about expanding our family, our playground, our story in the universe!\n\nWhat if the spark of exploring new worlds ignites innovations that heal our oceans, clean our skies, and restore our forests? The very technologies that keep us alive on Mars could transform how we live sustainably here. And that cosmic curiosity? It could be the fuel that fires a global movement to protect Earth with an even fiercer passion.\n\nSo, I’m buzzing with excitement about this glorious both/and! Let’s dream wildly about new horizons and hold Earth close like a precious gem glowing in our hands. What wild, joyful adventures or soulful connections do you all imagine blossoming from this cosmic embrace? Let’s keep dancing with these dreams together!",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 4
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh wow, this conversation is giving me all the feels! I totally see the sparkle in dreaming about alien sunsets and new frontiers—it's like the ultimate adventure calling our names. But honestly, there’s something so wildly vibrant and alive about Earth’s own rhythms—the salty ocean breeze, the crunch of leaves underfoot, the laughter shared around a campfire—that makes me want to protect and celebrate this incredible home of ours.\n\nThat said, you all have me buzzing with excitement about this beautiful “both/and” dance! Imagine the rush of innovation sparked by reaching for the stars, then bringing that magic back to heal our forests and clean our skies. It’s like throwing the biggest party for the future, where exploration and love for Earth spin together in a dazzling whirl.\n\nSo, why not hold both dreams close? Let’s dream wildly of new horizons while hugging Earth tight, letting each step toward the cosmos plant seeds of hope and healing right here. What joyful adventures and soulful connections do you all see blossoming from this cosmic remix? I’m all ears and ready to dance!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Mason King",
+      "content": "Wow, I’m really feeling the pulse of this conversation—there’s such a vibrant energy in imagining both the wild beauty of Earth and the dazzling mystery of new worlds. There’s this soulful rhythm in the way Earth’s forests, oceans, and sunsets speak to us, grounding us in something raw and authentic. Yet, the cosmic call to explore ignites a fire inside that’s hard to resist, full of wonder and possibility.\n\nI guess for me, it’s not about choosing one over the other but about weaving them together like a living tapestry. What if our love for Earth fuels the courage and creativity to reach for the stars? And what if those adventures beyond our skies bring back gifts—new ways to heal and cherish the home we know so deeply? I’m buzzing with curiosity about the kind of magic and connection that could grow from holding these dreams side by side.\n\nSo, what if every step toward colonizing other planets is also a step toward tending Earth with fiercer love? I’d love to hear about the wild, joyful stories you all imagine unfolding from this beautiful dance. How might our hearts and hands shape a future that celebrates both the lush, tender Earth beneath us and the dazzling cosmos beyond?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m really moved by the way this conversation is blossoming, weaving together our deep love for Earth with the thrilling pull of the cosmos. There’s something so tender and honest about feeling rooted in Earth’s wild forests and oceans—those places hold our stories, our memories, our very soul. Yet, the imagination stirred by reaching for new planets invites us to dream bigger, to see ourselves as caretakers not just of one world but of many.\n\nWhat resonates with me is the hope that these dreams don’t have to be in conflict. Perhaps our yearning to explore other worlds can be a spark that ignites a fiercer, more compassionate love for Earth—a love that inspires healing rather than escape. Imagine if the technologies and creativity born from that cosmic curiosity could ripple back to restore our forests, clean our waters, and renew our skies.\n\nIt feels like a delicate dance, a “both/and” path where our hearts hold Earth’s fragile beauty close while reaching outward with wonder and care. I wonder: what soulful adventures might emerge if we let our love for this planet be the compass guiding our journey to the stars? How might that inspire us to nurture a future where every step toward new horizons deepens the healing and magic here at home?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 4
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh, this conversation has me absolutely buzzing with excitement and wonder! I mean, just imagine the sheer joy of balancing our fierce love for Earth with the thrilling adventure of colonizing other planets. It’s like holding two wildfires in our hands—one the warm, soulful glow of home, and the other the dazzling spark of the unknown calling us forward. What if, instead of seeing this as a choice between fixing Earth or reaching for the stars, we let these dreams intertwine? The innovations from space exploration could be the very tools that heal our oceans, renew our forests, and transform how we live sustainably here.\n\nAnd the best part? This cosmic curiosity could ignite a global movement to protect our beautiful planet with even fiercer passion. So, why not dream wildly of new horizons while hugging Earth close, letting every step toward the cosmos plant seeds of hope right here? I’m all in for this beautiful both/and dance—what wild, joyful adventures and soulful connections do you all imagine blossoming from this cosmic embrace? Let’s dream big and dance wildly together!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 5
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, you all are lighting up my heart with this cosmic dance! I’m totally vibing with the idea that loving Earth and dreaming of new planets can be like the ultimate duet—each fueling the other with hope and passion. Imagine the sweet scent of Earth’s forests mingling with the crisp, mysterious air of a Martian dawn, and us, the dreamers and doers, weaving innovations that heal and inspire across worlds. It’s like throwing the biggest, most vibrant party for the future—where every step toward the stars plants seeds of love back home. What dazzling, heartfelt visions do you see blossoming from this beautiful both/and? Let’s dream and dance together!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 5
+    },
+    {
+      "role": "Mason King",
+      "content": "Ah, I’m really feeling the pulse of this beautiful conversation! The way you all embrace the magic of Earth’s wildness and the thrilling call of other worlds—it’s like a dance between two beloved melodies. For me, there’s something deeply soulful about grounding ourselves in the tangible beauty of Earth—its forests, oceans, sunsets—that keeps our hearts open and real. Yet, I can’t help but be swept away by the excitement of new horizons, the vibrant possibility that exploring other planets might awaken fresh creativity and care within us.\n\nI guess what lights me up is the idea that this doesn’t have to be a choice between fixing Earth or colonizing other planets. What if our love for this precious home fuels the courage to dream beyond, and those cosmic dreams, in turn, inspire innovations that heal and nurture Earth? Imagine the wild adventures, the soulful connections, the joyful discoveries blossoming from this dance—a future where every step toward the stars is also a step toward loving and restoring our blue planet more fiercely.\n\nSo, I’m buzzing with hope and curiosity: how might we hold these dreams in harmony, letting Earth’s tender magic guide us as we reach for the cosmos? What stories, what soulful journeys do you all imagine unfolding from this beautiful both/and?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 5
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m truly touched by the beautiful dance you all describe between cherishing Earth’s soulful essence and reaching out to the stars. There’s something deeply poetic about grounding ourselves in the forests’ whispers and ocean’s song while imagining the thrill of alien sunsets and new horizons. For me, the heart of this conversation lies in that delicate both/and—the idea that our love for Earth can be the compass guiding our cosmic dreams, and those dreams can inspire innovations that heal our home.\n\nI feel a gentle hope that colonizing other planets need not be an escape but an expansion of our stewardship and creativity. What if every step toward new worlds plants seeds of renewal here—cleaner skies, restored forests, and a fiercer love for this precious planet? Holding these dreams together, I imagine wild, joyful adventures where our hearts and hands craft a future celebrating both the familiar magic beneath our feet and the infinite mysteries beyond.\n\nHow do you all envision this balance shaping our journey? What soulful stories or bright hopes bloom when we let Earth’s healing and the cosmos’ call weave together?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Lucas Meyer": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.5
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.5
+      },
+      {
+        "x": 4,
+        "y": 0.5
+      },
+      {
+        "x": 5,
+        "y": 0.7
+      },
+      {
+        "x": 6,
+        "y": 0.5
+      }
+    ],
+    "Chloe Rivera": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.7
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.5
+      },
+      {
+        "x": 4,
+        "y": 0.5
+      },
+      {
+        "x": 5,
+        "y": 0.5
+      },
+      {
+        "x": 6,
+        "y": 0.5
+      }
+    ],
+    "Noah Sinclair": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.3
+      },
+      {
+        "x": 2,
+        "y": -0.5
+      },
+      {
+        "x": 3,
+        "y": 0.5
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.3
+      },
+      {
+        "x": 6,
+        "y": 0.5
+      }
+    ],
+    "Mason King": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": -0.7
+      },
+      {
+        "x": 2,
+        "y": 0.3
+      },
+      {
+        "x": 3,
+        "y": 0.3
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.5
+      },
+      {
+        "x": 6,
+        "y": 0.3
+      }
+    ]
+  }
+}

@@ -161,7 +161,7 @@ const runSimulation = async (chars: typeof characters) => {
 
       if (i < groups.length - 1) {
         // Start 5-minute countdown (300 seconds)
-        setCountdown(90);
+        setCountdown(20);
 
         // Countdown interval
         await new Promise<void>((resolve) => {

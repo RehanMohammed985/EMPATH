@@ -1,6 +1,7 @@
 "use server";
 
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
+import { ChatOpenAI } from "@langchain/openai";
 import { MessagesAnnotation } from "@langchain/langgraph";
 import { StateGraph, END, START } from "@langchain/langgraph";
 import { messageLimit } from "@/config/run_config";
@@ -9,14 +10,31 @@ import {
   simulatedUserNode,
 } from "@/utils/simulation_utils";
 
-const llm = new ChatGoogleGenerativeAI({
-  model: "gemini-1.5-flash",
-  apiKey:
-    process.env.GOOGLE_API_KEY ??
+// const llm = new ChatGoogleGenerativeAI({
+//   model: "gemini-2.5-flash",
+//   apiKey:
+//     process.env.GOOGLE_API_KEY ??
+//     (() => {
+//       throw new Error("GOOGLE_API_KEY is not set.");
+//     })(),
+// });
+
+const llm = new ChatOpenAI({
+  model: "gpt-4.1-mini", // or "gpt-4o", "gpt-4.1", etc. depending on your plan
+  temperature: 0.7, // adjust if you want more/less randomness
+  openAIApiKey:
+    process.env.OPENAI_API_KEY ??
     (() => {
-      throw new Error("GOOGLE_API_KEY is not set.");
+      throw new Error("OPENAI_API_KEY is not set.");
     })(),
 });
+
+// const llm = new ChatAnthropic({
+//   model: "claude-3-sonnet-20240229",
+//   apiKey: process.env.ANTHROPIC_API_KEY ?? (() => {
+//     throw new Error("ANTHROPIC_API_KEY is not set.");
+//   })(),
+// });
 
 function shouldContinue(state: typeof MessagesAnnotation.State) {
   const messages = state.messages;
@@ -50,7 +68,7 @@ function createSimulation(characters: any[] = [], topic: string = "") {
   for (let i = 0; i < characters.length - 1; i++) {
     workflow.addEdge(characters[i].name as any, characters[i + 1].name as any);
   }
-  
+
   // Conditional looping logic (D → A if shouldContinue allows)
   for (let i = 0; i < characters.length; i++) {
     const nextIndex = (i + 1) % characters.length;
