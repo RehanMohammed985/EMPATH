@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Henry Walsh",
+      "profession": "Military Officer",
+      "personality": "ESTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Claire Bennett",
+      "profession": "Psychologist",
+      "personality": "INFJ",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Dr. Elena Pierce",
+      "profession": "Strategic Consultant",
+      "personality": "INTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Ethan Blake",
+      "profession": "Corporate Executive",
+      "personality": "ENTJ",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Universal basic income should replace traditional welfare systems.",
+  "messages": [
+    {
+      "role": "Henry Walsh",
+      "content": "Let's get straight to the point. If we're going to discuss universal basic income replacing traditional welfare systems, we need to focus on efficiency, practicality, and measurable outcomes. What specific goals are we aiming to achieve with this change, and how do we ensure the system runs smoothly without waste or loopholes?",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I appreciate your focus on efficiency and practicality—it’s essential we consider how any system functions in the real world. But beyond metrics and outcomes, I believe the heart of this discussion should be about human dignity and the potential for personal growth. Universal basic income could offer people not just financial stability but also the freedom to pursue education, creative endeavors, or caregiving roles that traditional welfare often overlooks or undervalues. How might we design a system that balances practical concerns with nurturing the deeper needs of individuals and communities?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "Your point about human dignity and personal growth is valid in a societal context, but we must prioritize systemic effectiveness first. Any welfare replacement, including universal basic income (UBI), must be designed with rigorous frameworks to minimize fraud, ensure adequate funding, and incentivize productive behavior. While UBI’s simplicity could reduce administrative overhead, we have to be cautious about unintended consequences such as inflationary pressures or reduced labor participation rates. The challenge lies in creating a model that is both scalable and sustainable without compromising economic productivity. Ideally, we should model various implementations using comprehensive data before full adoption, to ensure long-term viability and avoid replacing one inefficient system with another.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 0
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "You're right to emphasize the need for rigorous frameworks and data-driven modeling before adopting universal basic income wholesale. However, the current welfare systems are riddled with inefficiencies, bureaucratic red tape, and stigmatization that hinder progress and waste resources. UBI, with its simplicity, can eliminate much of that overhead and provide a clear, direct support mechanism. The key is to implement it strategically—start with pilot programs, analyze economic impacts, and adjust parameters to maintain labor incentives and control inflation. We cannot afford to let fear of potential drawbacks paralyze us; decisive, calculated action is required to modernize welfare for the 21st century. Waiting for perfect data is a luxury we don’t have when millions struggle under outdated systems. Let’s lead with bold leadership and pragmatic execution.",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 0
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "I agree that outdated welfare systems have their flaws and inefficiencies, and streamlining support is necessary. However, we must not rush into replacing them with a universal basic income without a thorough, evidence-based plan in place. Pilot programs and data analysis are essential, but they must be structured with strict criteria: measurable outcomes, fiscal responsibility, and safeguards against abuse. Leadership isn’t about bold gestures alone—it’s about delivering practical, sustainable solutions that improve lives without compromising economic stability. Let’s focus on designing a UBI model that integrates with existing structures, gradually phases in changes, and maintains clear accountability. That’s how we get results and build confidence in the system.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I deeply appreciate the thoughtful concerns about practicality, sustainability, and the need for evidence-based approaches. These are vital to ensure that any shift in social support systems truly benefits people in the long run. At the same time, I find myself drawn to the transformative potential of universal basic income—not just as an economic policy, but as a way to honor each person’s inherent dignity and capacity for growth.\n\nTraditional welfare often carries stigma and complex eligibility rules that can erode self-worth and create barriers rather than bridges. UBI’s universality could dismantle those walls, allowing people to pursue meaningful work, education, caregiving, or healing without the constant anxiety of financial precarity. This isn’t about removing incentives to contribute but about recognizing the diverse ways people add value beyond conventional economic measures.\n\nWhat if we envisioned a phased, carefully monitored implementation that prioritizes both the measurable outcomes you emphasize and the human stories that statistics can overlook? In this way, we could create a system that evolves with the needs and wisdom of the community, blending rigorous data with compassion and flexibility. Would this kind of integrative approach address your concerns while embracing the deeper purpose that drives me to support UBI?",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 1
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The integrative approach you outline—phased implementation with rigorous monitoring—aligns with strategic prudence. However, I must emphasize that any pilot or phased program must be designed with clear, quantifiable benchmarks tied directly to economic productivity, fiscal sustainability, and social mobility metrics. The human dignity argument is compelling, but it cannot override the necessity for systemic robustness. We must avoid introducing a policy that, while well-intentioned, risks inflationary pressures, labor market distortions, or an unsustainable fiscal burden. Therefore, a hybrid model that incrementally integrates UBI elements into existing welfare frameworks may offer the best path forward. This preserves proven support mechanisms while methodically testing UBI’s scalability and impact. Only through such a data-driven, modular strategy can we ensure that welfare modernization achieves both efficiency and meaningful societal benefit.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 1
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut through the idealistic notions and focus on what drives real progress: measurable results and strategic execution. Universal basic income has potential, but it cannot simply replace traditional welfare systems overnight without a meticulously engineered framework. We need a hybrid approach—one that retains the strengths of current welfare programs while methodically integrating UBI components through well-designed pilot projects. These pilots must be governed by strict economic and social performance metrics, ensuring fiscal responsibility, preserving labor incentives, and preventing unintended consequences like inflation or dependency. Leadership demands we move decisively but intelligently, leveraging data and clear benchmarks to overhaul welfare systems efficiently and sustainably. Anything less risks chaos and wasted resources. Let's build a pragmatic roadmap that delivers progress, not just promises.",
+      "values": {
+        "opinion": 0.4
+      },
+      "turn": 1
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's be clear: replacing traditional welfare systems with universal basic income isn’t about idealism—it’s about effective governance. I strongly support a structured, data-driven transition that preserves economic stability and incentivizes productivity. UBI’s simplicity is appealing, but without rigorous pilot programs and measurable benchmarks, we risk unintended consequences like inflation and reduced labor participation. We must hold ourselves to strict standards of fiscal responsibility and social impact, using phased implementation to safeguard existing support where necessary. Leadership means delivering results through pragmatic, accountable action—not rushing headlong into untested reforms. That’s how we achieve a sustainable, efficient welfare system for the future.",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 2
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I hear all of you emphasizing the importance of careful planning, data-driven pilot programs, and fiscal responsibility—and I agree those are absolutely necessary to safeguard the system and its beneficiaries. Still, I feel it’s crucial to keep the human element front and center in this debate. The current welfare systems often unintentionally perpetuate feelings of shame or inadequacy, which can stifle personal growth and community connection. Universal basic income, if implemented thoughtfully, has the potential to restore a sense of dignity and agency to individuals, enabling them to contribute to society in diverse, meaningful ways beyond traditional employment metrics.\n\nCould we envision a pilot phase that not only tracks economic indicators but also qualitatively measures wellbeing, empowerment, and social inclusion? By doing so, we might foster a more holistic understanding of what “success” looks like—a success that honors both the measurable outcomes and the emotional, psychological needs of people. This integrative approach could build a bridge between pragmatic governance and compassionate vision, helping us create a welfare system that supports not just survival, but thriving. What are your thoughts on expanding our evaluation criteria to include these deeper human dimensions alongside traditional economic metrics?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 2
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The proposal to expand evaluation criteria to include qualitative measures such as wellbeing and social inclusion is intellectually appealing, but we must remain vigilant against diluting the primary objectives of welfare reform: economic stability, fiscal responsibility, and incentivizing productive behavior. While these softer metrics have value in understanding human experience, they are inherently subjective and difficult to quantify reliably at scale, which complicates policy assessment and adjustment.\n\nIf we incorporate such criteria, they must be secondary and clearly linked to concrete, measurable outcomes to avoid mission creep or policy paralysis. For example, improvements in wellbeing should translate into reduced healthcare costs or increased workforce participation, which can be tracked objectively. Without this tethering to hard data, we risk creating a welfare model that is vulnerable to political shifts and lacks clear accountability.\n\nTherefore, a phased implementation of UBI integrated with existing welfare systems, guided primarily by rigorous economic and social performance benchmarks, is the most strategic path forward. Incorporating qualitative data as supplementary insight—not as primary decision criteria—will help us refine the model without compromising systemic robustness. This approach balances the human dimension with the hard realities of governance and sustainability.",
+      "values": {
+        "opinion": 0.4
+      },
+      "turn": 2
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut to the chase: I fully support replacing traditional welfare systems with a universal basic income, but only through a disciplined, data-driven transition. We cannot afford to gamble on untested ideals without clear, quantifiable benchmarks tied to economic productivity, fiscal sustainability, and social mobility. That means pilot programs with strict oversight, preserving labor incentives, and preventing inflationary pressures or dependency traps.\n\nThe human dignity argument is valid, but it must be subordinated to systemic efficiency and robustness. We need a hybrid, modular approach—integrating UBI components into existing welfare frameworks incrementally—to ensure we don't discard proven mechanisms prematurely. Leadership is about decisive, pragmatic action that delivers measurable results. Anything less risks chaos and wasted resources.\n\nSo, let's build a strategic roadmap focused on outcomes, accountability, and scalability. Only then can we modernize welfare effectively and sustainably.",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 2
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's be clear: universal basic income replacing traditional welfare systems is not a matter of idealism; it's a matter of effective, accountable governance. I stand firmly for a structured, phased rollout grounded in rigorous data and measurable outcomes. We must preserve economic stability, maintain labor incentives, and ensure fiscal responsibility every step of the way.\n\nThe current welfare system’s inefficiencies are undeniable, but throwing it out wholesale without a tested framework risks inflation, dependency, and wasted resources. A hybrid approach that incrementally integrates UBI elements into existing programs allows us to safeguard proven support mechanisms while evaluating real-world impacts.\n\nLeadership demands we focus on what delivers results—strict benchmarks, pilot programs with oversight, and clear accountability. We owe it to the public to proceed pragmatically, not ideologically. That’s how we build a sustainable, efficient welfare system that truly works for everyone.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 3
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I truly appreciate the emphasis on data, accountability, and phased implementation—it’s crucial we proceed with care and responsibility. Yet, I’m reminded that behind every statistic are real lives marked by struggle and hope. If we focus solely on economic metrics without honoring the emotional and social dimensions, we risk creating a system that supports survival but not the flourishing of human potential.\n\nWhat if our pilot programs not only measure fiscal sustainability and labor participation but also listen deeply to the experiences of those receiving support? By incorporating qualitative feedback on wellbeing, empowerment, and community connection, we could design a system that evolves with humanity at its core.\n\nBalancing rigorous data with compassionate insight feels not just wise but necessary. It’s in that integration—where numbers meet narratives—that I believe we find the truest path forward. Wouldn’t a welfare system that uplifts dignity and nurtures growth alongside economic stability be the kind of transformative change worth pursuing together?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 3
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The notion of integrating qualitative feedback such as wellbeing and empowerment alongside economic metrics is worth considering, but only insofar as it complements objective, quantifiable data. When designing or overhauling welfare systems, the primary benchmarks must be measurable indicators: fiscal sustainability, labor market participation, inflation control, and social mobility. Emotional and social dimensions, while important, cannot drive policy decisions if they lack reliable, scalable metrics. Subjective measures risk undermining the clarity and accountability necessary for sound governance.\n\nMoreover, a wholesale replacement of traditional welfare with universal basic income (UBI) is not prudent without phased, data-driven pilot programs anchored in rigorous evaluation. A hybrid model that incrementally integrates UBI components allows for real-world testing of economic impacts and social outcomes, minimizing risk while preserving essential support mechanisms. This approach prioritizes long-term systemic robustness over short-term idealism.\n\nIn summary, the path forward demands a disciplined balance: primary reliance on hard data and fiscal responsibility, supplemented—not supplanted—by qualitative insights. Only through this strategic, modular, and accountable process can we achieve an efficient, sustainable, and ultimately transformative welfare system.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's focus on what leadership truly demands here: decisive, strategic reform backed by data and measurable outcomes. Universal basic income has promise, but replacing traditional welfare systems outright without a phased, tightly controlled rollout risks economic instability and wasted resources. The solution is a hybrid model—one that retains proven welfare elements while integrating UBI components incrementally through pilot programs governed by strict fiscal and social benchmarks. Emotional and qualitative factors such as dignity and empowerment are important, but they must be secondary and clearly tied to objective metrics like labor participation and fiscal sustainability. Our priority is a welfare system that is efficient, scalable, and promotes productivity—not one driven by idealism that could unravel under pressure. Let’s lead with pragmatic execution and build a roadmap that delivers real, sustainable progress.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's be unequivocal: the transition to universal basic income must be governed by strict, data-driven protocols. While I acknowledge the importance of human dignity and qualitative factors, these must not overshadow the fundamental criteria that ensure the system’s viability—economic productivity, fiscal responsibility, and labor incentives. A wholesale replacement of traditional welfare without phased pilots and rigorous metrics is reckless and jeopardizes both beneficiaries and taxpayers.\n\nOur objective is to modernize welfare efficiently and sustainably. This requires a hybrid approach—incrementally integrating UBI elements into existing systems with measurable benchmarks and oversight. Only through disciplined execution, clear accountability, and continuous evaluation can we avoid unintended consequences like inflation or dependency. Leadership is about delivering tangible results, not yielding to idealistic impulses. That is the practical path forward.",
+      "values": {
+        "opinion": 0.2
+      },
+      "turn": 4
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I truly value the emphasis on measurable outcomes and fiscal responsibility—it’s essential that any reform we pursue is sustainable and accountable. At the same time, I can’t help but feel that focusing solely on economic metrics risks overlooking the profound human impact of these policies. Traditional welfare systems often impose barriers and stigmas that quietly erode people’s sense of dignity and potential. Universal basic income, if implemented thoughtfully and in phases as many of you suggest, offers a chance not just for economic stability but for restoring agency and fostering personal growth.\n\nWhat if our pilot programs combined rigorous data collection with deep listening to recipients’ lived experiences—measuring not only employment rates and budgets but also wellbeing, empowerment, and community connection? Integrating these qualitative insights alongside economic indicators could help us design a system that nurtures the whole person, not just the ledger. This balanced approach might bridge the gap between pragmatic governance and compassionate vision.\n\nCould such an integrative model address concerns about accountability and risk while honoring the deeper human needs that motivate support for universal basic income? I believe this is the transformative path that truly respects both the complexity of policy and the richness of human lives.",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 4
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "I acknowledge the importance of human dignity and the potential qualitative benefits of universal basic income, but these must be subordinated to the imperatives of systemic efficiency, fiscal responsibility, and economic stability. The proposal to replace traditional welfare systems with UBI outright is strategically unsound without a phased, data-driven approach that rigorously measures economic productivity, labor participation, inflationary effects, and long-term sustainability.\n\nPilot programs must be designed with clear, quantifiable benchmarks and strict oversight to prevent unintended consequences such as dependency or economic distortion. Incorporating qualitative metrics like wellbeing and empowerment can provide supplementary insight, but these must be secondary and directly linked to measurable outcomes to maintain policy clarity and accountability.\n\nA hybrid model that incrementally integrates UBI elements into existing welfare frameworks offers the most pragmatic path forward. This approach preserves proven support mechanisms while allowing for controlled experimentation and adjustment based on real-world data. Leadership demands we prioritize strategic execution grounded in evidence over idealistic aspirations, ensuring any transition strengthens rather than destabilizes the welfare system.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 4
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut to the chase: Universal basic income replacing traditional welfare systems is a complex strategic challenge that demands a disciplined, data-driven approach. I stand firmly for a phased, hybrid model that incrementally integrates UBI elements into existing welfare frameworks. This ensures we preserve proven support mechanisms while rigorously testing real-world impacts.\n\nHuman dignity and empowerment are important, but they cannot override the imperatives of economic productivity, fiscal responsibility, and labor incentives. Pilot programs must have clear, quantifiable benchmarks—measuring fiscal sustainability, inflation control, labor participation, and social mobility. Qualitative measures like wellbeing can supplement our understanding but must never supplant objective, scalable data that drive policy decisions.\n\nLeadership means delivering measurable results through pragmatic execution—not yielding to idealism or rushing untested reforms. We owe it to the public to modernize welfare efficiently and sustainably. That requires a strategic roadmap with strict oversight, accountability, and continuous evaluation. Anything less risks chaos, wasted resources, and undermined public trust. Let’s focus on building that roadmap and leading with confidence and clarity.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's get one thing straight: transitioning to universal basic income as a replacement for traditional welfare systems is not an overnight decision—it requires meticulous planning, phased implementation, and unwavering adherence to measurable benchmarks. We cannot afford to gamble with taxpayer money or social stability by rushing headlong into untested reforms driven by idealism alone.\n\nOur priority must be maintaining economic productivity, fiscal responsibility, and labor incentives throughout this process. This means pilot programs with strict oversight, clear quantifiable goals related to inflation control, workforce participation, and social mobility. While acknowledging the value of human dignity and qualitative benefits, these must be secondary and directly linked to objective data to ensure accountability and avoid policy drift.\n\nA hybrid, modular approach that incrementally integrates UBI components into existing welfare frameworks offers the most pragmatic and effective pathway. It preserves the strengths of current systems while allowing us to gather real-world evidence on UBI’s viability and impact. Leadership demands decisive, pragmatic execution with a clear roadmap—anything less risks inefficiency, wasted resources, and ultimately failure. That’s how we deliver sustainable welfare reform that works for everyone.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 5
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I truly resonate with the call for careful, data-driven implementation and the importance of maintaining economic stability and accountability. At the same time, I feel it's vital we don't lose sight of the people behind the numbers—their hopes, struggles, and creative potential. Traditional welfare systems often unintentionally impose barriers that can diminish self-worth and limit growth. Universal basic income offers an opportunity not just for financial support but for restoring dignity and enabling individuals to explore meaningful contributions beyond conventional employment.\n\nWhat if our pilot programs intentionally combined rigorous economic metrics with qualitative assessments of wellbeing, empowerment, and community connection? This integrative approach could help us understand the full impact of UBI, ensuring policies nurture both systemic sustainability and human flourishing. By listening deeply to recipients’ lived experiences alongside tracking fiscal and labor data, we might co-create a welfare system that is both robust and compassionate.\n\nCould this balanced, phased strategy address concerns about risk and accountability while honoring the deeper human needs that motivate support for universal basic income? I believe such a vision offers a path toward transformative change that uplifts individuals and society alike.",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 5
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The emphasis on integrating qualitative measures like wellbeing and empowerment alongside economic metrics is intellectually interesting, but we must maintain clear priorities. Policy decisions require objective, quantifiable data to ensure accountability, scalability, and fiscal responsibility. Subjective measures, while valuable for context, cannot drive systemic change without demonstrable links to measurable outcomes such as labor participation rates, inflation control, and social mobility improvements.\n\nReplacing traditional welfare with universal basic income outright remains strategically unwise without phased, data-driven pilot programs that preserve essential support structures and rigorously evaluate economic impact. A hybrid, incremental approach allows controlled experimentation, minimizing risk and avoiding the pitfalls of hasty reform.\n\nUltimately, leadership demands a pragmatic roadmap focused on measurable results and systemic robustness. While human dignity and personal growth are worthy goals, they must be pursued within frameworks that safeguard economic stability and societal productivity. This balance is non-negotiable if we are to modernize welfare efficiently and sustainably.",
+      "values": {
+        "opinion": 0.2
+      },
+      "turn": 5
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut through the abstract idealism and focus squarely on what leadership demands: a strategic, phased transition to universal basic income that preserves economic productivity, fiscal responsibility, and labor incentives. Replacing traditional welfare systems outright without rigorous pilot programs and measurable benchmarks is reckless. We must adopt a hybrid model—incrementally integrating UBI components into existing frameworks with strict oversight and clear performance metrics tied to inflation control, workforce participation, and social mobility.\n\nWhile human dignity and empowerment are important considerations, they cannot override the need for systemic robustness and accountability. Qualitative measures may supplement our understanding, but policy decisions must be driven by hard data. Anything less risks economic instability, dependency, and wasted resources.\n\nThe path forward is clear: a disciplined, data-driven roadmap that balances pragmatism with cautious innovation. This is how we modernize welfare effectively and sustainably—no shortcuts, no sentimentalism, just decisive leadership delivering tangible results.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Henry Walsh": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.6
+      },
+      {
+        "x": 4,
+        "y": 0.5
+      },
+      {
+        "x": 5,
+        "y": 0.2
+      },
+      {
+        "x": 6,
+        "y": 0.3
+      }
+    ],
+    "Claire Bennett": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.7
+      },
+      {
+        "x": 2,
+        "y": 0.8
+      },
+      {
+        "x": 3,
+        "y": 0.7
+      },
+      {
+        "x": 4,
+        "y": 0.5
+      },
+      {
+        "x": 5,
+        "y": 0.8
+      },
+      {
+        "x": 6,
+        "y": 0.8
+      }
+    ],
+    "Dr. Elena Pierce": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.3
+      },
+      {
+        "x": 2,
+        "y": 0.3
+      },
+      {
+        "x": 3,
+        "y": 0.4
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.3
+      },
+      {
+        "x": 6,
+        "y": 0.2
+      }
+    ],
+    "Ethan Blake": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.8
+      },
+      {
+        "x": 2,
+        "y": 0.4
+      },
+      {
+        "x": 3,
+        "y": 0.7
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.5
+      },
+      {
+        "x": 6,
+        "y": 0.3
+      }
+    ]
+  }
+}
