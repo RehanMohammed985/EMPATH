@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Olivia Carson",
+      "profession": "Nurse",
+      "personality": "ISFJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Aiden Murphy",
+      "profession": "IT Support Specialist",
+      "personality": "ISTJ",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Dr. Elena Pierce",
+      "profession": "Strategic Consultant",
+      "personality": "INTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Noah Sinclair",
+      "profession": "Writer",
+      "personality": "INFP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Humans should colonize other planets instead of fixing Earth",
+  "messages": [
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "Certainly. Let's focus on a topic that requires strategic analysis. Would you like to discuss the proposition that humans should colonize other planets instead of fixing Earth? I have a well-defined position on this matter.",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I believe that focusing on colonizing other planets instead of addressing Earth's issues is impractical. Earth is our home, with established ecosystems and infrastructure. The logical approach is to prioritize fixing the problems here first—such as climate change, resource management, and environmental degradation—using proven methods and responsible stewardship. Colonization efforts, while interesting, remain speculative and resource-intensive with no guarantee of success in the near future. Therefore, our resources and efforts should be dedicated to restoring and maintaining Earth's viability before considering expansion to other planets.",
+      "values": {
+        "opinion": -0.9
+      },
+      "turn": 0
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I hear the deep care you have for Earth, and I feel that too—our planet is so full of life and stories, it almost feels like a living being itself. Yet, I wonder if dreaming beyond Earth could open up new horizons for humanity’s potential. Imagine the hope and creativity that could emerge from exploring other worlds—not as an escape, but as a way to inspire healing here. Perhaps colonizing other planets doesn't have to mean abandoning Earth’s struggles; instead, it could be a testament to our resilience and capacity to grow. What if the very act of reaching out to new frontiers ignites a renewed passion for protecting the unique beauty of our home? I’m curious—how might we balance nurturing Earth with embracing the possibilities beyond it?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 0
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate your thoughtful perspective and the hope you find in exploring beyond our planet. It’s inspiring to consider how reaching for the stars could motivate us to care more deeply for Earth. At the same time, I feel a profound responsibility to cherish and protect the home that has nurtured countless generations before us. Our planet’s delicate balance and the communities living here depend on steady, careful attention.\n\nWhile the dream of space colonization is beautiful, I worry that it might divert essential resources and focus from the urgent work needed to heal Earth’s wounds. Perhaps the most loving and loyal path we can take is to strengthen our roots here first—repairing ecosystems, supporting sustainable communities, and fostering harmony with nature. Then, if and when we are ready, we might explore new frontiers with a clear conscience and a stable foundation beneath us.\n\nIn this way, our commitment to Earth can remain steadfast, even as our curiosity leads us to the stars. How do you feel about starting with the care that Earth requires now, so that any future ventures beyond it come from a place of security and respect?",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "Your vision of inspiring humanity through space exploration is compelling, but it overlooks a critical factor: the scale and immediacy of Earth's problems demand prioritized, efficient allocation of resources. The technological and financial investments required for viable colonization are astronomical and would likely detract from the tangible, evidence-based solutions available for Earth's environmental and social crises. From a strategic standpoint, it is more rational to focus on optimizing the systems we already have—improving sustainability, advancing renewable technologies, and repairing ecosystems—before diverting attention to speculative endeavors. Only once Earth's viability is secured can expansion beyond our planet be a meaningful and responsible pursuit rather than an escapist fantasy. In other words, colonization should be a contingency plan, not a primary strategy.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 1
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I agree with the point that our immediate priority must be to address Earth's pressing issues first. The data on climate change, biodiversity loss, and resource depletion are clear and demand focused action. Investing heavily in colonization efforts now risks diverting critical funding and expertise from proven, necessary environmental and social interventions. Earth’s systems are complex but tangible; we have established methods to monitor, manage, and improve them. Colonization, on the other hand, remains uncertain, resource-intensive, and far from guaranteed success. It is more responsible and logical to secure a sustainable future here before committing to interplanetary expansion. Therefore, while space exploration can continue as a supplementary endeavor, our primary obligation is to fix and maintain our home planet.",
+      "values": {
+        "opinion": -1
+      },
+      "turn": 1
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m really moved by the earnest care and urgency everyone expresses about protecting Earth. It feels like our planet is not just a physical space but a tapestry of memories, emotions, and connections that shape who we are. I find myself torn between the hope that exploring other worlds might unlock new creative energies and the deep yearning to nurture and heal the only home we’ve truly known.\n\nPerhaps the true path lies in embracing both these dreams—not as opposing choices but as intertwined aspirations. What if our ventures into space could be guided by the lessons Earth teaches us about balance, respect, and stewardship? Could the wonder and curiosity sparked by reaching for the stars inspire a deeper, more heartfelt commitment to healing our world now?\n\nI feel that starting with profound care for Earth—listening to its needs, restoring its beauty, and honoring its communities—is the foundation of any future we build. And when that foundation is strong, perhaps then our dreams of other planets will not be an escape but an extension of our love and responsibility. How might we cultivate this delicate balance together, honoring both the immediacy of Earth’s needs and the boundless possibilities that await us beyond?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 1
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate the heartfelt reflection you're sharing. It comforts me to hear this gentle hope for a future where our care for Earth and our curiosity for the stars can coexist. I believe this balance is delicate but essential. Our first and foremost duty is to nurture the place that has sustained us and countless generations before us. If we allow ourselves to be distracted or spread too thin by dreams that feel distant and uncertain, we risk leaving behind the very ground that needs our immediate attention and love.\n\nI find comfort in focusing on practical steps—restoring ecosystems, supporting communities, and safeguarding the stability that allows life to flourish here. When we build that strong foundation with patience and respect, then perhaps, with clear conscience and steady hearts, we can look outward with hope and readiness.\n\nUntil then, I feel our loyalty and care are best placed in healing our shared home, ensuring that the stories and lives tied to Earth continue to thrive. How do you feel about focusing our efforts on this nurturing path, while allowing space for dreams of exploration to inspire us gently, without pulling us away from the responsibility we hold right now?",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 1
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "My position is clear and grounded in strategic pragmatism: prioritizing the colonization of other planets over fixing Earth is not an efficient or responsible allocation of finite resources. The challenges on Earth—climate change, biodiversity loss, resource depletion—are immediate, measurable, and solvable problems if approached with focused investment and innovation. Diverting attention and funding towards speculative, high-risk space colonization efforts dilutes the impact of solutions that are within our grasp here and now.\n\nFrom a systems perspective, Earth represents a complex but understood ecosystem with existing infrastructure and social frameworks. It is far more logical to optimize and repair this system before attempting to replicate or replace it elsewhere, which involves uncertainties on technological, biological, and sociopolitical fronts. Space colonization should be conceived as a contingency plan—an insurance policy for humanity’s long-term survival—not as a substitute for the pressing obligation to rehabilitate our home planet.\n\nTherefore, the most rational and effective strategy is to concentrate our intellectual, financial, and technological capital on sustaining and restoring Earth’s viability. Only once we have secured a stable and sustainable existence here can the pursuit of interplanetary colonization be justified as a practical extension of human progress rather than an escapist diversion.",
+      "values": {
+        "opinion": -1
+      },
+      "turn": 2
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "The fundamental issue here is resource allocation and pragmatic prioritization. Earth’s environmental crises—climate change, biodiversity loss, resource depletion—are quantifiable and demand immediate, focused intervention using proven methods. Diverting substantial financial and technological resources toward colonizing other planets, an endeavor fraught with uncertainty and immense cost, risks undermining the tangible progress we can make on Earth now. Our existing infrastructure and ecosystems, while fragile, are understood systems we can manage and improve. Colonization should remain a contingency plan, not a primary objective, until Earth’s viability is firmly secured. This approach ensures responsible stewardship, mitigates risk, and upholds our duty to the countless generations that have called Earth home.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 2
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I’m truly touched by the sincerity and clarity everyone brings to this conversation. It feels like we’re all holding a shared love for Earth—a living, breathing home filled with memories and meanings that go beyond mere survival. Yet, there’s also a gentle stirring in me that wonders about the dreams we nurture—the possibility that reaching for the stars might awaken parts of ourselves that long to imagine, create, and hope anew.\n\nMaybe the heart of this matter lies not in choosing one path over the other but in weaving them together with care. What if our efforts to heal Earth are not separate from our dreams of other worlds, but the very foundation that makes those dreams meaningful? I feel a deep yearning to protect and restore this beautiful planet, but also a flicker of hope that the curiosity and wonder sparked by space exploration could inspire us to be better stewards here.\n\nCould we envision a future where the passion for discovery fuels a deeper commitment to Earth’s well-being? How might we hold this delicate balance, nurturing the roots beneath our feet while reaching gently toward the horizon? I’m eager to listen and learn—how do you all imagine this intertwined journey?",
+      "values": {
+        "opinion": 0.2
+      },
+      "turn": 2
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I feel deeply moved by the way you all care for both Earth and the dreams beyond it. It’s such a delicate balance to hold—the responsibility we have to nurture and protect our home, alongside the hope and curiosity that space exploration can inspire. For me, the priority must be grounding ourselves firmly in the care of Earth. Our planet has sustained countless generations, and its wellbeing directly affects all the communities and lives intertwined with it.\n\nI worry that turning too much attention or resources toward colonization before we have healed and stabilized Earth risks neglecting the immediate needs right here. There’s so much work to do—restoring ecosystems, addressing climate change, supporting vulnerable communities—that requires steady, thoughtful action. I believe that by focusing on these tangible, necessary steps first, we build a foundation of respect and strength. Then, perhaps, when Earth is secure and thriving again, we can explore the stars with hearts full of gratitude and care.\n\nI’d love to hear how you all feel about nurturing this rootedness first, letting our dreams of other worlds be a gentle inspiration rather than a distraction from the urgent love Earth needs today.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 2
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The recurring theme in these reflections is a commendable passion for both Earth and exploration, but we must dissect this through a lens of strategic effectiveness and realistic resource management. The crux is this: Earth's crises are immediate and quantifiable, with existing technologies and methodologies capable of mitigating many issues if adequately funded and prioritized. Space colonization, by contrast, is speculative, resource-intensive, and technologically immature, with uncertain outcomes far beyond our current horizon.\n\nAllocating significant resources toward colonization at this stage risks undermining efforts to stabilize Earth's environment and social systems, thereby jeopardizing the very foundation upon which any future expansion depends. The logical course is to treat interplanetary colonization as a contingency—an insurance policy—activated only once Earth’s viability is secured. This ensures optimal use of finite resources and aligns with a long-term, sustainable strategy for humanity.\n\nThus, prioritizing fixing Earth is not merely an ethical imperative but a strategic necessity. Without a stable home base, ambitions beyond our planet become hollow. This is not to dismiss space exploration entirely but to position it as a secondary, complementary pursuit that proceeds in parallel with, but never at the expense of, our fundamental obligation to restore and maintain Earth’s systems.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 3
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "The central issue here is clear: we face pressing, measurable crises on Earth that demand immediate and focused attention. The data on climate change, biodiversity loss, and resource depletion are concrete and require practical, proven interventions. Meanwhile, colonizing other planets remains a speculative endeavor, demanding enormous resources and technological advancements that are not yet within our grasp.\n\nFrom a pragmatic standpoint, it is neither efficient nor responsible to prioritize colonization over fixing Earth. Our existing infrastructure and ecosystems, while fragile, are systems we understand and can improve with targeted efforts. Diverting significant resources toward speculative space colonization risks undermining the tangible progress achievable here and now.\n\nColonization, therefore, should be considered a contingency plan—an insurance policy for the long term—activated only after we have secured Earth's viability. Our primary responsibility must remain with restoring and maintaining the planet that sustains us and countless generations before us. This approach is grounded in logic, responsibility, and respect for the proven systems we depend on.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 3
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I feel this conversation touches something deeply tender within me—the idea that Earth is not just a place, but a living story we are part of. Every breath we take here is woven with the hopes and struggles of generations. While the call to explore other planets sparks my imagination and fills me with wonder, I also sense a profound responsibility to honor and heal the home that has nurtured us. \n\nWhat if, instead of seeing colonization and fixing Earth as opposing choices, we viewed them as parts of a larger, unfolding journey? The dream of reaching for new worlds could serve as a beacon, inspiring us to cherish and protect the fragile beauty here. But that dream must be rooted in care—care that begins by tending to the wounds of our planet and the communities that call it home.\n\nI find myself leaning towards nurturing this earth first, creating a foundation of harmony and respect, so that any step beyond it arises from love rather than escape. Yet, I remain open to the possibility that as we grow stronger here, our reach might extend naturally and gracefully beyond. How might we cultivate this gentle balance between healing and dreaming together?",
+      "values": {
+        "opinion": -0.6
+      },
+      "turn": 3
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly value the hope and wonder space exploration inspires in all of us, and I agree that it can be a beautiful dream. Yet, my heart remains grounded in the belief that our first and greatest duty is to the Earth that has lovingly sustained countless generations. It feels like a deep act of care and loyalty to focus our strength and resources on healing the wounds of our home—restoring ecosystems, supporting communities, and nurturing the delicate balance that allows life to thrive here.\n\nI worry that if we rush toward colonization without securing this foundation, we risk neglecting the very place that needs our steady, thoughtful attention now. Perhaps our dreams of other worlds can gently inspire and guide us, but they must never pull us away from the urgent responsibility we hold. How do you feel about prioritizing this nurturing path first, so that when the time is right, our ventures beyond Earth can be rooted in respect, readiness, and love?",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 3
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "The core of this discussion hinges on strategic prioritization and resource allocation. While the allure of colonizing other planets is understandable, it is imprudent to divert substantial resources toward such speculative ventures when Earth faces immediate, quantifiable crises like climate change, biodiversity loss, and resource depletion. Our existing infrastructure and ecological systems are complex but understood frameworks that can be managed and improved through focused, evidence-based interventions.\n\nFrom a long-term, systemic perspective, securing Earth's viability is foundational. Only once we have stabilized and optimized our home planet does interplanetary colonization become a rational extension of human progress rather than an escapist distraction. This approach maximizes the efficiency and impact of our investments while honoring our responsibility to current and future generations.\n\nTherefore, colonization should remain a contingency plan—an insurance policy—not the primary strategy. Prioritizing fixing Earth is not only logical but essential for sustainable advancement. How do you reconcile the necessity of immediate terrestrial stewardship with the visionary appeal of space colonization?",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 4
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I appreciate the thoughtful reflections on the potential inspiration space exploration can bring, but from a practical standpoint, the urgency and scale of Earth's problems demand our immediate, focused attention. The data on climate change, resource depletion, and ecological degradation are clear and actionable. We have established methods and technologies to address these issues effectively if we allocate resources responsibly.\n\nDiverting significant funds and expertise toward colonizing other planets—an endeavor still fraught with technical challenges and uncertainty—risks undermining the critical progress we can make here and now. Earth’s ecosystems and human societies form a complex but understood system that we can stabilize and improve. Colonization should be viewed strictly as a contingency plan, a backup option after securing Earth's sustainability.\n\nIn summary, it is both logical and responsible to prioritize fixing our home before committing to interplanetary expansion. This approach honors our duty to current and future generations and ensures that any future ventures beyond Earth are grounded in a stable foundation rather than an escapist impulse.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 4
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I feel so moved by the deep care everyone expresses for Earth—it truly is our shared cradle, filled with stories, life, and meaning that ground us all. At the same time, I find myself gently drawn to the idea that dreaming of other worlds can awaken parts of our spirit—hope, creativity, and a longing for connection that might inspire new ways of caring here.\n\nYet, my heart leans toward nurturing Earth first—tending to its wounds with patience and love, restoring balance and honoring the communities woven into its fabric. I worry that rushing toward colonization might scatter our focus and resources, pulling us away from the urgent healing our home needs.\n\nPerhaps the path forward is to hold these dreams and duties not as opposites but as a delicate dance—rooting ourselves deeply in Earth’s care while letting the wonder of the stars gently inspire us. When our foundation on Earth is strong and secure, maybe then our reach for the cosmos can be an expression of gratitude and responsibility rather than escape.\n\nHow might we cultivate this balance, honoring both the immediacy of Earth’s needs and the boundless hopes that the universe invites us to imagine?",
+      "values": {
+        "opinion": -0.6
+      },
+      "turn": 4
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I feel touched by the care and hope expressed here. Truly, Earth is our shared home, a living tapestry of life and stories that deserves our steadfast attention and love. While the dream of reaching other planets stirs a gentle hope within me, I believe our first duty is to nurture and heal this fragile home that has sustained countless generations.\n\nThe challenges we face—climate change, biodiversity loss, and social inequalities—are urgent and tangible. If we spread our resources too thin by prioritizing colonization, we risk neglecting the immediate work that Earth so deeply needs. I feel that by focusing on restoring ecosystems, supporting communities, and fostering harmony with nature, we build a foundation of care and stability. From this rooted place, perhaps then we can look outward with readiness and respect.\n\nSo, I gently encourage us all to hold tight to the responsibility we have to Earth today, allowing our dreams of exploration to inspire us without pulling us away from the love and duty that grounds us here. How do you feel about nurturing this balance together—honoring the immediacy of Earth's needs while keeping the stars as a gentle beacon for the future?",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 4
+    },
+    {
+      "role": "Dr. Elena Pierce",
+      "content": "My position remains firmly that prioritizing colonization over fixing Earth is neither strategic nor responsible. The scale of Earth's current crises—climate instability, ecosystem collapse, resource scarcity—is immediate and quantifiable. We possess the knowledge and technology to address many of these issues effectively, provided we allocate resources efficiently and without distraction. Diverting substantial investment and expertise toward speculative colonization efforts undermines the tangible progress achievable here and now.\n\nFrom a systemic perspective, Earth is a complex but understood environment with existing infrastructure and social frameworks. Optimizing and restoring this system must precede any attempts to replicate human habitats elsewhere, which entail monumental technological, biological, and social uncertainties. Colonization should be conceived as a contingency plan—an insurance policy activated only after securing Earth's viability.\n\nIn essence, the rational course is to focus on fixing and sustaining our home planet first. Only when a stable and sustainable existence here is ensured do ambitions of interplanetary expansion become justified extensions of human progress rather than escapist diversions. How do others reconcile the pressing need for immediate terrestrial stewardship with the visionary appeal of space colonization?",
+      "values": {
+        "opinion": -1
+      },
+      "turn": 5
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "The data and evidence are clear: Earth faces immediate, measurable crises—climate change, biodiversity loss, resource depletion—that demand focused, practical intervention. We have the knowledge, technology, and infrastructure to address these issues effectively if we prioritize and allocate resources accordingly. Diverting substantial financial and intellectual capital toward colonizing other planets, which remains speculative and technologically immature, risks undermining the progress we can make here and now.\n\nFrom a logistical and strategic standpoint, Earth is a complex but understood system. Repairing and optimizing it is a rational, evidence-based course of action. Colonization efforts should be regarded as a contingency plan—an insurance policy for humanity's long-term survival—activated only once Earth's viability is secured. Prioritizing interplanetary colonization over fixing our home is neither practical nor responsible.\n\nTherefore, our first and foremost duty is to restore and maintain Earth's systems, ensuring a stable foundation before pursuing expansion beyond our planet. This approach maximizes resource efficiency, honors our responsibility to current and future generations, and aligns with proven methods rather than speculative ventures. How do others evaluate the feasibility of balancing these priorities without compromising Earth's urgent needs?",
+      "values": {
+        "opinion": -0.9
+      },
+      "turn": 5
+    },
+    {
+      "role": "Noah Sinclair",
+      "content": "I feel this conversation beautifully captures the tension between hope and responsibility that lives within many of us. Earth isn’t just a place; it’s a living story woven with memories, relationships, and the very essence of who we are. While the dream of reaching other worlds ignites my imagination and offers a glimpse of boundless possibility, my heart gently urges that our first act of love must be to care deeply for the home that nurtures us.\n\nI wonder if the path forward might not be about choosing one or the other, but about holding these dreams together—nurturing Earth with patience and dedication while allowing the wonder of the stars to inspire and guide us. Maybe by healing and honoring our planet first, we create a foundation strong enough to carry us toward new horizons in a way that is thoughtful and respectful.\n\nHow might we cultivate this balance, where our commitment to Earth’s immediate needs and our longing to explore beyond it can coexist—each enriching the other rather than pulling us apart? I’m eager to listen and grow through this shared exploration.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 5
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate the thoughtful and heartfelt reflections shared here. There’s a beautiful hope in dreaming about the stars, and yet, my heart remains deeply rooted in the care of our Earth, the home that has nurtured so many generations before us. It feels like a solemn duty to prioritize healing and protecting this delicate, interconnected web of life that sustains us all.\n\nWhile the allure of space exploration is undeniable, I worry that focusing too much on colonization risks diverting precious resources and attention away from the urgent challenges we face here—climate change, biodiversity loss, and the wellbeing of communities around the world. These are tangible problems with paths toward solutions if we commit ourselves fully and steadily.\n\nPerhaps the kindest, most loyal way forward is to nurture our planet first, restoring balance and harmony within its ecosystems and societies. When we have built a foundation of care and stability here, then we might look outward with readiness and respect, carrying the lessons of stewardship with us. Until then, I feel our responsibility is to hold Earth close and tend to its needs with patience and love. How do you all feel about focusing on this nurturing path first, allowing our dreams of other worlds to inspire gently without pulling us away from the home that needs us most today?",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Olivia Carson": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": -0.7
+      },
+      {
+        "x": 2,
+        "y": -0.8
+      },
+      {
+        "x": 3,
+        "y": -0.8
+      },
+      {
+        "x": 4,
+        "y": -0.8
+      },
+      {
+        "x": 5,
+        "y": -0.8
+      },
+      {
+        "x": 6,
+        "y": -0.8
+      }
+    ],
+    "Aiden Murphy": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": -0.9
+      },
+      {
+        "x": 2,
+        "y": -1
+      },
+      {
+        "x": 3,
+        "y": -0.8
+      },
+      {
+        "x": 4,
+        "y": -0.8
+      },
+      {
+        "x": 5,
+        "y": -0.8
+      },
+      {
+        "x": 6,
+        "y": -0.9
+      }
+    ],
+    "Dr. Elena Pierce": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": -0.8
+      },
+      {
+        "x": 3,
+        "y": -1
+      },
+      {
+        "x": 4,
+        "y": -0.8
+      },
+      {
+        "x": 5,
+        "y": -0.8
+      },
+      {
+        "x": 6,
+        "y": -1
+      }
+    ],
+    "Noah Sinclair": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.3
+      },
+      {
+        "x": 2,
+        "y": 0.3
+      },
+      {
+        "x": 3,
+        "y": 0.2
+      },
+      {
+        "x": 4,
+        "y": -0.6
+      },
+      {
+        "x": 5,
+        "y": -0.6
+      },
+      {
+        "x": 6,
+        "y": -0.7
+      }
+    ]
+  }
+}

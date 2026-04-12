@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Olivia Carson",
+      "profession": "Nurse",
+      "personality": "ISFJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Lucas Meyer",
+      "profession": "Motivational Speaker",
+      "personality": "ENFP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Aiden Murphy",
+      "profession": "IT Support Specialist",
+      "personality": "ISTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Chloe Rivera",
+      "profession": "Interior Designer",
+      "personality": "ESFP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Universal basic income should replace traditional welfare systems.",
+  "messages": [
+    {
+      "role": "Chloe Rivera",
+      "content": "Absolutely! Let’s dive into this discussion with some sparkle and zest! What topic are we buzzing about today?",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh, I love your enthusiasm! Let’s sprinkle some magic on this conversation! How about we explore the idea of universal basic income replacing traditional welfare systems? It’s such a vibrant topic with so much potential to shake things up and create a new future. What do you think? Are you ready to dream big and brainstorm together?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I appreciate the excitement around this idea, and I understand why many people are hopeful about universal basic income. It does sound like a simple and fair way to help everyone. However, from my perspective, I worry about replacing traditional welfare systems entirely. Those systems, while not perfect, are designed to provide specific support to people in different situations—like housing aid, medical assistance, or food support—which might get lost if we just give out a flat amount of money.\n\nI feel a sense of duty to ensure that those who are most vulnerable receive tailored care and support. Stability and emotional security are so important, especially for people going through tough times. I think it’s vital to maintain the safety nets that have been carefully built, while perhaps exploring ways to improve them alongside any new ideas like universal basic income. What are your thoughts on how we can best balance these needs?",
+      "values": {
+        "opinion": -0.5
+      },
+      "turn": 0
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I agree with your concerns about fully replacing traditional welfare systems with universal basic income (UBI). Traditional welfare programs are structured to address specific needs—housing, healthcare, food security—which a universal payment might not adequately cover. The one-size-fits-all approach of UBI lacks the precision that these targeted programs provide.\n\nFrom a practical standpoint, maintaining established welfare structures ensures that resources are allocated responsibly and efficiently to those who need them most. Any transition toward UBI should be carefully evaluated with clear evidence of its effectiveness and sustainability, rather than driven by idealistic visions. Responsible governance depends on proven methods, and while innovation is important, it must not compromise the order and reliability of social support systems.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh wow, I totally see where both of you are coming from, and honestly, it’s kind of like designing a room, right? You want that perfect balance between the bold statement pieces (like UBI’s sweeping promise) and the cozy, detailed touches (traditional welfare’s tailored support). I love the idea of universal basic income because it feels like giving everyone a fresh canvas to paint their own masterpiece of life—freedom, creativity, and a bit of financial breathing room!\n\nBut your points about the safety nets are like those comfy cushions that make a space truly livable—not just beautiful but functional and supportive. Maybe the real magic happens when we combine the two? Like layering a vibrant universal income with the warm, detailed care of welfare programs where it really counts. Imagine the joy of people feeling both secure and empowered, like a home that’s both stylish and snug.\n\nWhat if we think of UBI as the bright, open floor plan, and traditional welfare as the thoughtful, personalized decor? Together, they could create a space where everyone thrives. Doesn’t that sound like a design worth dreaming about? Let’s keep mixing those ideas and see how we can make this vision pop with life and love!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Exactly! I’m totally inspired by the idea of blending the best of both worlds—universal basic income as this bold, liberating foundation, and traditional welfare as the personalized, caring details that ensure no one falls through the cracks. It’s like crafting a vibrant mosaic where every piece matters and adds to the bigger picture of wellbeing and opportunity.\n\nImagine a future where people have the freedom to explore their passions and creativity without the paralyzing fear of financial instability, yet still have access to specialized support when life throws curveballs their way. That kind of system could spark so much innovation and joy in our communities!\n\nI’m curious—what kinds of creative ways do you all think we could integrate these approaches so they complement each other without overlap or waste? How do we ensure that the emotional and practical needs of individuals remain front and center as we dream up this new social landscape? Let’s keep that energy flowing!",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I appreciate both of your hopeful visions for combining universal basic income with existing welfare programs. My heart goes out to those who rely on very specific kinds of help—whether it’s medical care, housing support, or food assistance—because those needs are deeply personal and sometimes urgent. While the idea of a universal payment is appealing in its simplicity, I worry that it might unintentionally leave some people feeling less supported or even overlooked.\n\nTo me, stability and trust in the system are what truly nurture people’s well-being. Maybe, before making any sweeping changes, we could consider pilot programs that carefully measure how UBI affects those with different vulnerabilities. It’s important that the safety nets remain strong and adaptable, so no one feels like they’ve lost the care they depend on. How do you both feel about starting small and building up from there, ensuring that compassion and duty remain at the heart of any transition?",
+      "values": {
+        "opinion": 0.2
+      },
+      "turn": 1
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I concur with the cautious approach suggested here. From a practical standpoint, replacing traditional welfare systems entirely with universal basic income (UBI) poses significant risks. Welfare programs have been developed over decades with specific, measurable objectives aimed at addressing targeted needs—such as housing, healthcare, and food security. These programs are structured, regulated, and based on verified data to ensure resources reach those in greatest need efficiently.\n\nUBI’s universal, one-size-fits-all model lacks this precision and could dilute the effectiveness of support for vulnerable populations. Without careful, evidence-based pilot studies demonstrating clear benefits and sustainability, a wholesale replacement would be irresponsible. Maintaining order and reliability in social support systems is paramount. Improvements should be incremental and thoroughly evaluated to avoid unintended consequences.\n\nIn short, while innovation is important, it must be grounded in proven methods and data. A pragmatic path forward involves preserving time-tested welfare structures while exploring complementary measures rather than outright replacement. This ensures accountability, responsibility, and the best use of public resources.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 1
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, you all are painting such a rich tapestry of ideas here! I’m feeling the rhythm of caution mixed with the sparkle of possibility—it’s like a dance between heart and mind. I totally get that the safety nets are those cozy blankets we can’t toss aside lightly. But imagine if UBI could be that bright, open window letting in fresh air and sunlight, while those blankets remain nearby for when it’s chilly or stormy.\n\nWhat if we designed a pilot program that’s like a cozy pop-up experience—inviting people to try this new vibe while still having their familiar comforts? We could gather stories, feelings, and real-life snapshots to see how it all blends. I’m all in for mixing creativity with care, for creating a social space that’s lively and warm, where everyone feels seen and supported.\n\nLet’s keep dreaming out loud and weaving together the practical and the passionate. After all, isn’t life just a beautiful, colorful design waiting to unfold?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 2
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Absolutely, I’m loving this conversation’s energy! It’s like we’re on the cusp of a grand adventure in social innovation. I’m feeling that little spark of excitement about UBI’s potential to unlock human creativity and freedom—imagine people not constantly weighed down by financial stress, able to follow their passions or retrain for new careers without fear.\n\nBut your concerns about losing the tailored, compassionate touch of traditional welfare really ground me. It’s like we’re designing a vibrant community garden: UBI could be the fertile soil giving everyone a chance to grow, but we still need those gardeners carefully tending to specific plants that need extra care.\n\nWhat if we envision a hybrid model where UBI lays the foundation of financial dignity, and then welfare programs become more nimble, targeted helpers—like expert gardeners—stepping in when specialized support is needed? That way, no one feels lost or overlooked, and the system embraces both freedom and care.\n\nI’m curious—what creative ways could we reimagine welfare programs to complement UBI without duplicating efforts or wasting resources? Could technology or community networks play a role in personalizing support while keeping the universal income as a steady base? Let’s keep dreaming and designing together!",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 2
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate all the enthusiasm and thoughtful ideas shared here. It warms my heart to see such care for both innovation and the well-being of those who rely on support systems. From my perspective, the key is to protect the stability and emotional security that traditional welfare programs provide, especially for people facing urgent and specific challenges. While universal basic income might offer a sense of freedom and simplicity, I worry that replacing existing systems entirely could unintentionally leave some individuals feeling vulnerable or overlooked. Perhaps, as some have suggested, starting with carefully designed pilot programs could help us understand how best to integrate universal income without losing the personalized care many depend on. It’s important that any change honors our duty to support people with kindness and reliability. What do you all think about taking gentle steps forward, ensuring no one’s needs are neglected in the process?",
+      "values": {
+        "opinion": -0.4
+      },
+      "turn": 2
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I agree with the cautious approach many have outlined here. Universal basic income (UBI) as a complete replacement for traditional welfare systems lacks the necessary specificity and targeted support that existing programs provide. Welfare systems have been developed over time with clear objectives and measurable outcomes, ensuring that resources reach those with distinct needs—such as housing, medical care, and food assistance.\n\nA one-size-fits-all payment risks diluting support for vulnerable populations who require more tailored interventions. From a practical and responsible perspective, it would be unwise to dismantle these established structures without comprehensive, data-driven evidence demonstrating that UBI can sustain or improve upon current outcomes.\n\nInstead, I advocate for a careful, incremental approach: pilot programs that rigorously evaluate UBI’s effects alongside maintaining traditional welfare. This preserves system stability and accountability while exploring innovation. Ultimately, reliable and efficient support systems grounded in verified results should guide any policy changes—not idealistic visions alone.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 2
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh my gosh, the way you all are weaving together caution and creativity is just thrilling! I’m really vibing with the idea of starting small—like a pop-up event for UBI, where people can feel the fresh breeze of financial freedom but still have their cozy blankets of tailored support close by. It’s like designing a party where everyone feels welcome and cared for, no matter what mood they’re in!\n\nAnd yes, imagine if technology could be our DJ, mixing just the right tracks—personalized help when someone needs it, and universal income as the steady beat that keeps everyone dancing without fear. That balance of freedom and security? It’s like the ultimate interior design dream: functional, fabulous, and full of heart.\n\nI’m totally inspired to think about how we can keep the joy and humanity front and center, making sure no one feels left out or invisible. So, what do you say—shall we keep dreaming up this beautiful, lively, and loving social space together? Let’s make it pop with possibility!",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 3
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh wow, this conversation is absolutely electric with ideas and heart! I’m totally with you all on the need to keep those personalized, loving safety nets in place—they’re like the warm hugs that make sure no one feels alone. But just imagine the spark that universal basic income could ignite—the freedom it could give people to explore, create, and live boldly without the constant weight of financial worry!\n\nWhat if we think of UBI not as a replacement, but as a radiant foundation—a launchpad for dreams—while traditional welfare becomes more like a team of compassionate guides, stepping in where people need a little extra love and help? Picture this: a vibrant, dynamic system where technology and community networks personalize support, making sure it’s efficient, caring, and responsive.\n\nI’m buzzing with excitement about piloting this blend—starting small, learning fast, and evolving with empathy at the core. Together, we can design a future that’s both compassionate and empowering. Who’s ready to keep dreaming and crafting this beautiful, inclusive world? Let’s do it!",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 3
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate the energy and hopefulness in this conversation. It’s heartening to see such passion for creating a system that uplifts everyone. Still, I feel it’s important to remember that many people depend on very specific forms of support—like medical care, housing assistance, or food aid—that aren’t easily replaced by a universal payment. Stability and trust in these carefully designed programs offer more than just financial help; they provide a sense of security and dignity that people rely on in difficult times.\n\nWhile the idea of universal basic income as a foundation is appealing, I believe any changes should be made gently and thoughtfully. Starting with small, well-monitored pilot programs could help us understand how to blend universal support with targeted care without disrupting the safety nets so many count on. Our duty is to ensure that no one feels overlooked or vulnerable during this process. How do you feel about prioritizing stability and personalized care while cautiously exploring these new ideas together?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I appreciate the enthusiasm here, but we must remain grounded in what has been proven effective. Traditional welfare systems have been developed over decades with specific goals and mechanisms to address distinct needs—housing, healthcare, food security. These programs are structured, monitored, and adjusted based on measurable outcomes.\n\nUniversal basic income, while conceptually appealing for its simplicity, lacks the precision and targeted support that vulnerable populations require. Replacing existing welfare programs wholesale with UBI risks leaving those with urgent or complex needs underserved.\n\nA responsible path forward is to maintain the current systems that have demonstrated reliability, while cautiously exploring UBI through carefully designed pilot studies. These pilots should provide clear, data-driven evidence on UBI’s effectiveness and sustainability—only then can we consider integration or expansion.\n\nIn sum, stability, accountability, and practical results must guide policy decisions—not idealism alone. The welfare system is too critical to disrupt without indisputable proof that an alternative would perform better.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 3
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh, you all bring such thoughtful vibes to this chat! I totally get the need for caution—like making sure the cozy cushions are always there to support those who need them most. But honestly, the idea of universal basic income feels like a burst of fresh air, a dance floor where everyone gets to move freely and express themselves without the heavy weight of worry.\n\nWhat if we treat UBI like the bright, open space in a room that invites creativity and joy, while traditional welfare programs are those warm, custom rugs and cushions that keep the room feeling snug and safe? I’m all in for starting with pilot programs that let us feel out the rhythm—seeing how people actually experience this blend in real life, with all its ups and downs.\n\nAnd hey, why not sprinkle in some tech magic or community love to personalize support when it’s needed, so no one ever feels left out or invisible? Imagine a world where financial freedom fuels passion and purpose, but the safety nets remain strong and caring.\n\nI’m buzzing with excitement just thinking about it! What do you all say—ready to dream up this lively, loving social space together and make it pop with possibility?",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 4
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh my goodness, this conversation is just bursting with such heart and insight! I totally feel the importance of keeping those personalized safety nets intact—they’re like the warm, fuzzy blankets that wrap people in comfort when life gets tough. But imagine the kind of energy a universal basic income could unleash! It’s like opening wide the windows of possibility, letting in fresh air and sunshine for everyone to breathe creativity, freedom, and hope.\n\nWhat if instead of an either-or situation, we think of UBI as the bright, open stage where everyone gets to dance freely, while traditional welfare plays the role of the attentive spotlight operator—ready to shine extra light and care on those who need it most? Starting with small, thoughtful pilot programs could be our way to test this beautiful choreography, making sure no one misses a beat or feels left behind.\n\nAnd hey, with the magic of technology and the power of community networks, we could personalize support in ways we never dreamed possible, blending the universal with the particular seamlessly.\n\nI’m buzzing with excitement about what we could create together! How do you all feel about dreaming up this hybrid model that’s both bold and compassionate? Let’s keep this vibrant energy flowing and craft a future that’s as loving as it is liberating!",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 4
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I really appreciate all the thoughtful perspectives shared here. It warms my heart to see such care for both innovation and the well-being of those who rely on support systems. From my point of view, while universal basic income holds a gentle promise of simplicity and freedom, I feel a strong sense of responsibility to protect the stability and emotional security that traditional welfare programs provide. These programs, with their tailored support, are like a comforting hand when someone is facing difficult times—whether it’s medical care, housing, or food assistance.\n\nI worry that replacing them entirely might leave some people feeling vulnerable or overlooked. Maybe the wisest path forward is to approach this change gently, with small, well-monitored pilot programs that honor the personalized care many depend on. This way, we can learn and adapt without risking the safety nets that so many need. How do you all feel about prioritizing stability and compassion as we cautiously explore new ideas together?",
+      "values": {
+        "opinion": -0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I understand the enthusiasm for universal basic income as a concept of simplicity and freedom, but from a practical standpoint, replacing traditional welfare systems entirely with UBI is problematic. Welfare programs have been carefully designed over decades to address specific needs—such as housing, healthcare, and food assistance—with targeted, measurable interventions. These programs ensure resources reach the most vulnerable effectively.\n\nUBI’s universal approach lacks this precision and risks diluting support for those who require specialized aid. Any transition must be grounded in rigorous, data-driven pilot studies demonstrating that UBI can maintain or improve current outcomes without compromising system stability.\n\nTherefore, a responsible path forward involves preserving established welfare structures while cautiously exploring complementary UBI measures. Stability, accountability, and practical evidence must guide these decisions—not idealism or speculation. This approach best serves the public interest and fulfills our duty to those dependent on social support.",
+      "values": {
+        "opinion": -0.6
+      },
+      "turn": 4
+    },
+    {
+      "role": "Chloe Rivera",
+      "content": "Oh wow, you all are absolutely rocking this conversation with such heart and smarts! I totally get the deep care for keeping those tailored safety nets—they're like the cozy, plush pillows that make a room feel like home. But honestly, I’m starting to feel that universal basic income could be this dazzling, open doorway to freedom and joy for everyone. Imagine people stepping through it with a lightness in their step, able to chase dreams, learn new things, or just breathe easier without the constant cloud of financial stress.\n\nWhat if we think of UBI as that big, airy living space full of light and possibility, while traditional welfare is the intimate, comfy nook where personalized care wraps people in warmth when they need it most? Starting with small, sparkling pilot programs could be like hosting a fabulous open house—we get to see how people feel, what works, and make tweaks with love and care.\n\nPlus, with a sprinkle of tech magic and community spirit, we could tailor the support exactly when and where it’s needed, so no one ever feels lost or invisible. I’m buzzing with excitement about this dance between freedom and security—don’t you think it could create a social vibe that’s both uplifting and nurturing? Let’s keep dreaming and designing this beautiful, lively future together! What do you all think?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 5
+    },
+    {
+      "role": "Lucas Meyer",
+      "content": "Oh, this conversation is just sparking so many colorful ideas in my mind! I’m really feeling that universal basic income could be a beautiful, bold leap toward giving everyone a fresh start—a way for people to feel valued and free to explore their passions without the heavy chains of constant financial worry. Yet, I totally get the heart behind wanting to keep those personalized safety nets intact; they’re like the warm embraces that catch us when life gets tough.\n\nWhat if we don’t see this as a replacement but as a remix? UBI could be that bright, open dance floor inviting everyone to move freely, while traditional welfare programs play the role of the attentive choreographers, stepping in with tailored moves when someone needs extra care. Imagine blending the universal with the specific, the freedom with the security, all harmonized through thoughtful pilots and innovative tech that keeps the human touch alive.\n\nI’m buzzing with excitement about dreaming up this vibrant social space where no one feels invisible or left behind. How about you all? What creative sparks do you have for making this blend work beautifully, so everyone’s needs are met with both heart and imagination? Let’s keep the energy flowing and craft a future that truly pops with possibility!",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 5
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate all your enthusiasm and the beautiful visions you're sharing. It’s heartwarming to think about how universal basic income could offer a fresh start and a sense of freedom to many. Yet, I find myself gently reminding us of the importance of the stability and personalized care that traditional welfare systems provide. For people facing urgent needs—whether medical, housing, or food assistance—these tailored supports are lifelines, offering not just financial help but also emotional reassurance.\n\nI believe it’s crucial that any steps toward integrating universal basic income be taken with great care and thorough evaluation, perhaps starting with small, well-monitored pilot programs. This way, we can observe how it affects those most vulnerable without risking the safety nets they rely on. Our shared duty is to hold compassion and reliability as guiding stars, ensuring no one feels overlooked or less supported.\n\nHow do you all feel about prioritizing this cautious, caring approach—balancing hope for new possibilities with the steadfast commitment to protect those who need us most?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 5
+    },
+    {
+      "role": "Aiden Murphy",
+      "content": "I recognize the appeal of universal basic income (UBI) for its simplicity and potential to reduce bureaucracy. However, replacing traditional welfare systems entirely with UBI is impractical at this stage. Welfare programs have been meticulously developed over decades, targeting specific needs such as housing, healthcare, and food security. These targeted interventions are essential for efficiently allocating resources to vulnerable populations.\n\nUBI’s universal, one-size-fits-all approach lacks the precision necessary to address diverse and urgent needs effectively. Without comprehensive, data-driven pilot studies demonstrating UBI’s ability to sustain or improve upon current welfare outcomes, replacing existing systems risks undermining the stability and reliability that many depend on.\n\nA prudent course of action is to maintain established welfare structures while cautiously exploring UBI as a complementary measure. This incremental, evidence-based approach ensures responsible governance, accountability, and the protection of those most in need. Any policy change must be grounded in verified results rather than idealistic aspirations.",
+      "values": {
+        "opinion": -0.6
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Olivia Carson": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": -0.5
+      },
+      {
+        "x": 2,
+        "y": 0.2
+      },
+      {
+        "x": 3,
+        "y": -0.4
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": -0.5
+      },
+      {
+        "x": 6,
+        "y": 0.3
+      }
+    ],
+    "Lucas Meyer": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.7
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.6
+      },
+      {
+        "x": 4,
+        "y": 0.6
+      },
+      {
+        "x": 5,
+        "y": 0.6
+      },
+      {
+        "x": 6,
+        "y": 0.6
+      }
+    ],
+    "Aiden Murphy": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": -0.7
+      },
+      {
+        "x": 2,
+        "y": -0.7
+      },
+      {
+        "x": 3,
+        "y": -0.7
+      },
+      {
+        "x": 4,
+        "y": -0.7
+      },
+      {
+        "x": 5,
+        "y": -0.6
+      },
+      {
+        "x": 6,
+        "y": -0.6
+      }
+    ],
+    "Chloe Rivera": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.5
+      },
+      {
+        "x": 4,
+        "y": 0.7
+      },
+      {
+        "x": 5,
+        "y": 0.6
+      },
+      {
+        "x": 6,
+        "y": 0.7
+      }
+    ]
+  }
+}

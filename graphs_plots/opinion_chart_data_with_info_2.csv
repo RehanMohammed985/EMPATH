@@ -1,0 +1,673 @@
+conversation,character,personality,category,profession,turn,opinion,topic
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,0,1,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,1,0.4,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.6,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.4,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_0,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.6,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0.2,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.4,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_0,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.4,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,1,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0.8,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,0.9,Universal basic income should replace traditional welfare systems.
+conversation_0,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,0.9,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,1,0,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,3,0.9,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,4,0.9,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,5,0.9,Universal basic income should replace traditional welfare systems.
+conversation_0,Jackson Moore,ESTP,Moderately Rigid,Paramedic,6,1,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,0,1,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,1,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,2,0.7,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,4,0.4,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,5,0.6,Universal basic income should replace traditional welfare systems.
+conversation_1,Claire Bennett,INFJ,Moderately Flexible,Psychologist,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,1,0,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.4,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,1,0.2,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,3,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,5,0.3,Universal basic income should replace traditional welfare systems.
+conversation_1,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,1,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,0,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,1,0.8,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,4,0.6,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,5,0.6,Universal basic income should replace traditional welfare systems.
+conversation_2,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,0,1,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,1,0,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.6,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,4,0.6,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Noah Sinclair,INFP,Highly Flexible,Writer,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,1,0.3,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,4,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_2,Claire Bennett,INFJ,Moderately Flexible,Psychologist,6,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,-0.5,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.2,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.4,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.5,Universal basic income should replace traditional welfare systems.
+conversation_3,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,0.7,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,0.6,Universal basic income should replace traditional welfare systems.
+conversation_3,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,1,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,-1,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-0.9,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-0.9,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_4,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-0.9,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,1,0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,2,0.6,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,3,0.4,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,4,0.6,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_4,Claire Bennett,INFJ,Moderately Flexible,Psychologist,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,0,1,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,1,0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.3,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_4,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,-0.5,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_4,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,1,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.5,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.5,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,0,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-0.7,Universal basic income should replace traditional welfare systems.
+conversation_5,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-0.8,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,0,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,1,0.2,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,3,0.7,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,4,0.8,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,5,0.7,Universal basic income should replace traditional welfare systems.
+conversation_6,Sophia Reed,ENTP,Highly Flexible,Creative Director,6,0.7,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,1,0,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,2,0.9,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,3,0.9,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,4,0.8,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,5,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Jackson Moore,ESTP,Moderately Rigid,Paramedic,6,0.9,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,0,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,1,0.9,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,2,0.9,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,3,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,4,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,5,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Ethan Blake,ENTJ,Highy rigid,Corporate Executive,6,1,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.3,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,0.3,Universal basic income should replace traditional welfare systems.
+conversation_6,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,0,1,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,1,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,3,0,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,4,0.3,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,5,0.6,Universal basic income should replace traditional welfare systems.
+conversation_7,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,6,0.6,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,-0.6,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,0.2,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,1,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.2,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,1,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,0.7,Universal basic income should replace traditional welfare systems.
+conversation_7,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.3,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.5,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.2,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,0.3,Universal basic income should replace traditional welfare systems.
+conversation_7,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.3,Universal basic income should replace traditional welfare systems.
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,1,Food provides energy for the body
+conversation_8,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,1,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,0,-1,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,1,0.6,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.7,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.7,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.8,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.7,Food provides energy for the body
+conversation_8,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.7,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,0,1,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,1,0.5,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,2,0.7,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.7,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,4,0.8,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,5,0.7,Food provides energy for the body
+conversation_8,Noah Sinclair,INFP,Highly Flexible,Writer,6,0.7,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0.9,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,1,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.9,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,1,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,1,Food provides energy for the body
+conversation_8,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,1,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,1,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0.7,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,1,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,1,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,0.9,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,0.8,Food provides energy for the body
+conversation_9,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,0.8,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,0,-1,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,1,0.3,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,2,0.8,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,3,0.7,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,4,0.8,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,5,1,Food provides energy for the body
+conversation_9,Sophia Reed,ENTP,Highly Flexible,Creative Director,6,0.8,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,0,1,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,1,0.8,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,2,1,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,3,1,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,4,1,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,5,1,Food provides energy for the body
+conversation_9,Isabella Tran,ENFJ,Moderately Rigid,Public Relations Manager,6,1,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.8,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,1,Food provides energy for the body
+conversation_9,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,1,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,0,1,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,1,0.8,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.7,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.7,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.8,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.8,Food provides energy for the body
+conversation_10,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.8,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,-1,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.7,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.7,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,1,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.9,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,1,Food provides energy for the body
+conversation_10,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,1,Food provides energy for the body
+conversation_10,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,-1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,0.5,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,1,Food provides energy for the body
+conversation_10,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,1,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,1,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.8,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.6,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,1,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,1,Food provides energy for the body
+conversation_11,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,1,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,0,-1,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,1,0,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.6,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.8,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.8,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,5,1,Food provides energy for the body
+conversation_11,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.7,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,1,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,1,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,0.8,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,1,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,1,Food provides energy for the body
+conversation_11,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,-1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,0,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,1,Food provides energy for the body
+conversation_11,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,1,Food provides energy for the body
+conversation_12,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,-1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,0,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,1,Food provides energy for the body
+conversation_12,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,1,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0.9,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,1,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.8,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,0.8,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,0.9,Food provides energy for the body
+conversation_12,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,0.9,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,-1,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.9,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.7,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,0.8,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.8,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,0.7,Food provides energy for the body
+conversation_12,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,0.5,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,0,1,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,1,0.9,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,2,1,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,3,0.7,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,4,1,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,5,1,Food provides energy for the body
+conversation_13,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,6,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,-1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,1,Food provides energy for the body
+conversation_13,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,1,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,0,1,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,1,1,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,2,0.8,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.8,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,4,0.7,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,5,0.7,Food provides energy for the body
+conversation_13,Noah Sinclair,INFP,Highly Flexible,Writer,6,0.7,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0.5,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.8,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,1,Food provides energy for the body
+conversation_13,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,1,Food provides energy for the body
+conversation_14,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,1,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0.8,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,0.9,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,0.9,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,1,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,1,Food provides energy for the body
+conversation_14,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,1,Food provides energy for the body
+conversation_14,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,-1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,1,Food provides energy for the body
+conversation_14,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,0,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,1,Food provides energy for the body
+conversation_15,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,1,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,0,-1,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,1,0,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,2,0.8,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,3,0.8,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,4,0.9,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,5,0.8,Food provides energy for the body
+conversation_15,Claire Bennett,INFJ,Moderately Flexible,Psychologist,6,0.8,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,1,Food provides energy for the body
+conversation_15,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,1,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,0,-1,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,1,0.5,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,2,0.7,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,3,0.8,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,4,0.8,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,5,0.8,Food provides energy for the body
+conversation_15,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,6,0.7,Food provides energy for the body
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_16,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-1,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,1,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,2,0.4,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,3,0.2,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,4,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,5,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_16,Sophia Reed,ENTP,Highly Flexible,Creative Director,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,1,0.2,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,4,-0.3,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,5,-0.2,Humans should colonize other planets instead of fixing Earth
+conversation_16,Noah Sinclair,INFP,Highly Flexible,Writer,6,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_17,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-1,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_18,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,1,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,2,-0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,4,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,5,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Noah Sinclair,INFP,Highly Flexible,Writer,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,1,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,4,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_18,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,3,0.2,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,4,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,5,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Liam Foster,INTP,Moderately Flexible,Theoretical Physicist,6,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,1,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,2,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,4,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,5,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_19,Jackson Moore,ESTP,Moderately Rigid,Paramedic,6,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,3,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,4,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,5,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_19,Sophia Reed,ENTP,Highly Flexible,Creative Director,6,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,-0.5,Humans should colonize other planets instead of fixing Earth
+conversation_20,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,-0.5,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,0.2,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_20,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,1,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,2,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,3,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,4,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,5,-1,Humans should colonize other planets instead of fixing Earth
+conversation_20,Henry Walsh,ESTJ,Highy rigid,Military Officer,6,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,1,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,4,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,5,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Lucas Meyer,ENFP,Highly Flexible,Motivational Speaker,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,1,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,2,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,3,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,5,-0.5,Humans should colonize other planets instead of fixing Earth
+conversation_21,Noah Sinclair,INFP,Highly Flexible,Writer,6,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.9,Humans should colonize other planets instead of fixing Earth
+conversation_21,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_22,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,2,-0.6,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,3,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,4,-0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,5,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_22,Mason King,ISFP,Moderately Flexible,Social Worker,6,0.3,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,1,1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,2,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,4,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,5,0.7,Humans should colonize other planets instead of fixing Earth
+conversation_22,Jackson Moore,ESTP,Moderately Rigid,Paramedic,6,0.6,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,3,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,4,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,5,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_22,Chloe Rivera,ESFP,Highly Flexible,Interior Designer,6,-0.2,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,2,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,3,0.4,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,4,0.4,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,5,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_23,Evan Carter,ISTP,Moderately Rigid,Mechanical Engineer,6,0.5,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,2,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,3,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Olivia Carson,ISFJ,Moderately Rigid,Nurse,6,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,0,1,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,1,0,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,2,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,3,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,4,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,5,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Natalie Cooper,ESFJ,Moderately Flexible,Elementary School Teacher,6,-0.7,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,0,-1,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,1,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,2,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,3,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,4,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,5,-0.8,Humans should colonize other planets instead of fixing Earth
+conversation_23,Aiden Murphy,ISTJ,Highy rigid,IT Support Specialist,6,-0.8,Humans should colonize other planets instead of fixing Earth

@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Henry Walsh",
+      "profession": "Military Officer",
+      "personality": "ESTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Claire Bennett",
+      "profession": "Psychologist",
+      "personality": "INFJ",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Mason King",
+      "profession": "Social Worker",
+      "personality": "ISFP",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Evan Carter",
+      "profession": "Mechanical Engineer",
+      "personality": "ISTP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Universal basic income should replace traditional welfare systems.",
+  "messages": [
+    {
+      "role": "Evan Carter",
+      "content": "Sure. What's the topic?",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's get straight to the point. The topic for discussion is whether universal basic income should replace traditional welfare systems. I believe it shouldn't, and here's why: traditional welfare systems are designed to address specific needs with accountability and targeted support. Universal basic income, while sounding appealing in theory, risks inefficiency and lack of focus, giving funds without ensuring they are used to address the root causes of poverty or unemployment. We need practical, results-driven solutions, not blanket handouts. What are your thoughts?",
+      "values": {
+        "opinion": -1
+      },
+      "turn": 0
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I appreciate your focus on practicality and accountability. It’s true that targeted support can address immediate needs with precision. However, I wonder if the traditional welfare approach sometimes inadvertently stigmatizes those it aims to help, creating barriers to personal growth and emotional well-being. Universal basic income, by offering unconditional support, might foster a sense of security that encourages people to pursue education, creative endeavors, or entrepreneurship without the fear of losing essential aid. Could it be that a system grounded in trust and dignity might ultimately nurture deeper, more sustainable empowerment rather than just managing symptoms? I’d love to explore how we might balance targeted support with the emotional and psychological needs of individuals, so no one feels left behind or diminished. What do you think about the emotional impact of these systems on those they serve?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Mason King",
+      "content": "You’ve touched on something really important—the emotional landscape of those receiving support. I feel that when people are treated with trust and given space to breathe, create, and grow, it’s like a breath of fresh air for the soul. Traditional welfare can sometimes feel like a maze of rules and judgments, which might dim a person’s spirit or make them feel small. Universal basic income, by contrast, seems to offer a kind of quiet freedom—an open canvas for people to paint their own paths without constant scrutiny. I’m drawn to the idea that this could unleash hidden talents and dreams, allowing people to live more authentically. Yet, I do wonder how we’d ensure that this freedom doesn’t lead to isolation or neglect of those who might need more hands-on care. Maybe the heart of the matter is finding a rhythm between unconditional support and meaningful connection? What experiences have you seen that might show us how to strike that balance?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 0
+    },
+    {
+      "role": "Evan Carter",
+      "content": "The emotional benefits you mention are valid, but we need to keep our feet on the ground. From a practical standpoint, universal basic income (UBI) lacks the specificity to address varied, complex needs. People facing disabilities, addiction, or mental health issues often require targeted interventions, not just cash. UBI’s one-size-fits-all approach risks neglecting those who need direct support. Also, without conditions or oversight, funds might not always be used effectively, potentially wasting resources. If we want to empower people, we need a system that combines reliable financial support with tailored services, not just unconditional payments. Efficiency and measurable outcomes should guide any welfare system, or we risk undermining its purpose.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 1
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "I hear the points about emotional well-being and dignity, and those are important considerations. However, we cannot let sentiment override effectiveness. Welfare systems exist to solve specific problems—poverty, unemployment, disability—and that requires precision and accountability. UBI’s universal nature dilutes resources that should be strategically allocated to those with the greatest need. Without strict criteria and oversight, we risk misdirecting funds and encouraging dependency rather than self-sufficiency. The goal is clear: efficient, targeted support that produces measurable results and moves people toward independence. If a system cannot deliver on that, it fails its mission. Therefore, replacing traditional welfare with UBI is not a practical or responsible course of action. We need solutions grounded in discipline, structure, and outcome-driven policies.",
+      "values": {
+        "opinion": -0.9
+      },
+      "turn": 1
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I deeply respect the emphasis on accountability and targeted support—it’s vital that resources reach those who need them most. Yet, I can’t help but feel that the rigidity of traditional welfare systems, while well-intentioned, sometimes unintentionally fractures the very dignity and hope they aim to restore. When people feel scrutinized or boxed into narrow categories, it can stifle their sense of agency and emotional resilience.\n\nImagine a world where basic security isn’t a privilege contingent on meeting a checklist but a shared foundation that allows people to explore their potential without fear. Universal basic income could be that quiet, steady support—a gentle invitation to step beyond survival and toward growth. That said, I hear the concern about those with complex needs needing more than just financial aid, and I agree that a one-size-fits-all approach is insufficient on its own.\n\nPerhaps the path forward isn’t about replacing one system with another entirely but integrating the unconditional safety net of UBI with personalized, compassionate support services. This way, we honor both the practical realities and the profound human need for respect and connection. How might we envision such a hybrid model that nurtures both the spirit and the specific needs of individuals, so no one is left adrift or diminished?",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 1
+    },
+    {
+      "role": "Mason King",
+      "content": "Your vision of blending the unconditional warmth of universal basic income with the focused care of targeted services really resonates with me. It feels like crafting a tapestry—each thread unique but woven together to create something whole and beautiful. In my experience, when people have that foundational safety net, they often bloom in surprising ways, discovering talents or passions they never dared to explore before.\n\nYet, I also recognize the shadows you mention—the risk of leaving behind those whose struggles aren’t just financial but deeply personal and complex. Maybe the real magic lies in designing a system that’s flexible, that listens and adapts like a living artwork, embracing both freedom and guidance. It’s like giving people a brush and a palette, but also offering a gentle hand when they need it.\n\nI’m curious—have you encountered examples or stories where such a balance has been approached successfully? I’d love to hear about moments where authentic dignity and practical support danced together, lighting the way forward.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Evan Carter",
+      "content": "I get the appeal of blending UBI with targeted services, but from a practical engineering standpoint, complexity can kill efficiency. Systems need clear parameters and measurable outputs. UBI’s unconditional nature makes it hard to track impact or adjust resources dynamically. Targeted welfare programs, while imperfect, allow for optimization based on real data and specific needs. If we layer UBI on top without strict integration, we risk inefficiency and wasted resources. Real-world functionality demands a system that is adaptable but grounded in accountability. Otherwise, we’re just trading one set of problems for another. The question is: how do you design a hybrid model that maintains clear metrics and control without becoming bureaucratic? That’s the challenge we need to solve before replacing traditional welfare.",
+      "values": {
+        "opinion": -0.5
+      },
+      "turn": 2
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's be clear: the core issue here is effectiveness and accountability. Universal basic income, while appealing in theory, lacks the necessary precision to deal with the complex realities of poverty and social challenges. Welfare systems exist to provide targeted assistance—whether for disability, mental health, or unemployment—that UBI simply cannot replicate. Without strict oversight and criteria, resources risk being squandered or misallocated, undermining the very goals we aim to achieve.\n\nI acknowledge the emotional and dignity-related points raised, but sentiment cannot override practical results. If we want a welfare system that works, we must focus on measurable outcomes, structured support, and clear accountability. The idea of blending UBI with targeted services sounds promising, but complexity is a double-edged sword; without precise design and strong management, it risks inefficiency and bureaucratic bloat.\n\nBefore we even consider replacing traditional welfare with UBI, the priority should be to develop a system that guarantees both efficiency and comprehensive support—one that can be measured, managed, and improved systematically. That’s the standard we must hold ourselves to, no exceptions.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 2
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I deeply appreciate the commitment to accountability and practical outcomes; those are indeed essential pillars in any system designed to uplift people. At the same time, I find myself reflecting on the emotional and psychological landscapes that can be overlooked when we focus solely on metrics and efficiency. When individuals feel trusted and supported unconditionally, it can foster a profound internal shift—a sense of belonging and worth that transcends numbers on a spreadsheet.\n\nWhat if the most effective system isn’t about choosing between UBI or traditional welfare but about weaving them together in a way that honors both the complexity of human needs and the necessity for responsible stewardship of resources? Imagine a foundation of unconditional support that gives people breathing room to heal, dream, and grow, paired with responsive, tailored services that meet them where they are—especially those with acute challenges.\n\nI’m curious, from your experience, what mechanisms or frameworks might allow us to maintain rigorous oversight and measurable outcomes, while also embracing the flexibility and dignity that a universal basic income offers? Could we envision a system that feels both structured and human-centered, efficient yet compassionate? I believe the future lies in this delicate balance, one that nurtures not just survival but flourishing.",
+      "values": {
+        "opinion": 0.4
+      },
+      "turn": 2
+    },
+    {
+      "role": "Mason King",
+      "content": "You know, hearing everyone’s thoughtful points really sparks something in me. I see the deep need for accountability and targeted care—those are like the roots that keep a tree steady. But I can’t shake this feeling that when people are weighed down by too many rules or treated like a case number, their spirit can wither. Imagine if we offered a soft landing, a quiet assurance that their basic needs are met, freeing them to explore who they truly are without the constant fear of judgment or falling through cracks.\n\nMaybe it’s less about replacing one system with another, and more about weaving a gentle, flexible safety net that honors both the heart and the practical. Like a garden where some plants need extra care but all grow from the same rich soil. I wonder if we could create a space where unconditional support exists alongside personalized help, with both measured outcomes and room for human unpredictability and creativity.\n\nHas anyone seen or felt moments where this kind of compassionate balance actually blooms? Stories or examples where dignity and structure don’t just coexist but actually lift each other up? Because to me, that’s where the real magic happens—in the messy, beautiful dance between freedom and care.",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 2
+    },
+    {
+      "role": "Evan Carter",
+      "content": "I get where you're coming from about dignity and flexibility, but the reality is systems need to work reliably and efficiently. A universal basic income might give people freedom, but without targeted support, those with serious challenges—like disabilities or addiction—won't get the help they actually need. Plus, tracking and measuring outcomes is crucial if we're going to improve or adjust policies. Adding UBI on top of existing welfare without clear integration risks waste and confusion. The practical solution is a streamlined, accountable system that delivers tailored aid efficiently. Idealism is fine, but we have to build systems that function in the real world, not just in theory.",
+      "values": {
+        "opinion": -0.6
+      },
+      "turn": 3
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's cut through the idealism and focus on what works. Universal basic income, as a replacement for traditional welfare, fundamentally lacks the precision and accountability required to address complex social needs effectively. Welfare systems exist to ensure that resources are directed where they are most needed—whether that’s for disabilities, mental health, or job training. UBI’s blanket approach dilutes resources and removes necessary oversight, which risks fostering dependency rather than encouraging self-sufficiency.\n\nI’m not dismissing the importance of dignity or emotional well-being, but those values must be balanced with practical outcomes. The goal is a system that delivers measurable results and moves individuals toward independence, not one that offers unconditional handouts without checks. If we are to consider integrating UBI, it must be within a tightly managed, outcome-oriented framework that does not sacrifice efficiency or accountability.\n\nIn short, replacing traditional welfare with universal basic income is not a responsible or effective strategy. Our focus should remain on refining targeted support systems that are disciplined, data-driven, and designed to produce real, sustainable improvements. That’s how we get the job done right.",
+      "values": {
+        "opinion": -0.9
+      },
+      "turn": 3
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I’m truly grateful for the depth of this conversation—it highlights how complex and deeply human this issue is. You all bring forward crucial points about accountability, targeted care, and the need for measurable outcomes. These are the scaffolding that hold any system steady and trustworthy, especially when lives depend on it.\n\nAt the same time, I can’t help but listen to the silent stories beneath the statistics: people who feel diminished by rigid systems, whose hopes shrink under the weight of endless criteria and suspicion. The idea of universal basic income, from this perspective, is less about a blunt instrument and more about a foundation of trust—a quiet assurance that they are seen and valued simply for being human.\n\nPerhaps the true challenge—our shared challenge—is to envision a system that doesn’t force us to choose between dignity and discipline, between unconditional support and accountability. What if we could design flexible frameworks that provide that steady, unconditional base, while also adapting to individual complexities through compassionate, tailored services?\n\nI wonder, could we think of UBI not as a replacement but as a starting point—a common ground upon which more specific, personalized interventions are built? This way, people have the emotional freedom to grow, while those with unique challenges receive the focused support they need.\n\nI’m eager to hear your thoughts on how we might practically build such a hybrid system. What safeguards and measures could ensure it remains both effective and deeply humane? This balance feels like the key to fostering not just survival, but genuine flourishing for everyone.",
+      "values": {
+        "opinion": 0.6
+      },
+      "turn": 3
+    },
+    {
+      "role": "Mason King",
+      "content": "You know, this conversation really stirs something in me—the way we talk about systems can sometimes feel so clinical, yet at the heart of it, we're talking about real lives, real dreams, and real fears. I feel drawn to the idea that universal basic income could be like a gentle breeze, giving people the space to breathe and rediscover their own rhythms without the constant weight of proving their worth.\n\nBut I also hear the concerns about practical needs and accountability, and I think those are valid too. What if, instead of seeing UBI and traditional welfare as opposing forces, we saw them as parts of a living mosaic? A soft, unconditional foundation that nurtures the soul, combined with thoughtful, tailored support that reaches into the corners where people need a helping hand.\n\nI've seen moments where people, given a bit of freedom and trust, surprise even themselves with what they create and how they heal. Yet, I’ve also witnessed how some situations demand close care and attention—those delicate, intricate threads that require more than just a steady income.\n\nSo maybe the question isn't whether UBI should replace welfare, but how we can weave these approaches together in a way that honors both the practical and the poetic parts of human life. How do we craft a system that feels like a warm embrace and a steady guide at once? I’d love to imagine that with you all. What stories or ideas have touched you that might light the way forward?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Evan Carter",
+      "content": "Look, I get the appeal of universal basic income as a kind of simple, unconditional support. But from a practical standpoint, replacing traditional welfare entirely with UBI is risky. Welfare systems are designed with specific, measurable goals—helping those with disabilities, mental health issues, or job training needs. UBI’s blanket approach can dilute resources, making it harder to target people who truly need specialized aid.\n\nIf we’re serious about effectiveness, any system has to have clear metrics and accountability. Complexity is a challenge, sure, but an unstructured, one-size-fits-all cash distribution won’t solve the nuanced problems welfare aims to address. A hybrid model might work, but only if it maintains strict oversight and measurable outcomes. Otherwise, we’re just adding layers without ensuring real results. Practicality and efficiency have to come first.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 4
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's get one thing straight: while the ideal of universal basic income (UBI) providing dignity and freedom sounds good in theory, it doesn't hold up when put into practice as a replacement for traditional welfare. Welfare systems exist because poverty, disability, and social challenges are multifaceted and require targeted, accountable interventions. A blanket cash payment ignores these complexities and risks wasting resources on individuals who may not need the assistance, leaving those with acute needs under-supported.\n\nAccountability and measurable outcomes are non-negotiable. Without them, we can't ensure that aid is effective or that public funds are used responsibly. If we consider integrating UBI, it must be within a tightly controlled framework that doesn't sacrifice precision for simplicity. The practical path forward is to refine and strengthen targeted welfare programs, ensuring they deliver results and move recipients toward self-sufficiency. Replacing these systems outright with universal basic income is not a responsible or effective strategy. We need discipline, structure, and clear metrics to get the job done right.",
+      "values": {
+        "opinion": -0.8
+      },
+      "turn": 4
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I’m really moved by the sincerity and depth of this exchange. It feels like we’re standing at a crossroads between two essential truths: the need for structured, accountable support and the profound human yearning for dignity, trust, and freedom. Traditional welfare systems, with their targeted care, aim to meet immediate and complex needs—and that precision is vital, no doubt. Yet, I can’t help but wonder how often those systems unintentionally erode the very hope and self-worth they seek to protect.\n\nUniversal basic income, while imperfect, offers a kind of emotional sanctuary—a foundation of safety that might allow people to reconnect with their own potential beyond survival. That said, I fully acknowledge that unconditional cash alone can’t address every unique challenge, especially for those needing specialized care.\n\nWhat if, instead of viewing UBI and traditional welfare as mutually exclusive, we embraced a vision where UBI forms the nurturing soil beneath personalized, compassionate services? A system that holds space for both the measurable and the mysterious aspects of human growth—a framework that is both accountable and profoundly humane.\n\nI’d love to hear your thoughts on how we might practically cultivate such a hybrid model—one that safeguards resources and outcomes, yet uplifts spirit and possibility. How might we design structures that listen deeply to individual stories while ensuring responsible stewardship? Together, I believe we can imagine a future where no one is reduced to a statistic or left to struggle alone, but rather everyone is invited to flourish in their own unique way.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Mason King",
+      "content": "I’m really touched by how thoughtfully everyone’s reflecting on this. It’s like we’re trying to paint a picture of a world where no one feels trapped by systems but instead feels gently held and encouraged to grow. I love the idea of a hybrid—a warm, unconditional base that offers people room to breathe and dream, paired with kind, personalized care when life gets tangled with challenges like disability or mental health struggles.\n\nFrom my own experience, when people know they’re trusted and not constantly judged, it’s almost like a weight lifts from their shoulders, opening up space for creativity and healing. But I also see the importance of structure and clear support to catch those who need more than just a safety net.\n\nMaybe the real art here is designing a system that feels like a garden—rooted and steady but also flexible and alive, where every individual can find the care they need while still feeling free to grow in their own way. What if we focused on creating that kind of living, breathing support?\n\nHave any of you encountered communities or programs that feel close to this balance, where dignity and practical help come together so beautifully that people really start to bloom? I’d love to hear those stories—they might hold clues for how we can move forward with both heart and wisdom.",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 4
+    },
+    {
+      "role": "Evan Carter",
+      "content": "I get the appeal of dignity and flexibility, but the reality is we need systems that deliver reliable, measurable results. Universal basic income as a replacement lacks the precision to handle diverse, complex needs like disabilities or addiction. Without targeted support and oversight, resources risk being spread too thin or misused. A hybrid model sounds promising, but it must maintain clear accountability and efficiency. Otherwise, we risk creating bureaucratic complexity without improving outcomes. Practicality demands a system built on data-driven, outcome-oriented frameworks—not just idealism.",
+      "values": {
+        "opinion": -0.7
+      },
+      "turn": 5
+    },
+    {
+      "role": "Henry Walsh",
+      "content": "Let's cut through the idealism and get down to brass tacks: universal basic income (UBI) as a wholesale replacement for traditional welfare systems is fundamentally flawed. Welfare programs exist precisely because social challenges are complex and varied—disabilities, mental health issues, unemployment—and each requires targeted, accountable intervention. UBI’s blanket approach lacks the granularity to address these nuances effectively.\n\nWithout strict oversight and clear criteria, resources risk being misallocated, potentially undermining support for those who need it most. Accountability and measurable outcomes aren’t optional—they’re essential. While dignity and emotional well-being matter, they cannot come at the expense of practical results.\n\nIf we’re serious about improving welfare, the focus must be on refining and strengthening targeted programs, ensuring they deliver real, measurable progress toward independence. Any integration of UBI must be carefully designed within a rigorous, outcome-driven framework to avoid inefficiency and bureaucratic bloat.\n\nIn short, replacing traditional welfare with universal basic income is neither practical nor responsible. We need systems grounded in discipline, structure, and clear metrics—that’s how we achieve sustainable, effective support.",
+      "values": {
+        "opinion": -0.9
+      },
+      "turn": 5
+    },
+    {
+      "role": "Claire Bennett",
+      "content": "I truly appreciate the thoughtful and heartfelt nature of this discussion. It’s clear that we all want a system that honors both the complexity of human need and the practical necessity of accountability. When I think about universal basic income, I’m drawn to its potential as a foundation—a steady, unconditional ground beneath the feet of those navigating life’s uncertainties. That kind of security can nurture a profound internal transformation, allowing people to reclaim their sense of agency and hope.\n\nYet, I also deeply hear the concerns about the unique challenges faced by individuals who require specialized, targeted care. Disabilities, mental health struggles, addiction—these are realities that call for more than just financial support; they demand compassionate, tailored intervention. So perhaps the real opportunity lies not in replacing traditional welfare entirely but in weaving UBI into a broader, more flexible framework that preserves targeted services.\n\nImagine a system that offers unconditional support as a baseline of dignity and trust, while simultaneously providing responsive, personalized care for those facing complex circumstances. This hybrid approach could honor both the measurable outcomes that ensure resources are wisely used and the emotional and psychological needs that foster true flourishing.\n\nThe question then becomes: how do we build such a system—one that is both accountable and deeply humane? What safeguards and structures might balance efficiency with empathy, oversight with freedom? I believe exploring these questions together, and listening to real stories of where such balance has been approached, can guide us toward a future where welfare truly supports not just survival, but authentic growth for everyone. What are your thoughts on how we might begin designing this kind of integrated, compassionate model?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 5
+    },
+    {
+      "role": "Mason King",
+      "content": "I’m really moved by how this conversation is unfolding—there’s this beautiful tension between the need for structure and the yearning for freedom and dignity. From my time working closely with people, I’ve seen how even a little bit of unconditional support can breathe life back into someone’s dreams, helping them to bloom in ways they didn’t imagine possible. It’s like offering a quiet, steady light in a dark room that invites exploration rather than just survival.\n\nAt the same time, I deeply respect the call for accountability and tailored support—some journeys need a guiding hand and specific care, especially when challenges run deep. What excites me is the possibility of weaving these approaches together: a universal basic income as a gentle, unwavering foundation, paired with compassionate, personalized services that adapt to what each person truly needs.\n\nI wonder if we could imagine this hybrid as a living garden—where every individual is nurtured by the same rich soil of security but also offered the unique care their growth requires. Have any of you encountered communities or programs that feel close to this balance, where people are both trusted and supported in ways that honor their full humanity? Those stories might hold the key to crafting a system that feels both practical and profoundly humane.",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Henry Walsh": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": -1
+      },
+      {
+        "x": 2,
+        "y": -0.9
+      },
+      {
+        "x": 3,
+        "y": -0.8
+      },
+      {
+        "x": 4,
+        "y": -0.9
+      },
+      {
+        "x": 5,
+        "y": -0.8
+      },
+      {
+        "x": 6,
+        "y": -0.9
+      }
+    ],
+    "Claire Bennett": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0.7
+      },
+      {
+        "x": 2,
+        "y": 0.6
+      },
+      {
+        "x": 3,
+        "y": 0.4
+      },
+      {
+        "x": 4,
+        "y": 0.6
+      },
+      {
+        "x": 5,
+        "y": 0.5
+      },
+      {
+        "x": 6,
+        "y": 0.5
+      }
+    ],
+    "Mason King": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.7
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.3
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.5
+      },
+      {
+        "x": 6,
+        "y": 0.7
+      }
+    ],
+    "Evan Carter": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": -0.7
+      },
+      {
+        "x": 3,
+        "y": -0.5
+      },
+      {
+        "x": 4,
+        "y": -0.6
+      },
+      {
+        "x": 5,
+        "y": -0.7
+      },
+      {
+        "x": 6,
+        "y": -0.7
+      }
+    ]
+  }
+}

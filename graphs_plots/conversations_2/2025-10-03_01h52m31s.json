@@ -1,0 +1,349 @@
+{
+  "characters": [
+    {
+      "name": "Sophia Reed",
+      "profession": "Creative Director",
+      "personality": "ENTP",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Jackson Moore",
+      "profession": "Paramedic",
+      "personality": "ESTP",
+      "opinion_strength": -1,
+      "additional_info": ""
+    },
+    {
+      "name": "Ethan Blake",
+      "profession": "Corporate Executive",
+      "personality": "ENTJ",
+      "opinion_strength": 1,
+      "additional_info": ""
+    },
+    {
+      "name": "Olivia Carson",
+      "profession": "Nurse",
+      "personality": "ISFJ",
+      "opinion_strength": -1,
+      "additional_info": ""
+    }
+  ],
+  "topic": "Universal basic income should replace traditional welfare systems.",
+  "messages": [
+    {
+      "role": "Olivia Carson",
+      "content": "Of course, I'm here to listen and share my thoughts. What topic would you like to discuss?",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Alright, I’m all ears. Let’s dive into something real—how about we tackle the idea of universal basic income replacing traditional welfare systems? I’m ready to hear your takes and throw mine into the ring. What do you say?",
+      "values": {
+        "opinion": 0
+      },
+      "turn": 0
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Ah, the classic UBI versus welfare showdown! Imagine a world where everyone gets a baseline cash injection, no strings attached—sounds like the dream of a futuristic utopia or a lazy weekend, right? But here’s the kicker: traditional welfare systems are like patchwork quilts, tailored to specific needs, while UBI is more like a one-size-fits-all hoodie. Cozy? Sure. But does it fit everyone perfectly? I’m curious—do we risk oversimplifying human complexity by flattening welfare into cash? Or could UBI actually liberate us from bureaucratic nightmares and stigmas? What’s your take?",
+      "values": {
+        "opinion": 0.2
+      },
+      "turn": 0
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut to the chase. Universal basic income replacing traditional welfare systems is not just about ideals—it's about efficiency and measurable outcomes. Traditional welfare programs are bogged down by bureaucracy, inefficiency, and often fail to address root problems effectively. UBI simplifies the process, reduces administrative overhead, and empowers individuals with the autonomy to allocate resources where they need them most.\n\nThat said, the transition must be strategic. We need rigorous data and pilot programs demonstrating that UBI can sustainably support populations without incentivizing dependency or draining resources. But the potential to streamline government spending, stimulate economic activity, and reduce poverty with fewer strings attached is a game-changer.\n\nIf we hesitate to overhaul outdated systems because of fear or complexity, we stay stuck in mediocrity. I stand firmly in favor of UBI replacing traditional welfare—provided we implement it with precision, accountability, and clear performance metrics. It's time to lead boldly and decisively. Who’s ready to move beyond incremental tweaks and drive real transformation?",
+      "values": {
+        "opinion": 0.9
+      },
+      "turn": 0
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I appreciate the passion for exploring new solutions like universal basic income, especially when the goal is to help those in need more effectively. However, I feel a bit cautious about fully replacing traditional welfare systems with UBI. Welfare programs often provide targeted support—like healthcare, housing, and food assistance—that meets very specific needs. A one-size-fits-all cash payment may not always address the complexities of individual circumstances or the emotional support people rely on through these programs.\n\nFrom my experience caring for people in vulnerable situations, stability and personalized support are vital. While UBI might reduce bureaucracy and stigma, I worry it could also overlook those who need more than just money to navigate difficult times. Maybe a thoughtful combination of both approaches, rather than a complete replacement, would better ensure no one falls through the cracks. What do you all think about balancing efficiency with personalized care?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 1
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Look, I get the heart behind targeted welfare programs, but let’s be real—complexity often means red tape and endless paperwork that slows down help when people need it most. UBI cuts through all that noise. Just cash in hand, no questions asked, empowering folks to handle their own priorities. You want healthcare? Great, use your UBI to get it. Need food or housing? Same deal. It’s about trusting people to make decisions for themselves instead of drowning them in bureaucratic hoops.\n\nAnd let’s not kid ourselves—stigma around welfare is a real barrier. UBI treats everyone equally, no shame, no labels. That alone can boost dignity and motivation. Sure, it’s bold, maybe even risky, but if we want to shake up a system that’s been stuck in the mud for decades, this is the move. Incremental tweaks won’t cut it anymore; it’s time to jump in headfirst and see what real change looks like. Who’s with me?",
+      "values": {
+        "opinion": 0.9
+      },
+      "turn": 1
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Oh, the classic \"UBI vs. welfare\" dance—love it! Here's the thing: I’m vibing with the idea of UBI shaking up the status quo. Bureaucracy? Paper mountains? Endless qualifications? Snooze fest. UBI hands people the keys and says, \"Drive yourself.\" It’s elegant in its simplicity and democratic in its fairness. But—and here’s where I flip the coin—what about those nuanced needs that cold cash might not cover? Like mental health support, addiction counseling, or emergency housing? Can a universal payment really replace the tailored safety nets?\n\nMaybe the real magic lies in remixing the two: keep the personalized care where it truly counts but slash the red tape for the basics. Let's disrupt the system without throwing out the baby with the bathwater. What if UBI is the baseline, and targeted services are the fine-tuned instruments on top? Could that be the win-win we’re missing? Who’s ready to brainstorm that hybrid future with me?",
+      "values": {
+        "opinion": 0.5
+      },
+      "turn": 1
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's be clear: clinging to welfare’s complex patchwork is a recipe for inefficiency and stagnation. The bureaucratic labyrinth delays aid, wastes resources, and creates dependency traps. Universal basic income dismantles these barriers by delivering direct, unconditional support, empowering individuals to make choices tailored to their own lives. This isn’t about abandoning nuance; it’s about prioritizing strategic overhaul over incremental tinkering.\n\nThe argument that UBI overlooks specialized needs misunderstands the potential of a streamlined baseline to free up resources and focus targeted services where they’re truly necessary. UBI is not the entire solution but the foundation upon which a more agile, effective support system can be built. We must lead decisively, implement robust pilot programs, and use data-driven metrics to refine and optimize.\n\nThe time for cautious hesitation is over. If we want to transform social support into a system that promotes dignity, autonomy, and economic vitality, UBI replacing traditional welfare is the strategic path forward. Who’s ready to commit to real progress instead of maintaining the status quo?",
+      "values": {
+        "opinion": 0.9
+      },
+      "turn": 1
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly understand the desire for efficiency and dignity that universal basic income promises. It’s so important that people feel respected and supported without the hurdles of excessive bureaucracy. At the same time, from my experience caring for individuals facing various challenges, I’ve seen how personalized support—like access to healthcare, counseling, and emergency help—can make a crucial difference beyond just financial assistance.\n\nI worry that a one-size-fits-all cash payment might unintentionally overlook those nuanced needs, the kind of care that helps people rebuild stability and wellness in difficult times. Perhaps instead of fully replacing traditional welfare, we could thoughtfully integrate UBI as a foundation while preserving targeted programs that provide essential, specialized care. This way, we honor both efficiency and the compassionate support people truly need to thrive.\n\nWhat do you all think about finding a balance that ensures no one falls through the cracks while still moving toward a simpler, more dignified system?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 2
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Alright, listen up—efficiency isn’t just a buzzword here; it’s the name of the game. Traditional welfare? It’s a tangled mess of rules, delays, and stigma. People get stuck chasing paperwork instead of focusing on improving their lives. UBI cuts through that nonsense like a hot knife through butter. Cash in hand, no strings, no waiting rooms, no judgment. That’s empowerment, plain and simple.\n\nSure, specialized services have their place, but why not build those on top of a solid, universal foundation? UBI isn’t about ignoring complexity; it’s about clearing out the clutter so targeted help can actually work better where it’s really needed. We don’t have time for incremental fixes that just kick the can down the road. It’s time to hit the gas pedal and drive change.\n\nSo, who’s ready to back a bold move that respects people’s autonomy and shakes up the system for good? Let’s make it happen.",
+      "values": {
+        "opinion": 0.9
+      },
+      "turn": 2
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Oh, this debate is sizzling! I’m all in for UBI stepping up to the plate and replacing traditional welfare—but with a twist. Hear me out: UBI is the ultimate disruptor, slicing through bureaucratic nonsense and stigma like a hot knife through butter. It’s elegant in its simplicity and radical in its respect for individual freedom. But—and here’s the juicy part—why stop there?\n\nImagine UBI as the baseline beat, the steady rhythm everyone dances to. On top of that, we layer targeted, personalized support for those complex, nuanced needs—mental health, addiction recovery, housing crises—you name it. That hybrid model? It’s the remix the system desperately needs. We get the efficiency and dignity of UBI, plus the tailored care that stops people from falling through the cracks.\n\nSo, I’m curious—are we brave enough to think beyond the black-and-white “UBI replaces welfare” narrative and instead remix them into a bold, new social symphony? Because that’s the kind of future that excites me. Who’s ready to brainstorm that hybrid future with me?",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 2
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's cut through the noise and focus on results. Universal basic income replacing traditional welfare systems is not only a logical step but an imperative one for the future of social support. The current welfare model is riddled with inefficiencies, excessive bureaucracy, and stigmatization that slows down aid and saps resources. UBI delivers a streamlined, unconditional cash flow that empowers individuals to make decisions best suited to their unique circumstances—no red tape, no gatekeeping.\n\nI acknowledge the concerns about specialized support for healthcare, mental health, or housing. However, UBI is not a wholesale abandonment of targeted services; it’s the foundation that frees up administrative bandwidth and funding to enhance and focus those services where they truly matter. Clinging to the patchwork quilt of welfare programs out of fear of complexity only guarantees stagnation and wasted resources.\n\nThe path forward demands bold leadership, strategic pilot programs, and data-driven refinement. Incremental tweaks won’t break the cycle of inefficiency. We must commit to decisive action that respects individual autonomy, reduces government overhead, and drives measurable outcomes. The question isn’t if we should transition to UBI replacing traditional welfare—it’s when and how swiftly we execute this transformation. Who’s ready to lead that charge?",
+      "values": {
+        "opinion": 1
+      },
+      "turn": 2
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I hear all of you sharing such thoughtful points, and I truly appreciate the passion behind wanting to improve support for those in need. From my experience, stability and personalized care are so important. While I understand that universal basic income could reduce bureaucracy and stigma, I worry that replacing traditional welfare completely might leave some people without the specific help they rely on—like healthcare access, counseling, or emergency housing support. These kinds of services often require more than just financial assistance; they offer emotional and practical support that helps people rebuild their lives.\n\nPerhaps a balanced approach could work best—using UBI as a steady foundation to ensure basic needs are met, while still maintaining targeted programs for those unique, complex circumstances. This way, no one is left behind, and we honor both efficiency and the compassionate care that vulnerable individuals truly need. What do you think about striving for that kind of harmony between new ideas and proven support systems?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 3
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Look, I get the heart behind wanting to keep all those specialized programs, but let’s be honest—welfare systems today are a bureaucratic nightmare. People need help *now*, not after jumping through endless hoops. UBI flips the script by putting cash straight into people’s hands, no strings attached. It’s about trusting folks to make their own decisions, boosting dignity, and cutting out the inefficiencies that drag everyone down.\n\nSure, targeted services matter, but they can exist *on top* of a solid UBI foundation—free from the clunky red tape that slows everything. We don’t have time for slow, cautious tweaks. It’s time to shake things up with bold action. Let’s empower people, slash bureaucracy, and watch real change happen. Who’s ready to stop tiptoeing and start making waves?",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 3
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Ah, the eternal tug-of-war between nuance and simplicity! I’m loving this energy—it’s like watching a chess game where every piece wants to be a queen. But here’s a spicy thought: what if UBI isn’t a replacement *or* a patch, but a *platform*? Imagine a world where everyone gets the baseline cash flow to cover essentials—no forms, no stigma, just straight-up trust. Then, specialized welfare services become hyper-focused, nimble, and innovative because they’re no longer burdened with being the sole safety net.\n\nYes, some folks need tailored care—that’s undeniable. But why cling to the labyrinthine welfare beast when we can tame it with a UBI-powered scalpel? It’s about flipping the script from “gatekeeper” to “enabler.” And let’s be real: bureaucracy isn’t just inefficient; it’s downright demoralizing. If we want to ignite true autonomy and creativity in people’s lives, we need to stop micromanaging and start empowering.\n\nThat said, I’m all ears for wild ideas on how to remix these systems into a jazzier, more harmonious social symphony. Who’s ready to remix the remix?",
+      "values": {
+        "opinion": 0.8
+      },
+      "turn": 3
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's be unambiguous: universal basic income replacing traditional welfare systems is not a question of if, but how quickly we can execute this transformation. The current welfare apparatus is a bloated, inefficient machine—riddled with red tape, delays, and stigma—that traps people in dependency rather than propelling them forward. UBI cuts through that paralysis by providing direct, unconditional cash to individuals, empowering them to make decisions best suited to their unique situations.\n\nYes, specialized services like healthcare and housing support are crucial, but those should not be tangled up in the cumbersome welfare bureaucracy. Instead, UBI can serve as the streamlined foundation that frees up resources and administrative capacity to deliver targeted interventions more effectively and responsively.\n\nIncremental tweaks to welfare are a recipe for stagnation. We need bold leadership, strategic pilots, and data-driven adjustments to prove and refine the model. Anything less than decisive action is just preserving inefficiency under the guise of caution.\n\nSo, let’s stop debating hypotheticals and start designing a roadmap for implementation. Who’s ready to lead this charge and transform social support into a system that respects autonomy, reduces overhead, and drives measurable, scalable outcomes?",
+      "values": {
+        "opinion": 1
+      },
+      "turn": 3
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I truly appreciate the thoughtful points everyone has raised here. From my experience as a nurse, I see firsthand how important it is to provide not just financial support but also personalized care that addresses each person's unique challenges—whether that’s access to healthcare, counseling, or emergency housing. While universal basic income offers the appealing simplicity of direct cash and could reduce some of the bureaucratic burdens and stigma, I worry that fully replacing traditional welfare systems might leave some vulnerable individuals without the tailored help they need to regain stability.\n\nI believe a balanced approach might serve us best—using UBI as a reliable foundation to cover basic needs while still maintaining targeted programs that deliver critical, specialized support. This way, we can respect people's dignity and autonomy while ensuring no one falls through the cracks. Does anyone else feel that combining the strengths of both systems could provide the harmony and stability our communities need?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 4
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Alright, let me cut to the chase here—UBI replacing traditional welfare isn’t just a good idea, it’s the *only* way forward if we want real, tangible change. The current system? A bureaucratic quagmire that slows down help and traps people in endless paperwork. UBI slashes through that mess with one clean move: cash in hand, no strings, no stigma. People get to decide what they need most—that’s empowerment, not paternalism.\n\nNow, I hear the concern about specialized services, and I’m not saying those should disappear. But here’s the kicker: UBI *frees up* resources and cuts overhead so targeted help can actually *focus* where it counts, instead of getting lost in red tape. Why keep patching a sinking ship when we can build a sleek, efficient speedboat?\n\nLook, incremental tweaks are for people afraid of rocking the boat. I say, let’s rev the engine, take the wheel, and drive this transformation full throttle. Who’s with me on shaking up the system and giving people the freedom—and the dignity—they deserve?",
+      "values": {
+        "opinion": 1
+      },
+      "turn": 4
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Oh, I’m loving the fire here! But let’s flip the script for a sec—what if UBI isn’t just a replacement but a disruptive *foundation* that lets us rethink welfare entirely? Picture this: everyone gets a baseline cash flow, no strings attached, slicing through bureaucracy and stigma like a hot knife through butter. Then, we supercharge the system by layering on targeted, specialized support for those complex needs—mental health, addiction recovery, emergency housing—you name it.\n\nWhy settle for the old either-or, when we can remix welfare into a hybrid powerhouse? It’s about trusting people with autonomy *and* recognizing that some situations demand tailored care. The beauty? UBI frees up resources and administrative chaos, letting targeted programs actually *work* instead of being bogged down in red tape.\n\nSure, the traditional welfare quilt has its patches, but maybe it’s time to stop sewing new ones and start designing a whole new fabric. So, who’s ready to stop tiptoeing and start jamming on this bold, hybrid future? I’m all ears for wild ideas and devil’s advocates—bring it on!",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 4
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let's be unequivocal: Universal Basic Income replacing traditional welfare systems is the strategic move forward. The existing welfare infrastructure is a labyrinth of inefficiency and bureaucracy that delays aid and saps resources—it's a system designed for mediocrity, not progress. UBI delivers direct, unconditional cash transfers that empower individuals to allocate resources according to their unique needs, removing gatekeeping and stigma.\n\nYes, specialized services like healthcare and housing support are critical, but these should operate independently from the cumbersome welfare machine. UBI creates a streamlined foundation that frees up administrative capacity and funding to target these complex needs more effectively.\n\nIncremental adjustments won't break this cycle of waste and stagnation. We need bold leadership, rigorous pilot programs, and data-driven implementation—swiftly and decisively. The question isn't if we should replace traditional welfare with UBI; it's how fast we can execute this transformation to maximize autonomy, efficiency, and measurable outcomes.\n\nWho’s ready to lead this charge and stop clinging to outdated, inefficient systems? The time for cautious debate is over—it's time for action.",
+      "values": {
+        "opinion": 1
+      },
+      "turn": 4
+    },
+    {
+      "role": "Olivia Carson",
+      "content": "I really appreciate all the passionate arguments for universal basic income and the desire to streamline support systems. From my experience as a nurse, I’ve seen how lifesaving it can be when people receive not just financial help, but also personalized care tailored to their individual struggles—whether that’s mental health support, housing assistance, or medical care. A one-size-fits-all cash payment might simplify things administratively, but I worry it risks overlooking the unique challenges some people face daily.\n\nI believe in the importance of stability and emotional support, especially for those in vulnerable situations. So, while I see the appeal of UBI as a foundation to reduce bureaucracy and stigma, I feel it should complement rather than fully replace traditional welfare programs. Maintaining targeted services ensures that no one falls through the cracks and that people receive the nuanced care and support they truly need to regain their footing.\n\nPerhaps the best path forward is a balanced approach—using UBI to cover basic needs reliably and efficiently, while still preserving specialized programs that offer the compassionate, hands-on assistance that many depend on. What are your thoughts on finding that kind of harmony between innovation and care?",
+      "values": {
+        "opinion": 0.3
+      },
+      "turn": 5
+    },
+    {
+      "role": "Jackson Moore",
+      "content": "Alright, listen up—this isn’t about tiptoeing around feelings or getting bogged down in endless debates. Universal Basic Income replacing traditional welfare? That’s the bold move that cuts through the bureaucratic mess and actually puts power where it belongs: in people’s hands. Forget the endless paperwork and judging eyes; UBI slaps cash directly into wallets, no strings attached, and lets folks decide what they need most. \n\nSure, specialized services matter, but they should be laser-focused and built on top of a solid UBI foundation—not tangled in a bloated welfare machine that slows everything down. We want fast results, dignity, and autonomy, not patchwork fixes that leave people stuck waiting and jumping through hoops.\n\nSo, who’s ready to stop dancing around the problem and drive this change full throttle? Let’s cut the red tape, empower individuals, and build a future where social support actually works—for everyone.",
+      "values": {
+        "opinion": 0.9
+      },
+      "turn": 5
+    },
+    {
+      "role": "Sophia Reed",
+      "content": "Alright, I’m picking up the vibes here, and honestly, this debate is like a mental rollercoaster—and I’m loving every twist! Here’s the spicy angle I’m vibing on: universal basic income absolutely has the chops to replace traditional welfare systems, but let’s not be naive and think it’s a magic bullet that wipes out complexity overnight.\n\nUBI’s elegance lies in its simplicity—no paperwork marathons, no judgmental gatekeepers, just cold hard cash handed over with a wink and a nod saying, “You got this.” It’s empowering, it’s efficient, and damn, it respects people’s autonomy like a champ. But—and here’s the twist—life isn’t a one-track highway. People’s needs are as diverse as playlists on a Friday night.\n\nSo why not remix the system? Use UBI as the foundational beat—the steady rhythm that ensures everyone’s basic needs have a baseline groove. Then layer on targeted, specialized support where the beat needs to shift: mental health, addiction recovery, healthcare, emergency housing—you name it. It’s like a social symphony where every instrument plays its part without drowning out the others.\n\nHonestly, sticking to the old welfare patchwork quilt feels like clinging to a flip phone in the age of smartphones. But tossing out targeted care altogether? That’s like throwing out the baby with the bathwater. The real challenge—and opportunity—is to disrupt boldly but thoughtfully, remixing autonomy with compassion.\n\nSo, who’s ready to jam on this hybrid future with me? Let’s not just debate; let’s innovate, challenge, and maybe even have some fun shaking up the status quo!",
+      "values": {
+        "opinion": 0.7
+      },
+      "turn": 5
+    },
+    {
+      "role": "Ethan Blake",
+      "content": "Let’s get straight to it. The current welfare system is an unwieldy, inefficient beast that stalls aid and fuels dependency. Universal Basic Income is the strategic solution—direct, unconditional cash empowers individuals immediately without bureaucratic bottlenecks. Yes, specialized services like healthcare and housing support are crucial, but they don’t have to be tangled in welfare’s red tape. By replacing traditional welfare with UBI, we free up resources and administrative capacity to deliver targeted interventions more effectively.\n\nIncremental tweaks won’t break this cycle; bold, data-driven leadership will. We need to move decisively, implement comprehensive pilot programs, and refine based on measurable outcomes. The question isn’t whether we should transition to UBI replacing welfare—it’s how fast we can execute this transformation to maximize autonomy, efficiency, and impact. Clinging to outdated welfare systems under the guise of caution only prolongs inefficiency and stagnation. Who’s ready to lead this charge and drive real progress?",
+      "values": {
+        "opinion": 1
+      },
+      "turn": 5
+    }
+  ],
+  "chartData": {
+    "Sophia Reed": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.2
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 3,
+        "y": 0.7
+      },
+      {
+        "x": 4,
+        "y": 0.8
+      },
+      {
+        "x": 5,
+        "y": 0.7
+      },
+      {
+        "x": 6,
+        "y": 0.7
+      }
+    ],
+    "Jackson Moore": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0.9
+      },
+      {
+        "x": 3,
+        "y": 0.9
+      },
+      {
+        "x": 4,
+        "y": 0.8
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 0.9
+      }
+    ],
+    "Ethan Blake": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0.9
+      },
+      {
+        "x": 2,
+        "y": 0.9
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 1
+      }
+    ],
+    "Olivia Carson": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0.3
+      },
+      {
+        "x": 3,
+        "y": 0.3
+      },
+      {
+        "x": 4,
+        "y": 0.3
+      },
+      {
+        "x": 5,
+        "y": 0.3
+      },
+      {
+        "x": 6,
+        "y": 0.3
+      }
+    ]
+  }
+}
