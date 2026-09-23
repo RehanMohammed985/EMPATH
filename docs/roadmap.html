@@ -1,0 +1,198 @@
+<title>EMPATH Roadmap</title>
+<style>
+  :root {
+    --bg: #fbfbf9; --panel: #ffffff; --ink: #1c1d20; --sub: #6f7178;
+    --hair: #e6e5e0; --accent: #2455b8; --accent-soft: #eef2fb;
+    --done: #3c7a46; --gate-ink: #7a5d00; --gate-bg: #faf5e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161719; --panel: #1e1f22; --ink: #ebebe8; --sub: #9b9da4;
+      --hair: #2d2e32; --accent: #82a9ee; --accent-soft: #232a3a;
+      --done: #82bd8d; --gate-ink: #d9b64a; --gate-bg: #26231a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161719; --panel: #1e1f22; --ink: #ebebe8; --sub: #9b9da4;
+    --hair: #2d2e32; --accent: #82a9ee; --accent-soft: #232a3a;
+    --done: #82bd8d; --gate-ink: #d9b64a; --gate-bg: #26231a;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink);
+         font: 15.5px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+
+  .kicker { font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--accent);
+            text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 18px;
+       text-wrap: balance; }
+
+  .thesis { background: var(--accent-soft); border-radius: 12px; padding: 18px 20px;
+            margin-bottom: 14px; }
+  .thesis p { margin: 0; font-size: 15.5px; }
+  .thesis p + p { margin-top: 10px; }
+  .conds { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 46px; }
+  .cond { flex: 1 1 140px; background: var(--panel); border: 1px solid var(--hair);
+          border-radius: 10px; padding: 10px 12px; font-size: 13px; }
+  .cond b { display: block; font-size: 13px; margin-bottom: 2px; }
+  .cond.hero { border-color: var(--accent); }
+  .cond.hero b { color: var(--accent); }
+
+  .phase { border: 1px solid var(--hair); background: var(--panel); border-radius: 14px;
+           padding: 22px 24px; margin-bottom: 18px; }
+  .phase.now { border-color: var(--accent); }
+  .phead { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .pnum { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--sub); }
+  .phase h2 { font-size: 18px; font-weight: 680; margin: 0; }
+  .when { color: var(--sub); font-size: 13px; margin-left: auto; }
+  .pill { font-size: 11.5px; font-weight: 650; letter-spacing: .04em; border-radius: 99px;
+          padding: 2.5px 10px; }
+  .pill.now { background: var(--accent); color: #fff; }
+  .pill.done { background: var(--done); color: #fff; }
+
+  .idea { font-size: 15px; color: var(--ink); margin: 8px 0 16px; }
+  .idea b { color: var(--accent); font-weight: 650; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 560px) { .split { grid-template-columns: 1fr; } }
+  .col h3 { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+            color: var(--sub); margin: 0 0 6px; }
+  .col ul { margin: 0; padding-left: 17px; font-size: 14px; }
+  .col li { margin: 5px 0; }
+
+  .gate { background: var(--gate-bg); border-radius: 9px; padding: 10px 14px; margin-top: 16px;
+          font-size: 13.5px; color: var(--ink); }
+  .gate b { color: var(--gate-ink); font-weight: 700; letter-spacing: .02em; }
+
+  .foot { color: var(--sub); font-size: 13px; margin-top: 34px; }
+</style>
+
+<div class="wrap">
+  <div class="kicker">CSC 499 · Fall 2026 · with Dr. Arnav Jhala</div>
+  <h1>EMPATH: do emotions change how AI agents change their minds?</h1>
+
+  <div class="thesis">
+    <p><b>The main idea.</b> The base framework (Talekar &amp; Jhala 2025) simulates 4 LLM agents with fixed MBTI personalities debating a topic while a judge scores every message from &minus;1 to +1. Their agents reason but never feel. Real people in arguments get angry, anxious, and invested, and that shapes who persuades whom. The DEBATE benchmark (2025) showed LLM agent groups reach consensus unnaturally fast compared to 2,832 real humans. EMPATH tests one candidate explanation: missing emotion.</p>
+    <p><b>How.</b> We give each agent an emotional state, computed each turn by appraising the message it just heard (does it attack my position? is it aimed at me? how forceful?), grounded in appraisal theory from psychology (Lazarus, Scherer). Emotion builds, decays, spreads between agents, and colors how each personality argues. Then we measure what changes: convergence speed, polarization, side-switching, and whether emotional contagion predicts persuasion.</p>
+  </div>
+
+  <div class="conds">
+    <div class="cond"><b>OFF</b>baseline, no emotion (the original framework)</div>
+    <div class="cond hero"><b>ON</b>full dynamic emotion via appraisal</div>
+    <div class="cond"><b>FROZEN</b>emotion set once, never updates</div>
+    <div class="cond"><b>RANDOM</b>emotion changes randomly each turn</div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">01</span><h2>Setup</h2><span class="pill done">DONE EXCEPT SMOKE TEST</span><span class="when">Aug&ndash;Sep</span></div>
+    <p class="idea"><b>Idea:</b> get the machine that produces evidence working before touching the science. A bug found now costs minutes; found after an overnight run, it costs the night.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Installed dependencies, pulled llama3.1:8b into Ollama (done)</li>
+        <li>Run the smoke test: one 4-agent, 24-message debate on the &ldquo;food provides energy&rdquo; topic, end to end</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Rebuilt the code on the <code>empath</code> branch: any model via config, separate judge at temperature 0, batch runner that needs no browser</li>
+        <li>Wrote the research plan, emotion spec, source library, study guide</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="phase now">
+    <div class="phead"><span class="pnum">02</span><h2>Reproduce the baseline</h2><span class="pill now">CURRENT</span><span class="when">~1 week</span></div>
+    <p class="idea"><b>Idea:</b> before adding anything, prove our setup shows the published paper&rsquo;s findings. Then any later difference is caused by the emotion layer, not by our plumbing or model swap.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Launch the overnight batch: 8 personality groups &times; 3 topic types, emotion off, 24 simulations</li>
+        <li>Ask Nitish: did judge scores update agents&rsquo; opinion values in the runs behind the paper? (his Algorithm 1 says yes, the code says no)</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Run the paper&rsquo;s own analysis scripts on our logs</li>
+        <li>Compare our curves against the paper&rsquo;s Figures 6&ndash;9, give a pass/fail verdict</li>
+      </ul></div>
+    </div>
+    <div class="gate"><b>GATE</b> &mdash; universal topics converge positive, controversial ones polarize, flexible personalities (ENFP, ENTP, INFP, ESFP) shift more than rigid ones (INTJ, ENTJ, ISTJ, ESTJ). Fail &rarr; debug prompts, judge, or model and rerun.</div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">03</span><h2>Build the emotion layer</h2><span class="when">~2 weeks</span></div>
+    <p class="idea"><b>Idea:</b> implement appraisal theory as code. Emotion is not a label pasted on an agent; it is computed fresh each turn from how the agent evaluates what it just heard (Scherer&rsquo;s claim that emotion is a process). This layer is the paper&rsquo;s framework contribution.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Read the 4 core papers (base paper, appraisal overview, Scherer, EMA) so you can defend the design</li>
+        <li>Review the emotion spec with Dr. Jhala: the 4 open questions are flagged in the doc</li>
+        <li>Sanity-check the 64 personality &times; emotion expression lines</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Appraisal call per turn: congruence, targetedness, certainty of the last message</li>
+        <li>Update rule: emotion label + intensity that builds (gain), fades (decay), and spreads between agents (contagion)</li>
+        <li>Inject emotion into generation, personality-specific; log every value; add the classifier that verifies the text really sounds like the assigned emotion</li>
+        <li>Keep OFF byte-identical to the baseline</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">04</span><h2>Pilot</h2><span class="when">~1 week</span></div>
+    <p class="idea"><b>Idea:</b> spend a little compute to protect a lot. If the emotion manipulation is not visible in the text, or the judge is inconsistent, every downstream number is noise. Catch that on 5 runs, not 120.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Run small ON-condition batches (minutes, not overnight)</li>
+        <li>If the judge proves noisy: get the Anthropic API key, we swap the judge in config, no code changes</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Measure manipulation-check agreement: does assigned emotion match expressed emotion?</li>
+        <li>Re-judge samples to measure judge stability; tune the decay/gain/contagion constants</li>
+      </ul></div>
+    </div>
+    <div class="gate"><b>GATE</b> &mdash; emotions visible in text, judge consistent on re-scoring. Fail &rarr; stronger expression prompts, or upgrade the model, then re-pilot.</div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">05</span><h2>The full experiment</h2><span class="when">~2 weeks of overnight runs</span></div>
+    <p class="idea"><b>Idea:</b> the actual test. FROZEN and RANDOM are the ablations that make it science: if ON differs from OFF but also from FROZEN and RANDOM, then the appraisal <i>mechanism</i> drives the effect, not the mere presence of emotion words.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Launch each night&rsquo;s batch (one command with <code>caffeinate</code> so the Mac stays awake)</li>
+        <li>Full grid: 4 conditions &times; 3 topic types &times; groups &times; 10+ seeds per cell</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Verify each night&rsquo;s logs, queue the next condition</li>
+        <li>Configure the validation slice on a second model family (Anthropic API) so the result is not a one-model quirk</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">06</span><h2>Analysis</h2><span class="when">~1&ndash;2 weeks</span></div>
+    <p class="idea"><b>Idea:</b> turn a hundred-plus debate logs into defensible claims. Reviewers accept effect sizes and confidence intervals, not three pretty line charts.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Read a sample of transcripts and hand-score some messages: your human check on the judge is itself a reported reliability number</li>
+        <li>Walk the findings with Dr. Jhala, decide the story of the paper</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Compute convergence, polarization, side-switches per condition; emotion trajectories; contagion via lagged cross-correlation, and whether contagion predicts persuasion (the headline question)</li>
+        <li>ANOVA / mixed-effects models, effect sizes, bootstrap CIs; comparison to DEBATE&rsquo;s over-convergence finding; publication figures</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phead"><span class="pnum">07</span><h2>Write and ship</h2><span class="when">Nov&ndash;Dec, then spring</span></div>
+    <p class="idea"><b>Idea:</b> one body of results, five outputs. The course deliverables are slices of the paper, not separate work.</p>
+    <div class="split">
+      <div class="col"><h3>You</h3><ul>
+        <li>Course: report Nov 30, tech demo Dec 4, poster Dec 5, open-source release Dec 7</li>
+        <li>Draft the paper as first author; submit with Dr. Jhala to JASSS or Cognitive Systems Research (or AIIDE/ACS 2027 if he prefers)</li>
+      </ul></div>
+      <div class="col"><h3>Claude</h3><ul>
+        <li>Figures, related-work drafts, methods section from the logged configs, editing passes</li>
+        <li>Clean the repo for public release with reproduction instructions</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <p class="foot">Living document. Companion files in EMPATH/docs: RESEARCH_PLAN, EMOTION_MODEL, SOURCES, STUDY_GUIDE.</p>
+</div>
