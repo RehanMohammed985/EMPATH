@@ -41,3 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 docker-compose.yml
+# local assistant config, not part of the project
+CLAUDE.md
